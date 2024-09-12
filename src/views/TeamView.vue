@@ -1,202 +1,186 @@
 <template>
-    <section>
-      <div class="services">
-        <hr>
-        <div class="our-service-sec">
-          <h1 class="oss-header">Meet The Team</h1>
-        </div>
-        <hr>
-          <p class="header-text">At Supa Ovens, we are proud to have a dedicated and talented team that drives our mission of delivering exceptional pizza ovens and customer satisfaction. Meet the people behind our success:</p>
-        <div class="row">
-          <div class="products-container">
-            <div class="product">
-              <div class="img-section fade-in">
-                <img src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="" width="120">
+  <section>
+    <div class="py-20">
+      <h1>Meet The Team</h1>
+      <hr class="mt-2 mb-4">
+      <p>At Supa Ovens, we are proud to have a dedicated and talented team that drives our mission of delivering exceptional pizza ovens and customer satisfaction. Meet the people behind our success:</p>
+    </div>
+          <div class="flex flex-row px-10">
+            <div class="w-1/3 px-10 py-20 text-left">
+              <div class="flex flex-row">
+                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
+                <h4 class="ml-10">Simphiwe Bhusa</h4>
               </div>
-                <h4 class="fade-in">Simphiwe Bhusa</h4>
-                <p class="display-5 fade-in">Managerial Director</p>
-                <h6 class="fade-in">sp.ovens@gmail.com</h6>
-                <h6 class="fade-in">076 416 7815</h6>
+                <p class="text-[1.6vw]">Managerial Director</p>
+                <h6 class="pt-3">sp.ovens@gmail.com</h6>
+                <h6 class="py-2 text-[1vw]">076 416 7815</h6>
                 <hr>
-                <button class="s-btn fade-in">Connect</button><i class="bi bi-arrow-right"></i>
+                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
                 <hr>
             </div>
-            <div class="product">
-              <div class="img-section fade-in">
-                <img src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="" width="120">
+            <div class="w-1/3 px-10 py-20 text-left">
+              <div class="flex flex-row">
+                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
+                <h4 class="ml-10">Asisipho Gcusa</h4>
               </div>
-                <h4 class="fade-in">Asisipho Gcusa</h4>
-                <p class="display-5 fade-in">Web Developer & Designer</p>
-                <h6 class="fade-in">gcusaaa@gmail.com</h6>
-                <h6 class="fade-in">069 292 9578</h6>
+                <p class="text-[1.6vw]">Web Developer & Designer</p>
+                <h6 class="pt-3">gcusaaa@gmail.com</h6>
+                <h6 class="py-2 text-[1vw]">069 292 9578</h6>
                 <hr>
-                <button class="s-btn fade-in">Connect</button><i class="bi bi-arrow-right"></i>
+                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
                 <hr>
             </div>
-            <div class="product">
-              <div class="img-section fade-in">
-                <img src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="" width="120">
+            <div class="w-1/3 px-10 py-20 text-left">
+              <div class="flex flex-row">
+                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
+                <h4 class="ml-10">Asisipho Gcusa</h4>
               </div>
-                <h4 class="fade-in">Asisipho Gcusa</h4>
-                <p class="display-5 fade-in">Web Developer & Designer</p>
-                <h6 class="fade-in">gcusaaa@gmail.com</h6>
-                <h6 class="fade-in">069 292 9578</h6>
+                <p class="text-[1.6vw]">Web Developer & Designer</p>
+                <h6 class="pt-3">gcusaaa@gmail.com</h6>
+                <h6 class="py-2 text-[1vw]">069 292 9578</h6>
                 <hr>
-                <button class="s-btn fade-in">Connect</button><i class="bi bi-arrow-right"></i>
-                <hr>
-            </div>
-            <div class="product">
-              <div class="img-section fade-in">
-                <img src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="" width="120">
-              </div>
-                <h4 class="fade-in">Nkosithandile Gcusa</h4>
-                <p class="display-5 fade-in">Chef </p>
-                <h6 class="fade-in">nkosithandilegcusa@gmail.com</h6>
-                <h6 class="fade-in">067 790 9805</h6>
-                <hr>
-                <button class="s-btn fade-in">Connect</button><i class="bi bi-arrow-right"></i>
-                <hr>
-            </div>
-            <div class="product">
-              <div class="img-section fade-in">
-                <img src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="" width="120">
-              </div>
-                <h4 class="fade-in">Somelezo Jakopana</h4>
-                <p class="display-5 fade-in">Photographer</p>
-                <h6 class="fade-in">somelezojakopana@gmail.com</h6>
-                <h6 class="fade-in">081 469 0288</h6>
-                <hr>
-                <button class="s-btn fade-in">Connect</button><i class="bi bi-arrow-right"></i>
-                <hr>
-            </div>
-            <div class="product">
-              <div class="img-section fade-in">
-                <img src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="" width="120">
-              </div>
-                <h4 class="fade-in">Somelezo Jakopana</h4>
-                <p class="display-5 fade-in">Oven Builder</p>
-                <h6 class="fade-in">somelezojakopana@gmail.com</h6>
-                <h6 class="fade-in">081 469 0288</h6>
-                <hr>
-                <button class="s-btn fade-in">Connect</button><i class="bi bi-arrow-right"></i>
+                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
                 <hr>
             </div>
           </div>
-        </div>
-      </div>
+            
+          <div class="flex flex-row px-10">
+            <div class="w-1/3 px-10 py-20 text-left">
+              <div class="flex flex-row">
+                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
+                <h4 class="ml-10">Nkosithandile Gcusa</h4>
+              </div>
+                <p class="text-[1.6vw]">Chef </p>
+                <h6 class="pt-3">nkosithandilegcusa@gmail.com</h6>
+                <h6 class="py-2 text-[1vw]">067 790 9805</h6>
+                <hr>
+                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
+                <hr>
+            </div>
+            <div class="w-1/3 px-10 py-20 text-left">
+              <div class="flex flex-row">
+                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
+                <h4 class="ml-10">Somelezo Jakopana</h4>
+              </div>
+                <p class="text-[1.6vw]">Photographer</p>
+                <h6 class="pt-3">somelezojakopana@gmail.com</h6>
+                <h6 class="py-2 text-[1vw]">081 469 0288</h6>
+                <hr>
+                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
+                <hr>
+            </div>
+            <div class="w-1/3 px-10 py-20 text-left">
+              <div class="flex flex-row">
+                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
+                <h4 class="ml-10">Somelezo Jakopana</h4>
+              </div>
+                <p class="text-[1.6vw]">Oven Builder</p>
+                <h6 class="pt-3">somelezojakopana@gmail.com</h6>
+                <h6 class="py-2 text-[1vw]">081 469 0288</h6>
+                <hr>
+                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
+                <hr>
+            </div>
+          </div>
     </section>
   
-    <section>
-    <div class="business-name">
+  <section>
+    <div class="mt-40">
       <h1>Supa Ovens</h1>
-      <h6>Founded in 2019 By Simphiwe Bhusa</h6>
+      <h6 class="mb-4">Founded in 2019 By Simphiwe Bhusa</h6>
     </div>
     <footer>
       <hr>
-      <div class="row">
-        <div class="col-6 footer-sec">
-          <div class="contact-sec">
-            <div class="contact-header">
-              <h4>Contact</h4>
-            </div>
+      <div class="flex flex-row">
+        <div class="w-1/2 footer-sec">
+          <div class="h-[20vh] text-left pt-10 px-10">
+            <h4 class="pb-3">Contact</h4>
             <p>27055 Shumani Street, Strand, Cape Town, 7140</p>
             <p>069-292-9578</p>
             <p>gcusaaa@gmail.com</p>
           </div>
           <hr>
-          <div class="menu-and-socials">
-            <div class="row">
-              <div class="col-6">
-                  <h4>Menu</h4>
+          <div class=" text-left pt-10 px-10">
+            <div class="flex flex-row">
+              <div class="w-1/2">
+                  <h4 class="pb-3">Menu</h4>
                   <div class="menu-1">
-                    <router-link to="/products"><button class="s-btn">Our Services</button></router-link>
+                    <router-link to="/products"><button class="tracking-normal hover:tracking-[0.2rem]">Our Services</button></router-link>
                   </div>
                   <div class="menu-2">
-                    <router-link to="/team"><button class="s-btn">Meet the Team</button></router-link>
+                    <router-link to="/team"><button class="tracking-normal hover:tracking-[0.2rem]">Meet the Team</button></router-link>
                   </div>
                   <div class="menu-3">
-                    <router-link to="/about"><button class="s-btn">About Us</button></router-link>
+                    <router-link to="/about"><button class="tracking-normal hover:tracking-[0.2rem]">About Us</button></router-link>
                   </div>
                 </div>
-              <div class="col-6">
-                <h4>Socials</h4>
+              <div class="w-1/2">
+                <h4 class="pb-3">Socials</h4>
                 <div class="social-1">
-                  <button class="s-btn">Facebook</button>
+                  <button class="tracking-normal hover:tracking-[0.2rem]">Facebook</button>
                 </div>
                 <div class="social-2">
-                  <button class="s-btn">Instagram</button>
+                  <button class="tracking-normal hover:tracking-[0.2rem]">Instagram</button>
                 </div>
                 <div class="social-3">
-                  <button class="s-btn">Linkedin</button>
+                  <button class="tracking-normal hover:tracking-[0.2rem]">Linkedin</button>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="abt-header">
-                <h4>Working Hours</h4>
-                </div>
-                <div class="abt-content">
-                  <p>Monday - Friday 09:00 - 17:00</p>
-                    <p>Saturday 09:00 - 17:00</p>
-                    <p>Sunday CLOSED</p>
-                  </div>
-                </div>
-              <div class="col-6">
+              <div class="w-1/2">
+                <h4 class="mt-10 pb-3">Working Hours</h4>
+                <p>Monday - Friday 09:00 - 17:00</p>
+                <p>Saturday 09:00 - 17:00</p>
+                <p>Sunday CLOSED</p>
               </div>
-            </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="get-in-touch">
+        <div class="w-1/2">
+          <div class="h-[20vh] text-left pt-10 px-10">
             <h4>Get in Touch</h4>
           </div>
           <hr>
-          <div class="contact-form">
+          <div class="h-[50vh] text-left pt-10 px-10 text-[18px]">
             <div class="mb-4">
               <div class="row">
-                <div class="col-6">
-                  <label for="exampleFormControlInput1" class="form-label">First name <i class="bi bi-asterisk"></i></label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                <div class="w-1/2">
+                  <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">First name <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
+                  <input type="text" class="form-control border-gray-400 border-2" id="exampleFormControlInput1">
                 </div>
-                <div class="col-6">
-                  <label for="exampleFormControlInput1" class="form-label">Last name <i class="bi bi-asterisk"></i></label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                <div class="w-1/2">
+                  <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">Last name <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
+                  <input type="text" class="form-control border-gray-400 border-2" id="exampleFormControlInput1">
                 </div>
               </div>
             </div>
             <div class="mb-4">
-              <label for="exampleFormControlInput1" class="form-label">Email address <i class="bi bi-asterisk"></i></label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">Email address <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
+              <input type="email" class="form-control border-gray-400 border-2" id="exampleFormControlInput1" placeholder="email@gmail.com">
             </div>
             <div class="mb-4">
-              <label for="exampleFormControlTextarea1" class="form-label">Query</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label for="exampleFormControlTextarea1" class="form-label pl-3">Query</label>
+              <textarea class="form-control border-gray-400 border-2" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-          </div>
-          <div class="cnt-btn">
-            <button class="submit-btn">Submit</button>
+            <div class="pb-10 flex flex-row rounded-lg">
+              <button class="py-2 bg-black text-white w-full border-2 round">Submit</button>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-    <div class="below-footer">
-      <div class="ts-and-cs">
-        <div class="left-sec">
+    <div class="py-8 bg-gray-300">
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between pl-10">
           <p>Terms & Conditions</p>
-          <p>Privacy Policy</p>
+          <p class="pl-10">Privacy Policy</p>
         </div>
-        <div class="right-sec">
+        <div class="pr-10">
           <p>© 2024 All Rights Reserved</p>
         </div>
       </div>
     </div>
   </section>
 </template>
-
-
-
-
 
 
 <script>
@@ -213,19 +197,10 @@ window.addEventListener('scroll', () => {
 </script>
 
 
-
-
-
-
-
-
-
-  
 <style scoped>
 h1{
-  font-size: 80px;
+  font-size: 4.6vw;
   font-weight: 700;
-  margin-top: 15%;
 }
   
 h2{
@@ -241,169 +216,23 @@ h3{
 }
   
 h4{
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
   padding: 30px 0px 20px 0px;
-}
-  
-.s-btn, .tm-btn{
-  border: none;
-  background-color: transparent;
-}
-  
-.contact-btn, .home-summary-text, .cu-btn{
-  margin-bottom: 100px;
-}
-  
-.services{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-  
-.row, .cnt-btn{
-  display: flex;
-  justify-content: center;
-}
-  
-.products-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-    padding-top: 40px;
-}
-  
-.product {
-  padding: 20px;
-  text-align: left;
-  height: 550px;
-}
-
-.product h4{
-  text-transform: uppercase;
-}
-
-.display-5{
-  height: 120px;
-}
-  
-.header-text, .oss-header{
-  text-align: left;
-}
-  
-.header-text{
-  padding: 20px 0px 20px 0px;
-}
-  
-.s-btn:hover{
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-  
-.contact-sec, .get-in-touch{
-  height: 200px;
-}
-  
-.contact-sec{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-  
-.contact-sec p {
-  margin: 3px;
-  padding: 0px;
-}
-  
-.get-in-touch{
-  padding: 41px 0px 0px 20px;
-}
-  
-.contact-form, .menu-and-socials, .contact-sec{
-  padding: 30px 0px 0px 20px;
-}
-
-.contact-header{
-  padding: 0px 0px 10px 0px;
-}
-  
-.menu-1, .menu-2, .menu-3, .social-1, .social-2, .social-3{
-  padding-top: 10px;
-}
-  
-.form-label{
-  display: flex;
-}
-  
-.form-control{
-  border: 1px solid;
-  padding: 10px;
-}
-  
-.bi-asterisk{
-  font-size: 8px;
-  padding-left: 8px;
-}
-  
-.below-footer{
-  background-color: rgb(234, 234, 234);
-  padding: 25px 0px 10px 0px;
-  margin-top: 20px;
-}
-  
-.submit-btn{
-  width: 100%;
-  margin-left: 20px;
-}
-  
-  .right-sec{
-  padding-right: 20px;
-  }
-  
-.ts-and-cs, .left-sec{
-  display: flex;
-  justify-content: space-between;
 }
   
 .footer-sec{
   border-right: 1px solid rgb(184, 184, 184);
 }
-  
-.row, .cnt-btn{
-  display: flex;
-  justify-content: center;
-}
-  
-.col-4{
-  margin-top: 20px;
-}
-  
-footer, .left-sec p{
-  padding-left: 50px;
-  padding-right: 50px;
-}
-  
-.card-body, footer{
-  text-align: left;
-}
-  
-.submit-btn{
-  color: white;
-  background-color: black;
+
+.round{
   border: 1px solid black;
-  border-radius: 20px;
-  padding: 8px 30px 8px 30px;
-  text-transform: capitalize;
+  border-radius: 10px;
 }
 
 
 
-
-
-
-
-
-
-.zoom-in {
+/* .zoom-in {
   transform: scale(0);
   transition: transform 1s ease-out;
 }
@@ -419,27 +248,27 @@ footer, .left-sec p{
 
 .fade-in.visible {
   opacity: 1;
-}
+} */
 
 /* Slide-In from Left */
-.slide-in-left {
+/* .slide-in-left {
   transform: translateX(-100%);
   transition: transform 1s ease-out;
 }
 
 .slide-in-left.visible {
   transform: translateX(0);
-}
+} */
 
 /* Slide-In from Right */
-.slide-in-right {
+/* .slide-in-right {
   transform: translateX(100%);
   transition: transform 1s ease-out;
 }
 
 .slide-in-right.visible {
   transform: translateX(0);
-}
+} */
 
 
   

@@ -1,22 +1,22 @@
 <template>
   <nav>
-    <div class="nav-left__logo">
-      <router-link to="/"><img src="https://i.ibb.co/60tc1q7/logo3.png" alt="logo" width="60"/> Supa Ovens</router-link>      
+    <div class="nav-left__logo w-[8.2vw]">
+      <router-link to="/" class="hover:underline flex flex-row items-center"><img src="https://i.ibb.co/60tc1q7/logo3.png" alt="logo" width="60"/> Supa Ovens</router-link>      
     </div>
     
     <div class="nav-center">
-      <div class="nc-1">
-        <router-link to="/products">Our Services</router-link>
+      <div class="nc-1 w-[8.2vw]">
+        <router-link to="/products" class="hover:underline">Our Services</router-link>
       </div>
-      <div class="nc-2">
-        <router-link to="/team">Meet-The-Team</router-link>
+      <div class="nc-2 w-[8.2vw]">
+        <router-link to="/team" class="hover:underline">Meet-The-Team</router-link>
       </div>
-      <div class="nc-3">
-        <router-link to="/about">About Us</router-link>
+      <div class="nc-3 w-[8.2vw]">
+        <router-link to="/about" class="hover:underline">About Us</router-link>
       </div>
     </div>
-    <div class="nav-right">
-      <router-link to="/contact">Contact</router-link>
+    <div class="nav-right w-[8.2vw]">
+      <router-link to="/contact" class="hover:underline">Contact</router-link>
     </div>
   </nav>
   <router-view/>
@@ -32,7 +32,7 @@
 }
 
 nav {
-  padding: 40px 50px 10px 50px;
+  padding: 40px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,8 +44,29 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  background: linear-gradient(90deg, #007bff, #ff073a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  position: relative;
 }
+
+nav a.router-link-exact-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #007bff, #ff073a);
+  animation: grow 0.5s ease-in-out;
+}
+
+@keyframes grow {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
 
 .nav-center {
   display: flex;

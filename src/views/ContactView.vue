@@ -1,140 +1,103 @@
 <template>
-    <section>
-      <div class="services">
-        <hr>
-        <div class="our-service-sec">
-          <h1 class="oss-header">Get in Touch</h1>
+  <section>
+  <div class="py-20">
+    <h1 class="">Get in Touch</h1>
+    <hr class="mt-2 mb-4">
+    <p>Let's chat</p>
+  </div>
+  <div class="">
+    <div class="h-[50vh] text-left pt-10 px-10 text-[18px]">
+      <div class="mb-4">
+        <div class="row">
+          <div class="w-1/2">
+            <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">First name <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
+            <input type="text" class="form-control border-gray-400 border-2" id="exampleFormControlInput1">
+          </div>
+          <div class="w-1/2">
+            <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">Last name <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
+            <input type="text" class="form-control border-gray-400 border-2" id="exampleFormControlInput1">
+          </div>
         </div>
-        <hr>
-        <div class="contact-form">
-              <div class="mb-4">
-                <div class="row">
-                  <div class="col-6">
-                    <label for="exampleFormControlInput1" class="form-label">First name <i class="bi bi-asterisk"></i></label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                  </div>
-                  <div class="col-6">
-                    <label for="exampleFormControlInput1" class="form-label">Last name <i class="bi bi-asterisk"></i></label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                  </div>
-                </div>
-              </div>
-              <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">Email address <i class="bi bi-asterisk"></i></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="gcusaaa@gmail.com">
-              </div>
-              <div class="mb-4">
-                <label for="exampleFormControlTextarea1" class="form-label">Query</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-            </div>
-            <div class="cnt-btn">
-              <button class="submit-btn">Submit</button>
-            </div>
       </div>
-    </section>
+      <div class="mb-4">
+        <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">Email address <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
+        <input type="email" class="form-control border-gray-400 border-2" id="exampleFormControlInput1" placeholder="email@gmail.com">
+      </div>
+      <div class="mb-4">
+        <label for="exampleFormControlTextarea1" class="form-label pl-3">Query</label>
+        <textarea class="form-control border-gray-400 border-2" id="exampleFormControlTextarea1" rows="6"></textarea>
+      </div>
+      <div class="pb-10 flex flex-row rounded-lg">
+        <button class="py-2 bg-black text-white w-full border-2 round">Submit</button>
+      </div>
+    </div>
+  </div>
+</section>
   
-    <section>
-    <div class="business-name">
-      <h1>Supa Ovens</h1>
-      <h6>Founded in 2019 By Simphiwe Bhusa</h6>
+  <section>
+    <div class="mt-40">
+      <h1><router-link to="/">Supa Ovens</router-link></h1>
+      <h6 class="mb-4">Founded in 2019 By Simphiwe Bhusa</h6>
     </div>
     <footer>
-      <hr>
-      <div class="row">
-        <div class="col-6 footer-sec">
-          <div class="contact-sec">
-            <div class="contact-header">
-              <h4>Contact</h4>
-            </div>
+      <div class="flex flex-row h-[30vh]">
+        <div class="w-1/2 footer-sec">
+          <hr>
+          <div class="flex flex-row text-left pt-10 px-10">
+          <div class="w-1/2">
+            <h4 class="pb-3">Contact</h4>
             <p>27055 Shumani Street, Strand, Cape Town, 7140</p>
             <p>069-292-9578</p>
             <p>gcusaaa@gmail.com</p>
           </div>
-          <hr>
-          <div class="menu-and-socials">
-            <div class="row">
-              <div class="col-6">
-                  <h4>Menu</h4>
-                  <div class="menu-1">
-                    <router-link to="/products"><button class="s-btn">Our Services</button></router-link>
-                  </div>
-                  <div class="menu-2">
-                    <router-link to="/team"><button class="s-btn">Meet the Team</button></router-link>
-                  </div>
-                  <div class="menu-3">
-                    <router-link to="/about"><button class="s-btn">About Us</button></router-link>
-                  </div>
-                </div>
-              <div class="col-6">
-                <h4>Socials</h4>
-                <div class="social-1">
-                  <button class="s-btn">Facebook</button>
-                </div>
-                <div class="social-2">
-                  <button class="s-btn">Instagram</button>
-                </div>
-                <div class="social-3">
-                  <button class="s-btn">Linkedin</button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="abt-header">
-                <h4>Working Hours</h4>
-                </div>
-                <div class="abt-content">
-                  <p>Monday - Friday 09:00 - 17:00</p>
-                    <p>Saturday 09:00 - 17:00</p>
-                    <p>Sunday CLOSED</p>
-                  </div>
-                </div>
-              <div class="col-6">
-              </div>
-            </div>
+          <div class="w-1/2">
+            <h4 class="pb-3">Working Hours</h4>
+            <p>Monday - Friday 09:00 - 17:00</p>
+            <p>Saturday 09:00 - 17:00</p>
+            <p>Sunday CLOSED</p>
           </div>
         </div>
-        <div class="col-6">
-          <div class="get-in-touch">
-            <h4>Get in Touch</h4>
-          </div>
+        </div>
+        <div class="w-1/2">
           <hr>
-          <div class="contact-form">
-            <div class="mb-4">
-              <div class="row">
-                <div class="col-6">
-                  <label for="exampleFormControlInput1" class="form-label">First name <i class="bi bi-asterisk"></i></label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1">
+          <div class="text-left pt-10 px-10 text-[18px]">
+            <div class="flex flex-row">
+              <div class="w-1/2">
+                  <h4 class="pb-3">Menu</h4>
+                  <div class="menu-1">
+                    <router-link to="/products"><button class="tracking-normal hover:tracking-[0.2rem]">Our Services</button></router-link>
+                  </div>
+                  <div class="menu-2">
+                    <router-link to="/team"><button class="tracking-normal hover:tracking-[0.2rem]">Meet the Team</button></router-link>
+                  </div>
+                  <div class="menu-3">
+                    <router-link to="/about"><button class="tracking-normal hover:tracking-[0.2rem]">About Us</button></router-link>
+                  </div>
                 </div>
-                <div class="col-6">
-                  <label for="exampleFormControlInput1" class="form-label">Last name <i class="bi bi-asterisk"></i></label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1">
+              <div class="w-1/2">
+                <h4 class="pb-3">Socials</h4>
+                <div class="social-1">
+                  <button class="tracking-normal hover:tracking-[0.2rem]">Facebook</button>
+                </div>
+                <div class="social-2">
+                  <button class="tracking-normal hover:tracking-[0.2rem]">Instagram</button>
+                </div>
+                <div class="social-3">
+                  <button class="tracking-normal hover:tracking-[0.2rem]">Linkedin</button>
                 </div>
               </div>
             </div>
-            <div class="mb-4">
-              <label for="exampleFormControlInput1" class="form-label">Email address <i class="bi bi-asterisk"></i></label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-4">
-              <label for="exampleFormControlTextarea1" class="form-label">Query</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="cnt-btn">
-            <button class="submit-btn">Submit</button>
           </div>
         </div>
       </div>
     </footer>
-    <div class="below-footer">
-      <div class="ts-and-cs">
-        <div class="left-sec">
+    <div class="py-8 bg-gray-300">
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between pl-10">
           <p>Terms & Conditions</p>
-          <p>Privacy Policy</p>
+          <p class="pl-10">Privacy Policy</p>
         </div>
-        <div class="right-sec">
+        <div class="pr-10">
           <p>© 2024 All Rights Reserved</p>
         </div>
       </div>
@@ -144,9 +107,8 @@
   
   <style scoped>
   h1{
-  font-size: 80px;
+  font-size: 4.6vw;
   font-weight: 700;
-  margin-top: 15%;
   }
   
   h2{
@@ -167,124 +129,13 @@
   padding: 30px 0px 20px 0px;
   }
   
-  .s-btn, .tm-btn{
-  border: none;
-  background-color: transparent;
+  .round{
+    border: 1px solid black;
+    border-radius: 10px;
   }
-  
-  .contact-btn, .home-summary-text, .cu-btn{
-  margin-bottom: 100px;
-  }
-  
-  .services{
-  padding-left: 50px;
-  padding-right: 50px;
-  }
-  
-  .row, .cnt-btn{
-  display: flex;
-  justify-content: center;
-  }
-  
-  .products-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
-  padding-top: 40px;
-  }
-  
-  .product {
-  padding: 20px;
-  text-align: left;
-  }
-  
-  .header-text, .oss-header{
-  text-align: left;
-  }
-  
-  .header-text{
-  padding: 20px 0px 20px 0px;
-  width: 70%;
-  }
-  
-  .s-btn:hover{
-  letter-spacing: 1px;
-  font-weight: bold;
-  }
-  
 
-
-
-.contact-header{
-  padding: 0px 0px 0px 0px;
-}
-  
-.menu-1, .menu-2, .menu-3, .social-1, .social-2, .social-3, contact-sec p{
-  padding-top: 10px;
-}
-  
-.form-label{
-  display: flex;
-}
-  
-.form-control{
-  border: 1px solid;
-  padding: 10px;
-}
-  
-.bi-asterisk{
-  font-size: 8px;
-  padding-left: 8px;
-}
-  
-.below-footer{
-  background-color: rgb(234, 234, 234);
-  padding: 25px 0px 10px 0px;
-  margin-top: 20px;
-}
-  
-.submit-btn{
-  width: 100%;
-}
-  
-.right-sec{
-  padding-right: 20px;
-}
-  
-  .ts-and-cs, .left-sec{
-  display: flex;
-  justify-content: space-between;
-  }
-  
   .footer-sec{
   border-right: 1px solid rgb(184, 184, 184);
-  }
-  
-  .row, .cnt-btn{
-  display: flex;
-  justify-content: center;
-  }
-  
-  .col-4{
-  margin-top: 20px;
-  }
-  
-  footer, .left-sec p{
-  padding-left: 50px;
-  padding-right: 50px;
-  }
-  
-  .card-body, footer{
-  text-align: left;
-  }
-  
-  .submit-btn{
-  color: white;
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 8px 30px 8px 30px;
-  text-transform: capitalize;
   }
   
   </style>
