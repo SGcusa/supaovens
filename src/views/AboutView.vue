@@ -164,32 +164,44 @@ body{
 }
 
 h1{
-font-size: 4.6vw;
-font-weight: 700;
+  font-size: 4.6vw;
+  font-weight: 700;
 }
 
 h2{
-font-size: 60px;
-font-weight: 700;
-padding: 40px;
+  font-size: 70px;
+  font-weight: 700;
 }
 
 h3{
-font-size: 40px;
-font-weight: 700;
-padding-top: 20px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 h4{
-font-size: 25px;
-font-weight: 700;
-padding: 30px 0px 20px 0px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .round{
   border: 1px solid black;
   border-radius: 10px;
 }
+
+.footer-sec{
+  border-right: 1px solid rgb(184, 184, 184);
+}
+
 
 
 /* marquee {
@@ -214,16 +226,6 @@ padding: 30px 0px 20px 0px;
       transform: translateX(-100%);
   }
 } */
-
-
-
-.footer-sec{
-border-right: 1px solid rgb(184, 184, 184);
-}
-
-
-
-
 
 
 

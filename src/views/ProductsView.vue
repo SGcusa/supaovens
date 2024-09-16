@@ -255,27 +255,35 @@ window.addEventListener('scroll', () => {
 
 
 <style scoped>
+
 h1{
   font-size: 4.6vw;
   font-weight: 700;
 }
 
 h2{
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
-  padding: 40px;
 }
 
 h3{
   font-size: 40px;
   font-weight: 700;
-  padding-top: 20px;
 }
 
 h4{
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 700;
-  padding-top: 10px;
+}
+
+h5{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .round{
@@ -287,7 +295,6 @@ h4{
   border-right: 1px solid rgb(184, 184, 184);
 }
 
-
 /* .fade-in {
   opacity: 0;
   transition: opacity 1s ease-out;
@@ -296,5 +303,4 @@ h4{
 .fade-in.visible {
   opacity: 1;
 } */
-
 </style>

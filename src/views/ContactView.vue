@@ -105,37 +105,44 @@
   </section>
   </template>
   
-  <style scoped>
-  h1{
+<style scoped>  
+h1{
   font-size: 4.6vw;
   font-weight: 700;
-  }
-  
-  h2{
-  font-size: 60px;
+}
+
+h2{
+  font-size: 70px;
   font-weight: 700;
-  padding: 40px;
-  }
-  
-  h3{
+}
+
+h3{
   font-size: 40px;
   font-weight: 700;
-  padding-top: 20px;
-  }
-  
-  h4{
-  font-size: 25px;
-  font-weight: 700;
-  padding: 30px 0px 20px 0px;
-  }
-  
-  .round{
-    border: 1px solid black;
-    border-radius: 10px;
-  }
+}
 
-  .footer-sec{
+h4{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.round{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.footer-sec{
   border-right: 1px solid rgb(184, 184, 184);
-  }
-  
-  </style>
+}
+
+</style>

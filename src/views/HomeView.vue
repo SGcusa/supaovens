@@ -1,69 +1,69 @@
 <template>
   <section>
     <div>
-      <h1 class="p-20 ">We deliver nationwide, Get your<br> pizza oven delivered to your door step</h1>
+      <h1 class="p-[5vw] top-header">We deliver nationwide, Get your<br> pizza oven delivered to your door step</h1>
 
       <article>
-        <p>You don't need to be a qualified chef to make your own pizza come up with your own recipe and enjoy your own pizza.</p>
+        <p class="subtext">You don't need to be a qualified chef to make your own pizza come up with your own recipe and enjoy your own pizza.</p>
       </article>
 
         <hr class="mt-4">
       <div class="py-3">
-          <button class="uppercase tracking-normal font-bold hover:tracking-[0.4rem]">Services<i class="bi bi-arrow-right"></i></button>
+        <button class="uppercase tracking-normal font-bold hover:tracking-[0.4rem]"><router-link to="/products">Services</router-link></button>
       </div>
     </div>
 
-    <div class="flex flex-row h-[60vh] bg-black-900 bg-blend-overlay">
-      <img src="https://i.ibb.co/4SW4hk5/cc1103d7-5868-4165-8583-7b469c2c12cd-1.jpg" class="w-1/3">
-      <img src="https://i.ibb.co/5sg34TR/Whats-App-Image-2024-06-20-at-20-39-04.png" class="w-1/3">
-      <img src="https://i.ibb.co/dksJzTP/Whats-App-Image-2024-06-20-at-20-30-22.png" class="w-1/3">
+    <div class="flex flex-row h-[30vw] bg-black-900 bg-blend-overlay top-gallery">
+      <img src="https://i.ibb.co/4SW4hk5/cc1103d7-5868-4165-8583-7b469c2c12cd-1.jpg" class="w-full sm:w-1/2 md:w-1/3">
+      <img src="https://i.ibb.co/5sg34TR/Whats-App-Image-2024-06-20-at-20-39-04.png" class="hidden sm:block sm:w-1/2 md:w-1/3">
+      <img src="https://i.ibb.co/dksJzTP/Whats-App-Image-2024-06-20-at-20-30-22.png" class="hidden md:block md:w-1/3">
     </div>
   </section>
 
   <section>
     <div>
-      <div class="py-20">
+      <div class="py-[5vw]">
         <h2>Our Services</h2>
         <hr class="mt-2 mb-4">
-        <p>At Supa Ovens, we provide top-quality, handcrafted pizza ovens designed to bring the joy of homemade pizza to your home or business. Our range of services includes:</p>
+        <p class="subtext">At Supa Ovens, we provide top-quality, handcrafted pizza ovens designed to bring the joy of homemade pizza to your home or business. Our range of services includes:</p>
       </div>
-      <div class="flex flex-row">
-        <div class="w-1/3 p-4">
-            <img class="w-full h-[60vh]" src="https://i.ibb.co/r0hsVJj/Whats-App-Image-2024-06-20-at-20-30-16.png" alt="">
-            <div class="text-left py-4">
-              <h4 class="pb-4">0.8 Meter <span class="text-[16px]">(1 Meter's outside diameter)</span></h4>
-              <p class="pb-3 text-[20px]">R7 999,99</p>
-              <hr>
-              <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Order Now</button>
-              <hr>
-            </div>
-        </div>
-        <div class="w-1/3 p-4">
-            <img class="w-full h-[60vh]" src="https://i.ibb.co/C1ghFjv/Whats-App-Image-2024-06-20-at-20-30-11.png" alt="">
-            <div class="text-left py-4">
-              <h4 class="pb-4">1 Meter <span class="text-[16px]">(1.2 Meter's outside diameter)</span></h4>
-              <p class="pb-3 text-[20px]">R9 999,99</p>
-              <hr>
-              <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Order Now</button>
-              <hr>
-            </div>
-        </div>
-        <div class="w-1/3 p-4">
-            <img class="w-full h-[60vh]" src="https://i.ibb.co/w4LyX3P/Whats-App-Image-2024-06-20-at-20-39-06-1.png" alt="">
-            <div class="text-left py-4">
-              <h4 class="pb-4">1.2 Meter <span class="text-[16px]">(1.4 Meter's outside diameter)</span></h4>
-              <p class="pb-3 text-[20px]">R13 999,99</p>
-              <hr>
+      <div class="flex flex-wrap">
+        <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+          <img class="w-full h-[30vw] object-cover prduct-image" src="https://i.ibb.co/r0hsVJj/Whats-App-Image-2024-06-20-at-20-30-16.png" alt="">
+          <div class="text-left py-4">
+            <h5 class="pb-4">0.8 Meter <span class="text-[1vw]">(1 Meter's outside diameter)</span></h5>
+            <p class="pb-3 text-[20px]">R7 999,99</p>
+            <hr>
             <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Order Now</button>
             <hr>
-            </div>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+          <img class="w-full h-[30vw] object-cover prduct-image" src="https://i.ibb.co/C1ghFjv/Whats-App-Image-2024-06-20-at-20-30-11.png" alt="">
+          <div class="text-left py-4">
+            <h5 class="pb-4">1 Meter <span class="text-[1vw]">(1.2 Meter's outside diameter)</span></h5>
+            <p class="pb-3 text-[20px]">R9 999,99</p>
+            <hr>
+            <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Order Now</button>
+            <hr>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+          <img class="w-full h-[30vw] object-cover prduct-image" src="https://i.ibb.co/w4LyX3P/Whats-App-Image-2024-06-20-at-20-39-06-1.png" alt="">
+          <div class="text-left py-4">
+            <h5 class="pb-4">1.2 Meter <span class="text-[1vw]">(1.4 Meter's outside diameter)</span></h5>
+            <p class="pb-3 text-[20px]">R13 999,99</p>
+            <hr>
+            <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Order Now</button>
+            <hr>
+          </div>
         </div>
       </div>
       <div class="flex flex-row">
         <div class="w-1/3 p-4">
-          <img class="w-full h-[60vh]" src="https://i.ibb.co/Wnh99YZ/Whats-App-Image-2024-06-20-at-20-39-05-1.png" alt="">
+          <img class="w-full h-[30vw]" src="https://i.ibb.co/Wnh99YZ/Whats-App-Image-2024-06-20-at-20-39-05-1.png" alt="">
           <div class="text-left py-4">
-            <h4 class="pb-4">1.5 Meter <span class="text-[16px]">(1.7 - 1.8 Meter's outside diameter)</span></h4>
+            <h5 class="pb-4">1.5 Meter <span class="text-[1vw]">(1.7 - 1.8 Meter's outside diameter)</span></h5>
             <p class="pb-3 text-[20px]">R15 999,99</p>
             <hr>
           <button  class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Order Now</button>
@@ -71,9 +71,9 @@
           </div>
         </div>
         <div class="w-1/3 p-4">
-          <img class="w-full h-[60vh]" src="https://i.ibb.co/6NzWRnx/Whats-App-Image-2024-06-20-at-20-39-06.png" alt="">
+          <img class="w-full h-[30vw]" src="https://i.ibb.co/6NzWRnx/Whats-App-Image-2024-06-20-at-20-39-06.png" alt="">
           <div class="text-left py-4">
-            <h4 class="pb-4">2 Meter <span class="text-[16px]">(2.3 - 2.4 Meter's outside diameter)</span></h4>
+            <h5 class="pb-4">2 Meter <span class="text-[1vw]">(2.3 - 2.4 Meter's outside diameter)</span></h5>
             <p class="pb-3 text-[20px]">R21 999,99</p>
             <hr>
           <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Order Now</button>
@@ -85,25 +85,28 @@
   </section>
 
   <section>
-    <div class="flex flex-row text-white text-start h-[70vh] items-end overflow-hidden relative my-20">
+    <div class="flex flex-row text-white text-start h-[70vh] items-center overflow-hidden relative my-20 pl-10 HTYO">
       <video autoplay muted loop class="absolute top-0 left-0 w-full h-ful object-cover">
         <source src="https://i.imgur.com/SOZINP0.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div class="relative z-10 m-16">
-      <h2 class="mb-10 w-[30vw]">How to use your oven?</h2>
-        <div class="flex flex-col w-7/12">
-          <div class="w-[22vw] py-3">
+      <div class="relative z-10 m-4">
+      <h2 class="mb-10 w-[30vw] HTY">How to use your oven?</h2>
+        <div class="flex flex-col">
+          <div class="w-[27vw] py-3 HT">
             <h5>After Installation</h5>
-            <p class="text-[16px]">After installation, a client is required to wait a maximum of 7 days for a dry out</p>
+            <p class="text-[1vw] H">After installation, a client is required to wait a maximum of 7 days for a dry out</p>
           </div>
-          <div class="w-[22vw] py-3">
+          <div class="w-[27vw] py-3 HT">
             <h5>In 7 days</h5>
-            <p class="text-[16px]">then the client can begin to do curing, burning a maximum of 4 blocks of wood at the centre of the oven, let it burn for 3 hours for 7 days.</p>
+            <p class="text-[1vw] H">then the client can begin to do curing, burning a maximum of 4 blocks of wood at the centre of the oven, let it burn for 3 HT hours for 7 days.</p>
           </div>
-          <div class="w-[22vw] py-3">
+          <div class="w-[27vw] py-2 sm:py-1 md:py-1 lg:py-5 HT">
             <h5>14 days later</h5>
-            <p class="text-[16px]">After 14 days, the client can begin to use the oven for cooking.</p>
+            <p class="text-[1vw] H">After 14 days, the client can begin to use the oven for cooking.</p>
+          </div>
+          <div class="flex flex-row justufy-center pt-6">
+            <button class="uppercase tracking-normal underline font-bold hover:tracking-[0.1rem]"><router-link to="/about">Read more</router-link></button>
           </div>
         </div>
     </div>
@@ -255,15 +258,15 @@
 
   <section>
     <div class="mt-40">
-      <h1>Supa Ovens</h1>
-      <h6 class="mb-4">Founded in 2019 By Simphiwe Bhusa</h6>
+      <h2>Supa Ovens</h2>
+      <p class="mb-4">Founded in 2019 By Simphiwe Bhusa</p>
     </div>
     <footer>
       <hr>
       <div class="flex flex-row">
         <div class="w-1/2 footer-sec">
           <div class="h-[20vh] text-left pt-10 px-10">
-            <h4 class="pb-3">Contact</h4>
+            <h6 class="pb-3">Contact</h6>
             <p>27055 Shumani Street, Strand, Cape Town, 7140</p>
             <p>069-292-9578</p>
             <p>gcusaaa@gmail.com</p>
@@ -272,7 +275,7 @@
           <div class=" text-left pt-10 px-10">
             <div class="flex flex-row">
               <div class="w-1/2">
-                  <h4 class="pb-3">Menu</h4>
+                  <h6 class="pb-3">Menu</h6>
                   <div class="menu-1">
                     <router-link to="/products"><button class="tracking-normal hover:tracking-[0.2rem]">Our Services</button></router-link>
                   </div>
@@ -284,7 +287,7 @@
                   </div>
                 </div>
               <div class="w-1/2">
-                <h4 class="pb-3">Socials</h4>
+                <h6 class="pb-3">Socials</h6>
                 <div class="social-1">
                   <button class="tracking-normal hover:tracking-[0.2rem]">Facebook</button>
                 </div>
@@ -297,7 +300,7 @@
               </div>
             </div>
               <div class="w-1/2">
-                <h4 class="mt-10 pb-3">Working Hours</h4>
+                <h6 class="mt-10 pb-3">Working Hours</h6>
                 <p>Monday - Friday 09:00 - 17:00</p>
                 <p>Saturday 09:00 - 17:00</p>
                 <p>Sunday CLOSED</p>
@@ -306,7 +309,7 @@
         </div>
         <div class="w-1/2">
           <div class="h-[20vh] text-left pt-10 px-10">
-            <h4>Get in Touch</h4>
+            <h6>Get in Touch</h6>
           </div>
           <hr>
           <div class="h-[50vh] text-left pt-10 px-10 text-[18px]">
@@ -364,28 +367,30 @@ h1{
 }
 
 h2{
-  font-size: 70px;
+  font-size: 4vw;
   font-weight: 700;
-  padding: 50px 0px 20px 0px;
 }
 
 h3{
-  font-size: 40px;
+  font-size: 2.86vw;
   font-weight: 700;
-  padding-top: 20px;
 }
 
 h4{
-  font-size: 32px;
+  font-size: 2vw;
   font-weight: 700;
-  padding-top: 10px;
 }
 
 h5{
-  font-size: 20px;
+  font-size: 1.71vw;
   font-weight: 700;
-  padding-top: 10px;
 }
+
+h6{
+  font-size: 1.43vw;
+  font-weight: 700;
+}
+
 
 .round{
   border: 1px solid black;
@@ -394,6 +399,64 @@ h5{
 
 .footer-sec{
   border-right: 1px solid rgb(184, 184, 184);
+}
+
+@media (max-width: 479px) {
+  .top-header {
+    padding: 30px 10px;
+    align-items: start;
+  }
+  .subtext {
+    font-size: small;
+    padding: 10px;
+  }
+  h1{
+    font-size: 7vw;
+    font-weight: 700;
+  }
+  h2{
+    font-size: 5.5vw;
+    font-weight: 700;
+  }
+  h4{
+    font-size: 5vw;
+    font-weight: 700;
+  }
+  .top-gallery, .prduct-image{
+    height: 38vh;
+  }
+  .py-3 button {
+    font-size: small;
+    padding: 0px;
+  }
+  .HTYO{
+    height: 30vh;
+    margin: 10px 0px;
+    padding: 0px;
+  }
+  .HTY{
+    width: 70vw;
+    padding: 0px;
+    margin: 0px;
+  }
+  .HT{
+    width: 70vw;
+    padding: 0px;
+    margin: 0px;
+  }
+  .H{
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
 }
 
 </style>

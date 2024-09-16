@@ -23,7 +23,7 @@
                 <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
                 <h4 class="ml-10">Asisipho Gcusa</h4>
               </div>
-                <p class="text-[1.6vw]">Web Developer & Designer</p>
+                <p class="text-[1.6vw]">Web Designer & Developer</p>
                 <h6 class="pt-3">gcusaaa@gmail.com</h6>
                 <h6 class="py-2 text-[1vw]">069 292 9578</h6>
                 <hr>
@@ -33,11 +33,11 @@
             <div class="w-1/3 px-10 py-20 text-left">
               <div class="flex flex-row">
                 <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
-                <h4 class="ml-10">Asisipho Gcusa</h4>
+                <h4 class="ml-10">S'phathimandla Makhanya</h4>
               </div>
-                <p class="text-[1.6vw]">Web Developer & Designer</p>
-                <h6 class="pt-3">gcusaaa@gmail.com</h6>
-                <h6 class="py-2 text-[1vw]">069 292 9578</h6>
+                <p class="text-[1.6vw]">Backend Developer</p>
+                <h6 class="pt-3">sphathimandlamakhanya@gmail.com</h6>
+                <h6 class="py-2 text-[1vw]">060 336 4154</h6>
                 <hr>
                 <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
                 <hr>
@@ -72,11 +72,11 @@
             <div class="w-1/3 px-10 py-20 text-left">
               <div class="flex flex-row">
                 <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
-                <h4 class="ml-10">Somelezo Jakopana</h4>
+                <h4 class="ml-10">Asisipho Gcusa</h4>
               </div>
-                <p class="text-[1.6vw]">Oven Builder</p>
-                <h6 class="pt-3">somelezojakopana@gmail.com</h6>
-                <h6 class="py-2 text-[1vw]">081 469 0288</h6>
+                <p class="text-[1.6vw]">Web Developer & Designer</p>
+                <h6 class="pt-3">gcusaaa@gmail.com</h6>
+                <h6 class="py-2 text-[1vw]">069 292 9578</h6>
                 <hr>
                 <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
                 <hr>
@@ -198,31 +198,35 @@ window.addEventListener('scroll', () => {
 
 
 <style scoped>
+
 h1{
   font-size: 4.6vw;
   font-weight: 700;
 }
-  
+
 h2{
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
-  padding: 40px;
 }
-  
+
 h3{
   font-size: 40px;
   font-weight: 700;
-  padding-top: 20px;
 }
-  
+
 h4{
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
-  padding: 30px 0px 20px 0px;
 }
-  
-.footer-sec{
-  border-right: 1px solid rgb(184, 184, 184);
+
+h5{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .round{
@@ -230,7 +234,9 @@ h4{
   border-radius: 10px;
 }
 
-
+.footer-sec{
+  border-right: 1px solid rgb(184, 184, 184);
+}
 
 /* .zoom-in {
   transform: scale(0);
@@ -268,8 +274,5 @@ h4{
 
 .slide-in-right.visible {
   transform: translateX(0);
-} */
-
-
-  
+} */ 
 </style>
