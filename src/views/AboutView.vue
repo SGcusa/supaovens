@@ -8,24 +8,24 @@
     
     <div>
       <div class="flex flex-row justify-around text-left">
-        <div class="w-[40vw] px-10">
-          <h3 class="py-3">Our Mission</h3>
+        <div class="w-[44vw] pl-10">
+          <h4 class="py-3">Our Mission</h4>
           <p>At Supa Ovens, our mission is simple: to bring the joy of authentic, homemade pizza to everyone. We believe that you don’t need to be a qualified chef to make delicious pizza. With our expertly crafted ovens and a bit of creativity, anyone can create their own culinary masterpieces.</p>
 
           <img class="pt-10" src="https://i.imgur.com/Qtilvzq.jpeg" alt="">
         </div>
         <div class="border-l-2 border-gray-400"></div>
-        <div class="w-[40vw] px-10">
-          <h3 class="py-3">Quality Craftsmanship</h3>
+        <div class="w-[44vw] pr-10">
+          <h4 class="py-3">Quality Craftsmanship</h4>
           <p>Our ovens are a testament to meticulous craftsmanship and innovation. Each unit is handcrafted to perfection, combining traditional techniques with modern technology to ensure durability, efficiency, and exceptional cooking results. We offer a range of customizable options to meet your specific needs, from size and color to additional features.</p>
 
-          <h3 class="py-3">Nationwide Delivery</h3>
+          <h4 class="py-3">Nationwide Delivery</h4>
           <p>We understand the importance of convenience, which is why we offer nationwide delivery. No matter where you are, we’ll bring your pizza oven right to your doorstep, so you can start enjoying homemade pizza as soon as possible.</p>
 
-          <h3 class="py-3">Customer Satisfaction</h3>
+          <h4 class="py-3">Customer Satisfaction</h4>
           <p>We are committed to providing excellent customer service and support. Our dedicated team is here to help you choose the perfect oven, guide you through the installation process, and ensure your complete satisfaction. Join hundreds of satisfied customers who have chosen Supa Ovens for their reliable and efficient pizza cooking solutions.</p>
 
-          <h3 class="py-3">Our Team</h3>
+          <h4 class="py-3">Our Team</h4>
           <p>Our team at Supa Ovens is passionate about pizza and dedicated to excellence. We are here to support you every step of the way, from selecting the right oven to mastering the art of pizza making. Thank you for choosing Supa Ovens. We look forward to helping you create delicious, homemade pizza and making your cooking experience unforgettable.</p>
         </div>
       </div>
@@ -40,7 +40,7 @@
   <section>
     <div class="mt-40">
       <h1><router-link to="/">Supa Ovens</router-link></h1>
-      <h6 class="mb-4">Founded in 2019 By Simphiwe Bhusa</h6>
+      <p class="mb-4">Founded in 2019 By Simphiwe Bhusa</p>
     </div>
     <footer>
       <hr>

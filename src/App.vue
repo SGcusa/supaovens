@@ -1,10 +1,9 @@
 <template>
-  <nav class="relative flex items-center justify-between p-4 text-black">
+  <nav class="relative flex items-center justify-between px-[4vw] text-black">
     <!-- Left section: Logo -->
     <div class="nav-left__logo">
       <router-link to="/" class="flex items-center">
         <img src="https://i.ibb.co/60tc1q7/logo3.png" alt="logo" class="w-[8vw] md:w-[60px]" />
-        <span class="ml-2 text-[4vw] md:text-[16px]">Supa Ovens</span>
       </router-link>
     </div>
 
@@ -18,19 +17,19 @@
     </div>
 
     <!-- Center and Right section: Navigation Links (Hidden on small screens) -->
-    <div id="nav-content" class="hidden md:flex md:space-x-8 items-center">
-      <router-link to="/products" class="hover:uppercase hover:text-gray-700 text-[16px] transition-colors duration-200">Our Services</router-link>
-      <router-link to="/team" class="hover:uppercase hover:text-gray-700 text-[16px] transition-colors duration-200">Meet The Team</router-link>
-      <router-link to="/about" class="hover:uppercase hover:text-gray-700 text-[16px] transition-colors duration-200">About Us</router-link>
-      <router-link to="/contact" class="hover:uppercase hover:text-gray-700 text-[16px] transition-colors duration-200">Contact</router-link>
+    <div id="nav-content" class="hidden md:flex md:space-x-8 items-center overflow-hidden">
+      <router-link to="/products" class="text-[16px] hover:scale-105 transition-colors duration-200">Our Services</router-link>
+      <router-link to="/team" class="text-[16px] hover:scale-105 transition-colors duration-200">Meet The Team</router-link>
+      <router-link to="/about" class="text-[16px] hover:scale-105 transition-colors duration-200">About Us</router-link>
+      <router-link to="/contact" class="text-[16px] hover:scale-105 transition-colors duration-200">Contact</router-link>
     </div>
 
     <!-- Dropdown Menu for Small Screens -->
     <div v-if="isMenuOpen" class="absolute top-full left-0 right-0 bg-white shadow-lg z-50 md:hidden flex flex-col space-y-4 p-4">
-      <router-link to="/products" class="hover:uppercase hover:bg-gray-200 text-gray-800 text-lg p-2 transition-all duration-200">Our Services</router-link>
-      <router-link to="/team" class="hover:uppercase hover:bg-gray-200 text-gray-800 text-lg p-2 transition-all duration-200">Meet The Team</router-link>
-      <router-link to="/about" class="hover:uppercase hover:bg-gray-200 text-gray-800 text-lg p-2 transition-all duration-200">About Us</router-link>
-      <router-link to="/contact" class="hover:uppercase hover:bg-gray-200 text-gray-800 text-lg p-2 transition-all duration-200">Contact</router-link>
+      <router-link to="/products" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
+      <router-link to="/team" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">Meet The Team</router-link>
+      <router-link to="/about" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
+      <router-link to="/contact" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
     </div>
   </nav>
 

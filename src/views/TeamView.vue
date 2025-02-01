@@ -3,91 +3,115 @@
     <div class="py-20">
       <h1>Meet The Team</h1>
       <hr class="mt-2 mb-4">
-      <p>At Supa Ovens, we are proud to have a dedicated and talented team that drives our mission of delivering exceptional pizza ovens and customer satisfaction. Meet the people behind our success:</p>
+      <p>Meet the people behind our success:</p>
     </div>
-          <div class="flex flex-row px-10">
-            <div class="w-1/3 px-10 py-20 text-left">
-              <div class="flex flex-row">
-                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
-                <h4 class="ml-10">Simphiwe Bhusa</h4>
-              </div>
-                <p class="text-[1.6vw]">Managerial Director</p>
-                <h6 class="pt-3">sp.ovens@gmail.com</h6>
-                <h6 class="py-2 text-[1vw]">076 416 7815</h6>
-                <hr>
-                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
-                <hr>
-            </div>
-            <div class="w-1/3 px-10 py-20 text-left">
-              <div class="flex flex-row">
-                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
-                <h4 class="ml-10">Asisipho Gcusa</h4>
-              </div>
-                <p class="text-[1.6vw]">Web Designer & Developer</p>
-                <h6 class="pt-3">gcusaaa@gmail.com</h6>
-                <h6 class="py-2 text-[1vw]">069 292 9578</h6>
-                <hr>
-                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
-                <hr>
-            </div>
-            <div class="w-1/3 px-10 py-20 text-left">
-              <div class="flex flex-row">
-                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
-                <h4 class="ml-10">S'phathimandla Makhanya</h4>
-              </div>
-                <p class="text-[1.6vw]">Backend Developer</p>
-                <h6 class="pt-3">sphathimandlamakhanya@gmail.com</h6>
-                <h6 class="py-2 text-[1vw]">060 336 4154</h6>
-                <hr>
-                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
-                <hr>
-            </div>
-          </div>
-            
-          <div class="flex flex-row px-10">
-            <div class="w-1/3 px-10 py-20 text-left">
-              <div class="flex flex-row">
-                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
-                <h4 class="ml-10">Nkosithandile Gcusa</h4>
-              </div>
-                <p class="text-[1.6vw]">Chef </p>
-                <h6 class="pt-3">nkosithandilegcusa@gmail.com</h6>
-                <h6 class="py-2 text-[1vw]">067 790 9805</h6>
-                <hr>
-                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
-                <hr>
-            </div>
-            <div class="w-1/3 px-10 py-20 text-left">
-              <div class="flex flex-row">
-                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
-                <h4 class="ml-10">Somelezo Jakopana</h4>
-              </div>
-                <p class="text-[1.6vw]">Photographer</p>
-                <h6 class="pt-3">somelezojakopana@gmail.com</h6>
-                <h6 class="py-2 text-[1vw]">081 469 0288</h6>
-                <hr>
-                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
-                <hr>
-            </div>
-            <div class="w-1/3 px-10 py-20 text-left">
-              <div class="flex flex-row">
-                <img  class="pl-10" src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" alt="">
-                <h4 class="ml-10">Asisipho Gcusa</h4>
-              </div>
-                <p class="text-[1.6vw]">Web Developer & Designer</p>
-                <h6 class="pt-3">gcusaaa@gmail.com</h6>
-                <h6 class="py-2 text-[1vw]">069 292 9578</h6>
-                <hr>
-                <button class="tracking-normal p-3 font-bold hover:tracking-[0.2rem]">Connect</button>
-                <hr>
-            </div>
-          </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-10 py-10">
+  <!-- Simphiwe Bhusa -->
+  <div class="p-[8vw] md:p-[4vw] lg:p-[2vw] pt-10 text-left border">
+    <div class="flex flex-row card-height mb-[12%]">
+      <img class="team-image" alt="team-player-image" 
+           src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png">
+      <h5 class="ml-[4vw] lg:ml-[2vw] text-lg font-semibold w-[140px] lg:w-[180px] mt-[6vw] lg:mt-[2vw]">Simphiwe Bhusa</h5>
+    </div>
+    <div class="flex flex-col justify-end">
+      <p class="py-2 text-[1.4vw] text-sm md:text-[2vw] lg:text-[1.4vw]">Managerial Director</p>
+      <p class="text-sm">sp.ovens@gmail.com</p>
+      <p class="py-2 text-sm">076 416 7815</p>
+      <hr class="my-2">
+      <button class="tracking-normal pt-2 font-bold hover:tracking-[0.2rem] transition-all duration-200">Connect</button>
+    </div>
+  
+  </div>
+
+  <!-- Asisipho Gcusa -->
+  <div class="p-[8vw] md:p-[4vw] lg:p-[2vw] pt-10 text-left border">
+    <div class="flex flex-row card-height mb-[12%]">
+      <img class="team-image" alt="team-player-image" 
+           src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png">
+      <h5 class="ml-[4vw] lg:ml-[2vw] text-lg font-semibold w-[140px] lg:w-[180px] mt-[6vw] lg:mt-[2vw]">Asisipho Gcusa</h5>
+    </div>
+    <div class="flex flex-col justify-end">
+      <p class="py-2 text-[1.4vw] text-sm md:text-[2vw] lg:text-[1.4vw]">Web Designer & Developer</p>
+      <p class="text-sm">gcusaaa@gmail.com</p>
+      <p class="py-2 text-sm">069 292 9578</p>
+      <hr class="my-2">
+      <button class="tracking-normal pt-2 font-bold hover:tracking-[0.2rem] transition-all duration-200">Connect</button>
+    </div>
+  </div>
+
+  <!-- S'phathimandla Makhanya -->
+  <div class="p-[8vw] md:p-[4vw] lg:p-[2vw] pt-10 text-left border">
+    <div class="flex flex-row card-height mb-[12%]">
+      <img class="team-image" alt="team-player-image" 
+           src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png">
+      <h5 class="ml-[4vw] lg:ml-[2vw] text-lg font-semibold w-[140px] lg:w-[180px] mt-[6vw] lg:mt-[2vw]">S'phathimandla Makhanya</h5>
+    </div>
+    <div class="flex flex-col justify-end">
+      <p class="py-2 text-[1.4vw] text-sm md:text-[2vw] lg:text-[1.4vw]">Backend Developer</p>
+      <p class="text-sm">sphathimandlamakhanya@gmail.com</p>
+      <p class="py-2 text-sm">060 336 4154</p>
+      <hr class="my-2">
+      <button class="tracking-normal pt-2 font-bold hover:tracking-[0.2rem] transition-all duration-200">Connect</button>
+    </div>
+  
+  </div>
+
+  <!-- Nkosithandile Gcusa -->
+  <div class="p-[8vw] md:p-[4vw] lg:p-[2vw] pt-10 text-left border">
+    <div class="flex flex-row card-height mb-[12%]">
+      <img class="team-image" alt="team-player-image" 
+           src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png">
+      <h5 class="ml-[4vw] lg:ml-[2vw] text-lg font-semibold w-[140px] lg:w-[180px] mt-[6vw] lg:mt-[2vw]">Nkosithandile Gcusa</h5>
+    </div>
+    <div class="flex flex-col justify-end">
+      <p class="py-2 text-[1.4vw] text-sm md:text-[2vw] lg:text-[1.4vw]">Chef</p>
+      <p class="text-sm">nkosithandilegcusa@gmail.com</p>
+      <p class="py-2 text-sm">067 790 9805</p>
+      <hr class="my-2">
+      <button class="tracking-normal pt-2 font-bold hover:tracking-[0.2rem] transition-all duration-200">Connect</button>
+    </div>
+  </div>
+
+  <!-- Somelezo Jakopana -->
+  <div class="p-[8vw] md:p-[4vw] lg:p-[2vw] pt-10 text-left border">
+    <div class="flex flex-row card-height mb-[12%]">
+      <img  class="team-image" alt="team-player-image" 
+            src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png">
+      <h5 class="ml-[4vw] lg:ml-[2vw] text-lg font-semibold w-[140px] lg:w-[180px] mt-[6vw] lg:mt-[2vw]">Somelezo Jakopana</h5>
+    </div>
+    <div class="flex flex-col justify-end">
+      <p class="py-2 text-[1.4vw] text-sm md:text-[2vw] lg:text-[1.4vw]">Photographer</p>
+      <p class="text-sm">somelezojakopana@gmail.com</p>
+      <p class="py-2 text-sm">081 469 0288</p>
+      <hr class="my-2">
+      <button class="tracking-normal pt-2 font-bold hover:tracking-[0.2rem] transition-all duration-200">Connect</button>
+    </div>
+  </div>
+
+  <!-- Asisipho Gcusa -->
+  <div class="p-[8vw] md:p-[4vw] lg:p-[2vw] pt-10 text-left border">
+    <div class="flex flex-row card-height mb-[12%]">
+      <img class="team-image" alt="team-player-image"
+           src="https://cdn-thumbs.imagevenue.com/0e/34/77/ME18PUVP_t.png" >
+      <h5 class="ml-[4vw] lg:ml-[2vw] text-lg font-semibold w-[140px] lg:w-[180px] mt-[6vw] lg:mt-[2vw]">Asisipho Gcusa</h5>
+    </div>
+    <div class="flex flex-col justify-end">
+      <p class="py-2 text-[1.4vw] text-sm md:text-[2vw] lg:text-[1.4vw]">Web Developer & Designer</p>
+      <p class="text-sm">gcusaaa@gmail.com</p>
+      <p class="py-2 text-sm">069 292 9578</p>
+      <hr class="my-2">
+      <button class="tracking-normal pt-2 font-bold hover:tracking-[0.2rem] transition-all duration-200">Connect</button>
+    </div>
+  
+  </div>
+</div>
+
     </section>
   
   <section>
     <div class="mt-40">
       <h1>Supa Ovens</h1>
-      <h6 class="mb-4">Founded in 2019 By Simphiwe Bhusa</h6>
+      <p class="mb-4">Founded in 2019 By Simphiwe Bhusa</p>
     </div>
     <footer>
       <hr>
@@ -198,34 +222,28 @@ window.addEventListener('scroll', () => {
 
 
 <style scoped>
-
-h1{
+h1 {
   font-size: 4.6vw;
   font-weight: 700;
 }
-
-h2{
-  font-size: 70px;
+h2 {
+  font-size: 3.6vw;
+  font-weight: 600;
+}
+h3 {
+  font-size: 2.8vw;
   font-weight: 700;
 }
-
-h3{
-  font-size: 40px;
+h4 {
+  font-size: 2vw;
   font-weight: 700;
 }
-
-h4{
-  font-size: 32px;
-  font-weight: 700;
+h5 {
+  font-size: 2vw;
+  font-weight: 600;
 }
-
-h5{
-  font-size: 24px;
-  font-weight: 700;
-}
-
-h6{
-  font-size: 20px;
+h6 {
+  font-size: 1.2vw;
   font-weight: 700;
 }
 
@@ -236,6 +254,132 @@ h6{
 
 .footer-sec{
   border-right: 1px solid rgb(184, 184, 184);
+}
+
+.team-image {
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.team-image{
+    width: 160px;
+    height: 160px;
+  }
+.card-height{
+  height: 14vh;
+}
+
+@media (max-width: 1223px) {
+  h1 {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 3.2vw;
+  }
+  h4 {
+    font-size: 2.4vw;
+  }
+  h5 {
+    font-size: 2vw;
+  }
+  h6 {
+    font-size: 1.4vw;
+  }
+  .team-image{
+    width: 100px;
+    height: 100px;
+  }
+  .card-height{
+    height: 10vh;
+  }
+}
+
+
+/* Medium screens (768px to 1023px) */
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 3.2vw;
+  }
+  h4 {
+    font-size: 2.4vw;
+  }
+  h5 {
+    font-size: 3vw;
+  }
+  h6 {
+    font-size: 1.4vw;
+  }
+  .team-image{
+    width: 150px;
+    height: 150px;
+  }
+  .card-height{
+    height: 14vh;
+  }
+}
+
+/* Small screens (480px to 767px) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  h4 {
+    font-size: 3vw;
+  }
+  h5 {
+    font-size: 5vw;
+  }
+  h6 {
+    font-size: 2vw;
+  }
+  .team-image{
+    width: 160px;
+    height: 160px;
+  }
+  .card-height{
+    height: 14vh;
+  }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6.5vw;
+  }
+  h3 {
+    font-size: 5.5vw;
+  }
+  h4 {
+    font-size: 4.5vw;
+  }
+  h5 {
+    font-size: 4.4vw;
+    margin: 0px 0px 200px 0px;
+  }
+  h6 {
+    font-size: 2.8vw;
+  }
+  .team-image{
+    width: 100px;
+    height: 100px;
+    margin: 0px 20px 0px 0px
+  }
 }
 
 /* .zoom-in {

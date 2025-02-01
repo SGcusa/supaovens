@@ -187,50 +187,49 @@
       <h2>Why Our Pizza Ovens</h2>
       <hr class="mt-2 mb-4">
       <p>At Supa Ovens, we provide top-quality, handcrafted pizza ovens designed to bring the joy of homemade pizza to your home or business. Our range of services includes:</p>
-      <div class="flex flex-row text-start pt-20 px-20">
-      <div class="w-1/3 p-10">
-        <div class="h-[10vh] py-2 flex flex-row justify-start transform transition-transform duration-500 hover:translate-x-[80%]">
-          <img class="w-[6rem]" src="https://i.ibb.co/JB4MTys/badge.png" alt="icon-default-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-start pt-20 px-[6vw]">
+        <div class="p-[1vw]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[5rem]" src="https://i.ibb.co/JB4MTys/badge.png" alt="icon-default-2">
+          </div>
+          <h4>01 - Quality Craftsmanship</h4>
+          <p>Our ovens showcase meticulous craftsmanship, ensuring each unit meets our high standards of durability and performance.</p>
         </div>
-        <h4>01 - Quality Craftsmanship</h4>
-        <p>Our ovens showcase meticulous craftsmanship, ensuring each unit meets our high standards of durability and performance.</p>
-      </div>
-      
-      <div class="w-1/3 p-10">
-        <div class="h-[10vh] py-2 flex flex-row justify-start transform transition-transform duration-500 hover:translate-x-[80%]">
-          <img class="w-[6rem]" src="https://i.ibb.co/kKt3CPR/customize.png" alt="icon-default-2">
+        
+        <div class="p-[1vw]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[5rem]" src="https://i.ibb.co/Yk2pd0b/satisfaction.png" alt="icon-default-2">
+          </div>
+          <h4>02 - Customer Satisfaction</h4>
+          <p>Join hundreds of satisfied customers who have chosen our ovens for their homes and businesses, enjoying reliable and efficient pizza cooking.</p>
         </div>
-        <h4>02 - Customizable</h4>
-        <p>Our ovens are designed to be customized to meet your specific needs, from size to color to features.</p>
-      </div>
-      
-      <div class="w-1/3 p-10">
-        <div class="h-[10vh] py-2 flex flex-row justify-start transform transition-transform duration-500 hover:translate-x-[80%]">
-          <img class="w-[6rem]" src="https://i.ibb.co/Yk2pd0b/satisfaction.png" alt="icon-default-2">
+        
+        <div class="p-[1vw]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[5rem]" src="https://i.ibb.co/L6RGxwr/porcelain.png" alt="icon-default-2">
+          </div>
+          <h4>03 - Handcrafted Excellence</h4>
+          <p>Each oven is handcrafted to perfection, combining traditional techniques with modern innovation to deliver exceptional cooking results.</p>
         </div>
-        <h4>03 - Customer Satisfaction</h4>
-        <p>Join hundreds of satisfied customers who have chosen our ovens for their homes and businesses, enjoying reliable and efficient pizza cooking.</p>
+        
+        <div class="p-[1vw]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[5rem]" src="https://i.ibb.co/kKt3CPR/customize.png" alt="icon-default-2">
+          </div>
+          <h4>04 - Customizable</h4>
+          <p>Our ovens are designed to be customized to meet your specific needs, from size to color to features.</p>
+        </div>
+        
+        <div class="p-[1vw]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[5rem]" src="https://i.ibb.co/MGtdCnN/support.png" alt="icon-default-2">
+          </div>
+          <h4>05 - Dedicated Support</h4>
+          <p>We're committed to providing excellent customer service and support, helping you choose the perfect oven for your needs and ensuring your satisfaction.</p>
+        </div>
       </div>
     </div>
-    <div class="flex flex-row text-start pb-20 px-20">
-      <div class="w-1/3 p-10">
-        <div class="h-[10vh] py-2 flex flex-row justify-start transform transition-transform duration-500 hover:translate-x-[80%]">
-          <img class="w-[6rem]" src="https://i.ibb.co/L6RGxwr/porcelain.png" alt="icon-default-2">
-        </div>
-        <h4>04 - Handcrafted Excellence</h4>
-        <p>Each oven is handcrafted to perfection, combining traditional techniques with modern innovation to deliver exceptional cooking results.</p>
-      </div>
-      
-      <div class="w-1/3 p-10">
-        <div class="h-[10vh] py-2 flex flex-row justify-start transform transition-transform duration-500 hover:translate-x-[80%]">
-          <img class="w-[6rem]" src="https://i.ibb.co/MGtdCnN/support.png" alt="icon-default-2">
-        </div>
-        <h4>05 - Dedicated Support</h4>
-        <p>We're committed to providing excellent customer service and support, helping you choose the perfect oven for your needs and ensuring your satisfaction.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section>
     <div class="flex flex-row justify-center items-center bg-black">

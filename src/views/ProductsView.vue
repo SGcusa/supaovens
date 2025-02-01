@@ -3,7 +3,7 @@
     <div class="py-20">
       <h1 class="">Our Services</h1>
       <hr class="mt-2 mb-4">
-      <p>At Supa Ovens, we provide top-quality, handcrafted pizza ovens designed to bring the joy of homemade pizza to your home or business. Our range of ovens includes:</p>
+      <p>Our range of ovens includes:</p>
     </div>
     <div class="flex flex-row">
       <div class="w-1/3 p-4">
