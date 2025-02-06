@@ -85,7 +85,7 @@
   </section>
 
   <section>
-    <div class="flex flex-row text-white text-start h-[70vh] items-center overflow-hidden relative my-20 pl-10 HTYO">
+    <div class="flex flex-row text-white text-start items-center overflow-hidden relative my-20 pl-10 HTYO">
       <video autoplay muted loop class="absolute top-0 left-0 w-full h-ful object-cover">
         <source src="https://i.imgur.com/SOZINP0.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -122,7 +122,7 @@
       </div>
       <div class="w-full overflow-x-scroll">
         <div class="flex flex-nowrap">
-          <div class="w-[30vw] p-4 flex-shrink-0">
+          <div class="min-w-[300px] w-[30vw] p-4 flex-shrink-0">
             <img class="w-full h-[40vh]" src="https://i.ibb.co/tPZxyLN/Screenshot-2024-09-09-at-10-07-45.png" alt="Brush Default">
             <div class="text-left py-4">
               <h4 class="pb-4">Brush</h4>
@@ -132,7 +132,7 @@
               <hr>
             </div>
           </div>
-          <div class="w-[30vw] p-4 flex-shrink-0">
+          <div class="min-w-[300px] w-[30vw] p-4 flex-shrink-0">
             <img class="w-full h-[40vh]" src="https://i.ibb.co/9Yj0vnz/Screenshot-2024-09-09-at-10-04-29.png" alt="">
             <div class="text-left py-4">
               <h4 class="pb-4">Pizza spade</h4>
@@ -142,7 +142,7 @@
               <hr>
             </div>
           </div>
-          <div class="w-[30vw] p-4 flex-shrink-0">
+          <div class="min-w-[300px] w-[30vw] p-4 flex-shrink-0">
             <img class="w-full h-[40vh]" src="https://i.ibb.co/tYLpGpW/Screenshot-2024-09-09-at-09-59-54.png" alt="">
             <div class="text-left py-4">
               <h4 class="pb-4">Oven Door</h4>
@@ -152,7 +152,7 @@
               <hr>
             </div>
           </div>
-          <div class="w-[30vw] p-4 flex-shrink-0">
+          <div class="min-w-[300px] w-[30vw] p-4 flex-shrink-0">
             <img class="w-full h-[40vh]" src="https://i.ibb.co/D71YdL9/Screenshot-2024-09-06-at-12-04-33.png" alt="">
             <div class="text-left py-4">
               <h4 class="pb-4">Pizza Cutter</h4>
@@ -162,7 +162,7 @@
               <hr>
             </div>
           </div>
-          <div class="w-[30vw] p-4 flex-shrink-0">
+          <div class="min-w-[300px] w-[30vw] p-4 flex-shrink-0">
             <img class="w-full h-[40vh]" src="https://i.ibb.co/3zB9RRs/Screenshot-2024-09-09-at-10-08-57-removebg-preview.png" alt="">
             <div class="text-left py-4">
               <h4 class="pb-4">Protection Gloves</h4>
@@ -175,11 +175,11 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-center items-center">
+    <!-- <div class="flex flex-row justify-center items-center">
       <img src="https://i.imgur.com/K2wOQcz.gif" class="w-12 mr-40 rotate-180" alt="">
       <p class="uppercase font-bold">Scroll</p>
       <img src="https://i.imgur.com/K2wOQcz.gif" class="w-12 ml-40" alt="">
-    </div>
+    </div> -->
   </section>
 
   <section>
@@ -262,18 +262,18 @@
     </div>
     <footer>
       <hr>
-      <div class="flex flex-row">
-        <div class="w-1/2 footer-sec">
-          <div class="h-[20vh] text-left pt-10 px-10">
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 footer-sec">
+          <div class="md:h-[20vh] text-left m-10 md:m-0 md:pt-10 md:px-10">
             <h6 class="pb-3">Contact</h6>
             <p>27055 Shumani Street, Strand, Cape Town, 7140</p>
             <p>069-292-9578</p>
             <p>gcusaaa@gmail.com</p>
           </div>
           <hr>
-          <div class=" text-left pt-10 px-10">
-            <div class="flex flex-row">
-              <div class="w-1/2">
+          <div class=" text-left m-10 md:m-0 md:pt-10 md:px-10">
+            <div class="flex min-[440px]:flex-row">
+              <div class="w-full md:w-1/2">
                   <h6 class="pb-3">Menu</h6>
                   <div class="menu-1">
                     <router-link to="/products"><button class="tracking-normal hover:tracking-[0.2rem]">Our Services</button></router-link>
@@ -285,7 +285,7 @@
                     <router-link to="/about"><button class="tracking-normal hover:tracking-[0.2rem]">About Us</button></router-link>
                   </div>
                 </div>
-              <div class="w-1/2">
+              <div class="w-full min-[440px]:w-1/2">
                 <h6 class="pb-3">Socials</h6>
                 <div class="social-1">
                   <button class="tracking-normal hover:tracking-[0.2rem]">Facebook</button>
@@ -298,7 +298,7 @@
                 </div>
               </div>
             </div>
-              <div class="w-1/2">
+              <div class="w-full md:w-1/2">
                 <h6 class="mt-10 pb-3">Working Hours</h6>
                 <p>Monday - Friday 09:00 - 17:00</p>
                 <p>Saturday 09:00 - 17:00</p>
@@ -306,12 +306,12 @@
               </div>
           </div>
         </div>
-        <div class="w-1/2">
-          <div class="h-[20vh] text-left pt-10 px-10">
+        <div class="w-full md:w-1/2">
+          <div class="hidden md:block md:h-[20vh] md:text-left md:p-10 md:pt-10 md:px-10">
             <h6>Get in Touch</h6>
           </div>
           <hr>
-          <div class="h-[50vh] text-left pt-10 px-10 text-[18px]">
+          <div class="md:h-[50vh] text-left m-10 text-[18px]">
             <div class="mb-4">
               <div class="row">
                 <div class="w-1/2">
@@ -360,37 +360,6 @@ body{
   overflow-y: hidden;
 }
 
-h1{
-  font-size: 4.6vw;
-  font-weight: 700;
-}
-
-h2{
-  font-size: 4vw;
-  font-weight: 700;
-}
-
-h3{
-  font-size: 2.86vw;
-  font-weight: 700;
-}
-
-h4{
-  font-size: 2vw;
-  font-weight: 700;
-}
-
-h5{
-  font-size: 1.71vw;
-  font-weight: 700;
-}
-
-h6{
-  font-size: 1.43vw;
-  font-weight: 700;
-}
-
-
 .round{
   border: 1px solid black;
   border-radius: 10px;
@@ -408,18 +377,6 @@ h6{
   .subtext {
     font-size: small;
     padding: 10px;
-  }
-  h1{
-    font-size: 7vw;
-    font-weight: 700;
-  }
-  h2{
-    font-size: 5.5vw;
-    font-weight: 700;
-  }
-  h4{
-    font-size: 5vw;
-    font-weight: 700;
   }
   .top-gallery, .prduct-image{
     height: 38vh;

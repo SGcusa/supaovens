@@ -7,15 +7,15 @@
     </div>
     
     <div>
-      <div class="flex flex-row justify-around text-left">
-        <div class="w-[44vw] pl-10">
+      <div class="flex flex-col md:flex-row justify-around text-left px-[20px] md:px-0 ">
+        <div class="w-full md:w-[44vw] md:pl-10">
           <h4 class="py-3">Our Mission</h4>
           <p>At Supa Ovens, our mission is simple: to bring the joy of authentic, homemade pizza to everyone. We believe that you don’t need to be a qualified chef to make delicious pizza. With our expertly crafted ovens and a bit of creativity, anyone can create their own culinary masterpieces.</p>
 
           <img class="pt-10" src="https://i.imgur.com/Qtilvzq.jpeg" alt="">
         </div>
         <div class="border-l-2 border-gray-400"></div>
-        <div class="w-[44vw] pr-10">
+        <div class="w-full md:w-[44vw] md:pr-10">
           <h4 class="py-3">Quality Craftsmanship</h4>
           <p>Our ovens are a testament to meticulous craftsmanship and innovation. Each unit is handcrafted to perfection, combining traditional techniques with modern technology to ensure durability, efficiency, and exceptional cooking results. We offer a range of customizable options to meet your specific needs, from size and color to additional features.</p>
 
@@ -38,100 +38,7 @@
   </section>
 
   <section>
-    <div class="mt-40">
-      <h1><router-link to="/">Supa Ovens</router-link></h1>
-      <p class="mb-4">Founded in 2019 By Simphiwe Bhusa</p>
-    </div>
-    <footer>
-      <hr>
-      <div class="flex flex-row">
-        <div class="w-1/2 footer-sec">
-          <div class="h-[20vh] text-left pt-10 px-10">
-            <h4 class="pb-3">Contact</h4>
-            <p>27055 Shumani Street, Strand, Cape Town, 7140</p>
-            <p>069-292-9578</p>
-            <p>gcusaaa@gmail.com</p>
-          </div>
-          <hr>
-          <div class=" text-left pt-10 px-10">
-            <div class="flex flex-row">
-              <div class="w-1/2">
-                  <h4 class="pb-3">Menu</h4>
-                  <div class="menu-1">
-                    <router-link to="/products"><button class="tracking-normal hover:tracking-[0.2rem]">Our Services</button></router-link>
-                  </div>
-                  <div class="menu-2">
-                    <router-link to="/team"><button class="tracking-normal hover:tracking-[0.2rem]">Meet the Team</button></router-link>
-                  </div>
-                  <div class="menu-3">
-                    <router-link to="/about"><button class="tracking-normal hover:tracking-[0.2rem]">About Us</button></router-link>
-                  </div>
-                </div>
-              <div class="w-1/2">
-                <h4 class="pb-3">Socials</h4>
-                <div class="social-1">
-                  <button class="tracking-normal hover:tracking-[0.2rem]">Facebook</button>
-                </div>
-                <div class="social-2">
-                  <button class="tracking-normal hover:tracking-[0.2rem]">Instagram</button>
-                </div>
-                <div class="social-3">
-                  <button class="tracking-normal hover:tracking-[0.2rem]">Linkedin</button>
-                </div>
-              </div>
-            </div>
-              <div class="w-1/2">
-                <h4 class="mt-10 pb-3">Working Hours</h4>
-                <p>Monday - Friday 09:00 - 17:00</p>
-                <p>Saturday 09:00 - 17:00</p>
-                <p>Sunday CLOSED</p>
-              </div>
-          </div>
-        </div>
-        <div class="w-1/2">
-          <div class="h-[20vh] text-left pt-10 px-10">
-            <h4>Get in Touch</h4>
-          </div>
-          <hr>
-          <div class="h-[50vh] text-left pt-10 px-10 text-[18px]">
-            <div class="mb-4">
-              <div class="row">
-                <div class="w-1/2">
-                  <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">First name <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
-                  <input type="text" class="form-control border-gray-400 border-2" id="exampleFormControlInput1">
-                </div>
-                <div class="w-1/2">
-                  <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">Last name <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
-                  <input type="text" class="form-control border-gray-400 border-2" id="exampleFormControlInput1">
-                </div>
-              </div>
-            </div>
-            <div class="mb-4">
-              <label for="exampleFormControlInput1" class="form-label pl-3 flex flex-row items-start">Email address <i class="bi bi-asterisk px-2" style="font-size: 0.5rem;"></i></label>
-              <input type="email" class="form-control border-gray-400 border-2" id="exampleFormControlInput1" placeholder="email@gmail.com">
-            </div>
-            <div class="mb-4">
-              <label for="exampleFormControlTextarea1" class="form-label pl-3">Query</label>
-              <textarea class="form-control border-gray-400 border-2" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="pb-10 flex flex-row rounded-lg">
-              <button class="py-2 bg-black text-white w-full border-2 round">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="py-8 bg-gray-300">
-      <div class="flex flex-row justify-between">
-        <div class="flex flex-row justify-between pl-10">
-          <p>Terms & Conditions</p>
-          <p class="pl-10">Privacy Policy</p>
-        </div>
-        <div class="pr-10">
-          <p>© 2024 All Rights Reserved</p>
-        </div>
-      </div>
-    </div>
+    <FooterComponent />
   </section>
 </template>
 
@@ -140,6 +47,15 @@
 
 
 <script>
+import FooterComponent from "@/components/footer.vue";
+
+export default {
+  components: {
+    FooterComponent
+  }
+};
+
+
 window.addEventListener('scroll', () => {
   const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
   elements.forEach(element => {
@@ -150,9 +66,10 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+
 </script>
-
-
 
 
 
