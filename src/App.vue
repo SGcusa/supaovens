@@ -117,4 +117,13 @@ nav a.router-link-exact-active::after {
 .nc-2{
   margin: 0px 20px 0px 20px;
 }
+
+.round{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.footer-sec{
+  border-right: 1px solid rgb(184, 184, 184);
+}
 </style>

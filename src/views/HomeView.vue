@@ -360,14 +360,7 @@ body{
   overflow-y: hidden;
 }
 
-.round{
-  border: 1px solid black;
-  border-radius: 10px;
-}
 
-.footer-sec{
-  border-right: 1px solid rgb(184, 184, 184);
-}
 
 @media (max-width: 479px) {
   .top-header {

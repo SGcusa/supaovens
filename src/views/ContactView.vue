@@ -65,10 +65,10 @@
       <p class="mb-4">Founded in 2019 By Simphiwe Bhusa</p>
     </div>
     <footer>
-      <div class="flex flex-row h-[50vh] md:h-[30vh]">
-        <div class="w-1/2 md:w-1/2 footer-sec">
+      <div class="flex flex-col md:flex-row my-10 md:m-0">
+        <div class="w-full md:w-1/2 footer-sec">
         <hr>
-        <div class="flex flex-col md:flex-row text-left pt-[4vw] px-10">
+        <div class="flex flex-col md:flex-row text-left py-[4vw] px-10">
           <div class="w-full md:w-1/2">
             <h5 class="pb-3">Contact</h5>
             <p>Strand, Cape Town, 7140</p>
@@ -84,9 +84,9 @@
         </div>
       </div>
 
-        <div class="w-1/2">
-          <hr>
-          <div class="text-left pt-[4vw] px-10 text-[18px]">
+        <div class="w-full md:w-1/2">
+          <hr class="hidden md:block">
+          <div class="text-left py-[4vw] px-10 text-[18px]">
             <div class="flex flex-col md:flex-row">
               <div class="w-full md:w-1/2 md:flex-row">
                 <h5 class="pb-3">Menu</h5>
