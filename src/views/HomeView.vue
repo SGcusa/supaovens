@@ -1,24 +1,98 @@
+<script>
+import mediar from '@/components/mediar.vue';
+
+export default {
+  components: {
+    mediar
+  },
+};
+</script>
+
+
+
 <template>
   <section>
-    <div>
-      <h1 class="p-[5vw] top-header">We deliver nationwide, Get your<br> pizza oven delivered to your door step</h1>
-
-      <article>
-        <p class="subtext">You don't need to be a qualified chef to make your own pizza come up with your own recipe and enjoy your own pizza.</p>
-      </article>
-
-        <hr class="mt-4">
-      <div class="py-3">
-        <button class="uppercase tracking-normal font-bold hover:tracking-[0.4rem]"><router-link to="/products">Services</router-link></button>
-      </div>
+    <div class="relative flex flex-row text-white text-start items-center max-h-[600px] overflow-hidden px-[20px] HTYO">
+      <video autoplay muted loop class="top-0 left-0 w-full h-full object-cover rounded-md">
+        <source class="!rounded-md" src="https://i.imgur.com/SOZINP0.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute z-10 m-4">
+        <h1 class="px-[3vw] text-[40px] lg:text-[60px] xl:text-[80px] leading-[90%] stroke-white" style="-webkit-text-stroke: 2px white;">SUPA<br/> OVENS</h1>
     </div>
+  </div>
 
-    <div class="flex flex-row h-[30vw] bg-black-900 bg-blend-overlay top-gallery">
-      <img src="https://i.ibb.co/4SW4hk5/cc1103d7-5868-4165-8583-7b469c2c12cd-1.jpg" class="w-full sm:w-1/2 md:w-1/3">
-      <img src="https://i.ibb.co/5sg34TR/Whats-App-Image-2024-06-20-at-20-39-04.png" class="hidden sm:block sm:w-1/2 md:w-1/3">
-      <img src="https://i.ibb.co/dksJzTP/Whats-App-Image-2024-06-20-at-20-30-22.png" class="hidden md:block md:w-1/3">
+
+  <div class="flex flex-col justify-center items-center z-10 my-0 mx-auto pl-[200px]">
+    <h1 class="py-[4vw] max-w-[500px] text-[40px] text-left">We deliver nationwide,<br/> Get your pizza oven delivered to your door step</h1>
+ </div>
+  </section>
+  
+
+
+  <section>
+    <div class="flex flex-col md:flex-row md:max-h-[500px] bg-black-900 bg-blend-overlay top-gallery max-w-[1280px] gap-[20px] px-[20px] mx-auto justify-center">
+      <img src="https://i.ibb.co/4SW4hk5/cc1103d7-5868-4165-8583-7b469c2c12cd-1.jpg" class="w-full md:w-1/2">
+      <img src="https://i.ibb.co/5sg34TR/Whats-App-Image-2024-06-20-at-20-39-04.png" class="w-full md:w-1/2">
     </div>
   </section>
+
+  <mediar />
+
+  <section>
+    <div class="py-20">
+      <h2>Why Our Pizza Ovens</h2>
+      <hr class="mt-2 mb-4">
+      <p>At Supa Ovens, we provide top-quality, handcrafted pizza ovens designed to bring the joy of homemade pizza to your home or business. Our range of services includes:</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-start pt-20 px-[6vw]">
+        <div class="p-[1vw] flex flex-col gap-[20px]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[4rem]" src="https://i.ibb.co/JB4MTys/badge.png" alt="icon-default-2">
+            <h4 class="flex items-center text-[24px] pl-8">01</h4>
+            <h4 class="flex items-center text-[24px] pl-8">Quality Craftsmanship</h4>
+          </div>
+          <p>Our ovens showcase meticulous craftsmanship, ensuring each unit meets our high standards of durability and performance.</p>
+        </div>
+        
+        <div class="p-[1vw] flex flex-col gap-[20px]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[4rem]" src="https://i.ibb.co/Yk2pd0b/satisfaction.png" alt="icon-default-2">
+            <h4 class="flex items-center text-[24px] pl-8">02</h4>
+            <h4 class="flex items-center text-[24px] pl-8">Customer Satisfaction</h4>
+          </div>
+          <p>Join hundreds of satisfied customers who have chosen our ovens for their homes and businesses, enjoying reliable and efficient pizza cooking.</p>
+        </div>
+        
+        <div class="p-[1vw] flex flex-col gap-[20px]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[4rem]" src="https://i.ibb.co/L6RGxwr/porcelain.png" alt="icon-default-2">
+            <h4 class="flex items-center text-[24px] pl-8">03</h4>
+            <h4 class="flex items-center text-[24px] pl-8">Handcrafted Excellence</h4>
+          </div>
+          <p>Each oven is handcrafted to perfection, combining traditional techniques with modern innovation to deliver exceptional cooking results.</p>
+        </div>
+        
+        <div class="p-[1vw] flex flex-col gap-[20px]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[4rem]" src="https://i.ibb.co/kKt3CPR/customize.png" alt="icon-default-2">
+            <h4 class="flex items-center text-[24px] pl-8">04</h4>
+            <h4 class="flex items-center text-[24px] pl-8">Customizable</h4>
+          </div>
+          <p>Our ovens are designed to be customized to meet your specific needs, from size to color to features.</p>
+        </div>
+        
+        <div class="p-[1vw] flex flex-col gap-[20px]">
+          <div class="h-[10vh] py-2 flex flex-row justify-start">
+            <img class="w-[4rem]" src="https://i.ibb.co/MGtdCnN/support.png" alt="icon-default-2">
+            <h4 class="flex items-center text-[24px] pl-8">05</h4>
+            <h4 class="flex items-center text-[24px] pl-8">Dedicated Support</h4>
+          </div>
+          <p>We're committed to providing excellent customer service and support, helping you choose the perfect oven for your needs and ensuring your satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <section>
     <div>
@@ -84,34 +158,7 @@
     </div>
   </section>
 
-  <section>
-    <div class="flex flex-row text-white text-start items-center overflow-hidden relative my-20 pl-10 HTYO">
-      <video autoplay muted loop class="absolute top-0 left-0 w-full h-ful object-cover">
-        <source src="https://i.imgur.com/SOZINP0.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="relative z-10 m-4">
-      <h2 class="mb-10 w-[30vw] HTY">How to use your oven?</h2>
-        <div class="flex flex-col">
-          <div class="w-[27vw] py-3 HT">
-            <h5>After Installation</h5>
-            <p class="text-[1vw] H">After installation, a client is required to wait a maximum of 7 days for a dry out</p>
-          </div>
-          <div class="w-[27vw] py-3 HT">
-            <h5>In 7 days</h5>
-            <p class="text-[1vw] H">then the client can begin to do curing, burning a maximum of 4 blocks of wood at the centre of the oven, let it burn for 3 HT hours for 7 days.</p>
-          </div>
-          <div class="w-[27vw] py-2 sm:py-1 md:py-1 lg:py-5 HT">
-            <h5>14 days later</h5>
-            <p class="text-[1vw] H">After 14 days, the client can begin to use the oven for cooking.</p>
-          </div>
-          <div class="flex flex-row justufy-center pt-6">
-            <button class="uppercase tracking-normal underline font-bold hover:tracking-[0.1rem]"><router-link to="/about">Read more</router-link></button>
-          </div>
-        </div>
-    </div>
-  </div>
-  </section>
+  
 
   <section>
     <div>
@@ -182,54 +229,7 @@
     </div> -->
   </section>
 
-  <section>
-    <div class="py-20">
-      <h2>Why Our Pizza Ovens</h2>
-      <hr class="mt-2 mb-4">
-      <p>At Supa Ovens, we provide top-quality, handcrafted pizza ovens designed to bring the joy of homemade pizza to your home or business. Our range of services includes:</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-start pt-20 px-[6vw]">
-        <div class="p-[1vw]">
-          <div class="h-[10vh] py-2 flex flex-row justify-start">
-            <img class="w-[5rem]" src="https://i.ibb.co/JB4MTys/badge.png" alt="icon-default-2">
-          </div>
-          <h4>01 - Quality Craftsmanship</h4>
-          <p>Our ovens showcase meticulous craftsmanship, ensuring each unit meets our high standards of durability and performance.</p>
-        </div>
-        
-        <div class="p-[1vw]">
-          <div class="h-[10vh] py-2 flex flex-row justify-start">
-            <img class="w-[5rem]" src="https://i.ibb.co/Yk2pd0b/satisfaction.png" alt="icon-default-2">
-          </div>
-          <h4>02 - Customer Satisfaction</h4>
-          <p>Join hundreds of satisfied customers who have chosen our ovens for their homes and businesses, enjoying reliable and efficient pizza cooking.</p>
-        </div>
-        
-        <div class="p-[1vw]">
-          <div class="h-[10vh] py-2 flex flex-row justify-start">
-            <img class="w-[5rem]" src="https://i.ibb.co/L6RGxwr/porcelain.png" alt="icon-default-2">
-          </div>
-          <h4>03 - Handcrafted Excellence</h4>
-          <p>Each oven is handcrafted to perfection, combining traditional techniques with modern innovation to deliver exceptional cooking results.</p>
-        </div>
-        
-        <div class="p-[1vw]">
-          <div class="h-[10vh] py-2 flex flex-row justify-start">
-            <img class="w-[5rem]" src="https://i.ibb.co/kKt3CPR/customize.png" alt="icon-default-2">
-          </div>
-          <h4>04 - Customizable</h4>
-          <p>Our ovens are designed to be customized to meet your specific needs, from size to color to features.</p>
-        </div>
-        
-        <div class="p-[1vw]">
-          <div class="h-[10vh] py-2 flex flex-row justify-start">
-            <img class="w-[5rem]" src="https://i.ibb.co/MGtdCnN/support.png" alt="icon-default-2">
-          </div>
-          <h4>05 - Dedicated Support</h4>
-          <p>We're committed to providing excellent customer service and support, helping you choose the perfect oven for your needs and ensuring your satisfaction.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <section>
     <div class="flex flex-row justify-center items-center bg-black">
@@ -359,53 +359,4 @@ body{
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
-
-
-@media (max-width: 479px) {
-  .top-header {
-    padding: 30px 10px;
-    align-items: start;
-  }
-  .subtext {
-    font-size: small;
-    padding: 10px;
-  }
-  .top-gallery, .prduct-image{
-    height: 38vh;
-  }
-  .py-3 button {
-    font-size: small;
-    padding: 0px;
-  }
-  .HTYO{
-    height: 30vh;
-    margin: 10px 0px;
-    padding: 0px;
-  }
-  .HTY{
-    width: 70vw;
-    padding: 0px;
-    margin: 0px;
-  }
-  .HT{
-    width: 70vw;
-    padding: 0px;
-    margin: 0px;
-  }
-  .H{
-    padding: 0px;
-    margin: 0px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-}
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-}
-
 </style>

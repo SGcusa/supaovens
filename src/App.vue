@@ -1,4 +1,11 @@
 <template>
+  <nav class="bg-[#000]">
+    <div class="flex flex-row justify-center items-center gap-10 text-white w-full">
+      <p>supaovens@gmail.com</p>|
+      <p>supaovens@gmail.com</p>|
+      <p>supaovens@gmail.com</p>
+    </div>
+  </nav>
   <nav class="relative flex items-center justify-between px-[4vw] text-black">
     <!-- Left section: Logo -->
     <div class="nav-left__logo">
@@ -19,7 +26,6 @@
     <!-- Center and Right section: Navigation Links (Hidden on small screens) -->
     <div id="nav-content" class="hidden md:flex md:space-x-8 items-center overflow-hidden">
       <router-link to="/products" class="text-[16px] hover:scale-105 transition-colors duration-200">Our Services</router-link>
-      <router-link to="/team" class="text-[16px] hover:scale-105 transition-colors duration-200">Meet The Team</router-link>
       <router-link to="/about" class="text-[16px] hover:scale-105 transition-colors duration-200">About Us</router-link>
       <router-link to="/contact" class="text-[16px] hover:scale-105 transition-colors duration-200">Contact</router-link>
     </div>
@@ -27,7 +33,6 @@
     <!-- Dropdown Menu for Small Screens -->
     <div v-if="isMenuOpen" class="absolute top-full left-0 right-0 bg-white shadow-lg z-50 md:hidden flex flex-col space-y-4 p-4">
       <router-link to="/products" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
-      <router-link to="/team" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">Meet The Team</router-link>
       <router-link to="/about" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
       <router-link to="/contact" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
     </div>
@@ -61,7 +66,7 @@ export default {
 }
 
 nav {
-  padding: 40px 50px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
