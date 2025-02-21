@@ -1,9 +1,11 @@
 <script>
 import mediar from '@/components/mediar.vue';
+import gallery from '@/components/gallery.vue'
 
 export default {
   components: {
-    mediar
+    mediar,
+    gallery
   },
 };
 </script>
@@ -38,6 +40,7 @@ export default {
   </section>
 
   <mediar />
+  <gallery />
 
   <section>
     <div class="py-20">
