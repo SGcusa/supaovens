@@ -1,11 +1,13 @@
 <script>
 import mediar from '@/components/mediar.vue';
-import gallery from '@/components/gallery.vue'
+import gallery from '@/components/gallery.vue';
+import sub_footer from '@/components/subscribtion.vue'
 
 export default {
   components: {
     mediar,
-    gallery
+    gallery,
+    sub_footer
   },
 };
 </script>
@@ -42,7 +44,7 @@ export default {
   <mediar />
   <gallery />
 
-  <section>
+  <!-- <section>
     <div class="py-20">
       <h2>Why Our Pizza Ovens</h2>
       <hr class="mt-2 mb-4">
@@ -94,7 +96,7 @@ export default {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- <section>
@@ -253,11 +255,11 @@ export default {
     </div>
   </section> -->
 
-  <section>
-    <!-- <div class="mt-40">
+  <!-- <section>
+    <div class="mt-40">
       <h2>Supa Ovens</h2>
       <p class="mb-4">Founded in 2019 By Simphiwe Bhusa</p>
-    </div> -->
+    </div>
     <footer>
       <hr>
       <div class="flex flex-col md:flex-row">
@@ -337,6 +339,7 @@ export default {
         </div>
       </div>
     </footer>
+
     <div class="py-8 bg-gray-300">
       <div class="flex flex-row justify-between">
         <div class="flex flex-row justify-between pl-10">
@@ -348,7 +351,9 @@ export default {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <sub_footer />
+
 </template>
 
 

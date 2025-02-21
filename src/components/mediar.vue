@@ -14,9 +14,7 @@ export default {
       </div> -->
     <div class="services-container flex flex-row xl:justify-center items-center gap-[20px] overflow-x-scroll px-6">
         <div class="card-block text-start w-2/2 md:w-full hover:text-white bg-cover bg-[#f4f4f4] p-4 sm:px-6 sm:py-4 min-w-[200px] sm:min-w-[260px] min-h-[200px] sm:min-h-[240px] flex flex-col justify-between"
-             style="background-image: none;"
-             onmouseover="this.style.backgroundImage = url('https://i.ibb.co/MVQCwwK/Screenshot-2024-09-09-at-10-08-57.png');"
-             onmouseout="this.style.backgroundImage = 'none';">
+             style="background-image: none;">
           <div class="card-header text-[20px] sm:text-[24px] leading-[140%] mt-4">
             <span class="text-[16px] leading-[40%] text-[#999]">Day 1</span>  
             <h1>After Installation</h1>
@@ -26,9 +24,7 @@ export default {
           </div>
         </div>
         <div class="card-block text-start w-2/2 md:w-full hover:text-white bg-cover bg-[#f4f4f4] p-4 sm:px-6 sm:py-4 min-w-[200px] sm:min-w-[260px] min-h-[200px] sm:min-h-[240px] flex flex-col justify-between"
-             style="background-image: none;"
-             onmouseover="this.style.backgroundImage = 'url(https://i.ibb.co/MVQCwwK/Screenshot-2024-09-09-at-10-08-57.png)';"
-             onmouseout="this.style.backgroundImage = 'none';">
+             style="background-image: none;">
           <div class="card-header text-[20px] sm:text-[24px] leading-[140%] mt-4">
             Day 7 - Preheat process
           </div>
@@ -37,9 +33,7 @@ export default {
           </div>
         </div>
         <div class="card-block text-start w-2/2 md:w-full hover:text-white bg-cover bg-[#f4f4f4] p-4 sm:px-6 sm:py-4 min-w-[200px] sm:min-w-[260px] min-h-[200px] sm:min-h-[240px] flex flex-col justify-between"
-             style="background-image: none;"
-             onmouseover="this.style.backgroundImage = 'url(https://i.ibb.co/MVQCwwK/Screenshot-2024-09-09-at-10-08-57.png)';"
-             onmouseout="this.style.backgroundImage = 'none';">
+             style="background-image: none;">
           <div class="card-header text-[20px] sm:text-[24px] leading-[140%] mt-4">
             Day 14 - Ready for use
           </div>

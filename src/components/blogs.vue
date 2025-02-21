@@ -1,10 +1,5 @@
 <template>
-
-</template>
-
-
-
-<div class="blog-section bg-black">
+  <div class="blog-section bg-black">
     <div class="blogs-container w-full mx-auto my-0">
       <div class="header-section flex flex-row items-center sm:justify-center py-10">
         <h1 class="text-white px-[10px] sm:px-[10px] text-[24px] sm:text-[40px]">NEWS & UPDATES:</h1>  
@@ -60,19 +55,5 @@
       </div>
     </div>  
   </div>
+</template>
   
-  
-  {% schema %}
-  {
-    "name": "Blog section",
-    "settings": [
-          
-    ],
-    "blocks": [],
-    "presets": [
-      {
-        "name": "Blog section"  
-      }
-    ]
-  }
-  {% endschema %}
