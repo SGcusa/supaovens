@@ -1,9 +1,9 @@
 <template>
   <nav class="bg-[#000]">
-    <div class="flex flex-row justify-center items-center gap-10 text-white w-full">
+    <div class="flex flex-row justify-center items-center md:gap-10 lg:gap-14 text-white w-full">
+      <p>+27 76 416 7815</p>|
       <p>supaovens@gmail.com</p>|
-      <p>supaovens@gmail.com</p>|
-      <p>supaovens@gmail.com</p>
+      <p>@Supa_Ovens</p>
     </div>
   </nav>
   <nav class="relative flex items-center justify-between px-[4vw] text-black">
@@ -15,7 +15,7 @@
     </div>
 
     <!-- Toggler Button for Small Screens -->
-    <div class="block md:hidden">
+    <div class="block ">
       <button @click="toggleMenu" class="focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -24,17 +24,17 @@
     </div>
 
     <!-- Center and Right section: Navigation Links (Hidden on small screens) -->
-    <div id="nav-content" class="hidden md:flex md:space-x-8 items-center overflow-hidden">
+    <div id="nav-content" class="hidden md:space-x-8 items-center overflow-hidden">
       <router-link to="/products" class="text-[16px] hover:scale-105 transition-colors duration-200">Our Services</router-link>
       <router-link to="/about" class="text-[16px] hover:scale-105 transition-colors duration-200">About Us</router-link>
       <router-link to="/contact" class="text-[16px] hover:scale-105 transition-colors duration-200">Contact</router-link>
     </div>
 
     <!-- Dropdown Menu for Small Screens -->
-    <div v-if="isMenuOpen" class="absolute top-full left-0 right-0 bg-white shadow-lg z-50 md:hidden flex flex-col space-y-4 p-4">
-      <router-link to="/products" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
-      <router-link to="/about" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
-      <router-link to="/contact" class="text-gray-800 hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
+    <div v-if="isMenuOpen" class="absolute w-[200px] top-14 right-10  bg-white shadow-lg z-50 flex flex-col space-y-4 p-4">
+      <router-link to="/products" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
+      <router-link to="/about" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
+      <router-link to="/contact" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
     </div>
   </nav>
 
@@ -103,7 +103,7 @@ nav a.router-link-exact-active::after {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #007bff, #ff073a);
+  background: #000000;
   animation: grow 0.5s ease-in-out;
 }
 

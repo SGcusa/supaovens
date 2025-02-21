@@ -94,7 +94,7 @@ export default {
   </section>
 
 
-  <section>
+  <!-- <section>
     <div>
       <div class="py-[5vw]">
         <h2>Our Services</h2>
@@ -156,11 +156,11 @@ export default {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   
 
-  <section>
+  <!-- <section>
     <div>
       <div class="py-20">
         <h1>Shop Accessories</h1>
@@ -222,16 +222,11 @@ export default {
         </div>
       </div>
     </div>
-    <!-- <div class="flex flex-row justify-center items-center">
-      <img src="https://i.imgur.com/K2wOQcz.gif" class="w-12 mr-40 rotate-180" alt="">
-      <p class="uppercase font-bold">Scroll</p>
-      <img src="https://i.imgur.com/K2wOQcz.gif" class="w-12 ml-40" alt="">
-    </div> -->
-  </section>
+  </section> -->
 
   
 
-  <section>
+  <!-- <section>
     <div class="flex flex-row justify-center items-center bg-black">
       <div class="w-full">
         <div class="text-white">
@@ -253,19 +248,19 @@ export default {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section>
-    <div class="mt-40">
+    <!-- <div class="mt-40">
       <h2>Supa Ovens</h2>
       <p class="mb-4">Founded in 2019 By Simphiwe Bhusa</p>
-    </div>
+    </div> -->
     <footer>
       <hr>
       <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-1/2 footer-sec">
           <div class="md:h-[20vh] text-left m-10 md:m-0 md:pt-10 md:px-10">
-            <h6 class="pb-3">Contact</h6>
+            <h6 class="pb-3 text-[20px]">Contact</h6>
             <p>27055 Shumani Street, Strand, Cape Town, 7140</p>
             <p>069-292-9578</p>
             <p>gcusaaa@gmail.com</p>
@@ -274,7 +269,7 @@ export default {
           <div class=" text-left m-10 md:m-0 md:pt-10 md:px-10">
             <div class="flex min-[440px]:flex-row">
               <div class="w-full md:w-1/2">
-                  <h6 class="pb-3">Menu</h6>
+                  <h6 class="pb-3 text-[20px]">Menu</h6>
                   <div class="menu-1">
                     <router-link to="/products"><button class="tracking-normal hover:tracking-[0.2rem]">Our Services</button></router-link>
                   </div>
@@ -286,7 +281,7 @@ export default {
                   </div>
                 </div>
               <div class="w-full min-[440px]:w-1/2">
-                <h6 class="pb-3">Socials</h6>
+                <h6 class="pb-3 text-[20px]">Socials</h6>
                 <div class="social-1">
                   <button class="tracking-normal hover:tracking-[0.2rem]">Facebook</button>
                 </div>
