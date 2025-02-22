@@ -7,7 +7,7 @@ export default {
 
 <template>
   <div class="subscribtion-section bg-black px-[10px] py-[30px] sm:p-8">
-    <div class="subscribtion-container mx-auto max-w-[1280px] flex flex-col">
+    <div class="subscribtion-container mx-auto max-w-[1440px] flex flex-col">
       <div class="header-block pt-[40px] md:mb-4 text-left">
         <div class="text-[32px] md:text-[60px] text-white leading-[100%] ">SUPA OVENS</div>
         <!-- <div class="subheader-block text-[12px] sm:text-[16px] text-white max-w-[940px]">

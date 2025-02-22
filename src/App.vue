@@ -89,9 +89,6 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  background: linear-gradient(90deg, #007bff, #ff073a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: bold;
   position: relative;
 }

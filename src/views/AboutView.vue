@@ -30,46 +30,11 @@
         </div>
       </div>
     </div>
-    <!-- <div class="row">
-        <marquee class="display-1" behavior="sroll" direction="right" loop="15">
-          About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us - About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us  -  About Us
-        </marquee>
-      </div> -->
-  </section>
-
-  <section>
-    <FooterComponent />
   </section>
 </template>
 
 
 
-
-
-<script>
-import FooterComponent from "@/components/footer.vue";
-
-export default {
-  components: {
-    FooterComponent
-  }
-};
-
-
-window.addEventListener('scroll', () => {
-  const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
-  elements.forEach(element => {
-    const position = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    if (position < windowHeight - 100) {
-      element.classList.add('visible');
-    }
-  });
-});
-
-
-
-</script>
 
 
 
