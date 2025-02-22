@@ -7,7 +7,7 @@ export default {
 
 
 <template>
-  <div class="relative flex flex-row text-start items-center max-h-[360px] overflow-hidden my-12">
+  <div class="relative flex flex-row text-start items-center max-h-[360px] overflow-hidden my-20">
     <img 
         class="object-cover"
         src="https://i.ibb.co/C1ghFjv/Whats-App-Image-2024-06-20-at-20-30-11.png" 

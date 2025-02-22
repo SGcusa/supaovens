@@ -6,7 +6,7 @@
       <p>@Supa_Ovens</p>
     </div>
   </nav>
-  <nav class="relative flex items-center justify-between px-[4vw] text-black">
+  <nav class="relative flex items-center justify-between px-[4vw] max-w-[1440px] mx-auto text-black">
     <!-- Left section: Logo -->
     <div class="nav-left__logo">
       <router-link to="/" class="flex items-center">
