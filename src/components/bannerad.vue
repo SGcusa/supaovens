@@ -16,7 +16,7 @@ export default {
         height="100%"
       >
     <div class="absolute z-10 m-4">
-      <h1 class="md:w-1/2 lg:w-1/3 flex flex-col gap-[10px] px-[20px] text-[40px] leading-[90%]">
+      <h1 class="md:w-1/2 lg:w-1/3 flex flex-col gap-[10px] px-[20px] text-[32px] uppercase leading-[100%]">
         Turn up the heat this season with the sleek supa oven — where every pizza is a masterpiece. 
           <span class="text-[12px]">Order yours now. Ts & Cs apply.</span>
       </h1>
