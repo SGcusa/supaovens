@@ -1,9 +1,16 @@
 <template>
   <nav class="bg-[#000]">
-    <div class="flex flex-row justify-center items-center md:gap-10 lg:gap-14 text-white w-full">
+    <div class="hidden md:flex flex-row justify-center items-center md:gap-14 text-white w-full">
       <p>+27 76 416 7815</p>|
       <p>supaovens@gmail.com</p>|
       <p>@Supa_Ovens</p>
+    </div>
+    <div class="md:hidden relative w-full overflow-hidden md:justify-center md:gap-10 lg:gap-14 text-white flex flex-row items-center">
+      <div class="flex w-full mobile-slider">
+        <p class="min-w-full text-center">+27 76 416 7815</p>
+        <p class="min-w-full text-center">supaovens@gmail.com</p>
+        <p class="min-w-full text-center">@Supa_Ovens</p>
+      </div>
     </div>
   </nav>
   <nav class="relative flex items-center justify-between px-[4vw] max-w-[1440px] mx-auto text-black">
@@ -31,7 +38,7 @@
     </div>
 
     <!-- Dropdown Menu for Small Screens -->
-    <div v-if="isMenuOpen" class="absolute w-[200px] top-14 right-10  bg-white shadow-lg z-50 flex flex-col space-y-4 p-4">
+    <div v-if="isMenuOpen" class="absolute w-[200px] top-14 right-[10px] md:right-[20px] xl:right-10 bg-blend-darken bg-white shadow-lg z-50 flex flex-col space-y-4 p-4">
       <router-link to="/products" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
       <router-link to="/about" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
       <router-link to="/contact" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
@@ -109,6 +116,19 @@ nav a.router-link-exact-active::after {
   100% { width: 100%; }
 }
 
+@media (max-width: 768px) {
+  .mobile-slider {
+    animation: slide 9s infinite;
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes slide {
+    0%, 33% { transform: translateX(0); }
+    34%, 66% { transform: translateX(-100%); }
+    67%, 100% { transform: translateX(-200%); }
+  }
+}
 
 .nav-center {
   display: flex;

@@ -1,0 +1,60 @@
+.comment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sign-in-btn {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .user-info img {
+    border-radius: 50%;
+    width: 50px;
+  }
+  
+  .comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .user {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .usercomment {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .comment {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .comment img {
+    border-radius: 50%;
+    width: 40px;
+  }

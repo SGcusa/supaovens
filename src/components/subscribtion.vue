@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-  <div class="subscribtion-section bg-black px-[10px] py-[30px] sm:p-8">
+  <div class="subscribtion-section bg-black px-[20px] py-[30px] sm:p-8">
     <div class="subscribtion-container mx-auto max-w-[1440px] flex flex-col">
       <div class="header-block pt-[40px] md:mb-4 text-left">
         <div class="text-[32px] md:text-[60px] text-white leading-[100%] ">SUPA OVENS</div>
@@ -19,7 +19,7 @@ export default {
           <div class="flex flex-col items-start text-left">
             <div class="below-text md:max-w-[250px] text-[12px] sm:text-[16px] text-white">Be the first to know about our latest treatments, exclusive offers, and wellness tips.</div>  
             <div class="first-button flex flex-col justify-center items-center mt-3">
-              <a class="text-center leading-[140%] min-w-[200px] bg-white text-black sm:min-w-[300px] py-3 uppercase hover:tracking-[4px]"
+              <a class="text-center leading-[140%] min-w-[200px] bg-white text-black sm:min-w-[300px] py-3 uppercase hover:tracking-[1px]"
                  href=".button_url">
                 Get In Touch
               </a>  
@@ -30,14 +30,14 @@ export default {
           <div class="w-full flex flex-col sm:flex-row gap-8 sm:gap-0">
             <div class="w-full sm:w-1/2 text-left">
               <div class="right-header text-white text-[16px] md:text-[20px] mb-[16px]">Orders and Support</div>
-                <div class="right-content text-white text-[12px] sm:text-[16px] hover:tracking-[2px] hover:pl-2 my-1">
-                  <p>Terms & Conditions</p> 
-                  <p>Privacy Policy</p> 
+                <div class="right-content text-white text-[12px] sm:text-[16px] my-1">
+                  <p class="hover:tracking-[1px]">Terms & Conditions</p> 
+                  <p class="hover:tracking-[1px]">Privacy Policy</p> 
                 </div>
             </div>
             <div class="w-full sm:w-1/2 text-left">
               <div class="right-header text-white text-[16px] md:text-[20px] mb-[16px]">Operating Hours</div>
-                <div class="right-content text-white text-[12px] sm:text-[16px] hover:tracking-[2px] hover:pl-2 my-1">
+                <div class="right-content text-white text-[12px] sm:text-[16px] my-1">
                   <p>Monday - Friday: 09:00 - 17:00</p>
                   <p>Saturday: 10:00 - 17:00</p> 
                   <p>Sunday: CLOSED</p> 
