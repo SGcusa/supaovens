@@ -1,15 +1,27 @@
 <template>
   <nav class="bg-[#000]">
     <div class="hidden md:flex flex-row justify-center items-center md:gap-14 text-white w-full">
-      <p>+27 76 416 7815</p>|
-      <p>supaovens@gmail.com</p>|
-      <p>@Supa_Ovens</p>
+      <a href="tel:+27764167815" class="text-white hover:underline">
+        +27 76 416 7815 
+      </a> |
+      <a href="mailto:supaovens@gmail.com" class="text-white hover:underline">
+        supaovens@gmail.com
+      </a> |
+      <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white hover:underline">
+        @Supa_Ovens
+      </a>
     </div>
-    <div class="md:hidden relative w-full overflow-hidden md:justify-center md:gap-10 lg:gap-14 text-white flex flex-row items-center">
+    <div class="md:hidden relative w-full overflow-hidden md:justify-center md:gap-10 lg:gap-14 flex flex-row items-center">
       <div class="flex w-full mobile-slider">
-        <p class="min-w-full text-center">+27 76 416 7815</p>
-        <p class="min-w-full text-center">supaovens@gmail.com</p>
-        <p class="min-w-full text-center">@Supa_Ovens</p>
+        <a href="tel:+27764167815" class="text-white hover:underline min-w-full text-center">
+          +27 76 416 7815 
+        </a> |
+        <a href="mailto:supaovens@gmail.com" class="text-white hover:underline min-w-full text-center">
+          supaovens@gmail.com
+        </a> |
+        <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white hover:underline min-w-full text-center">
+          @Supa_Ovens
+        </a>
       </div>
     </div>
   </nav>
@@ -134,10 +146,6 @@ nav a.router-link-exact-active::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nc-2{
-  margin: 0px 20px 0px 20px;
 }
 
 .round{

@@ -4,6 +4,7 @@ import sub_footer from '@/components/subscribtion.vue';
 import banner from '@/components/banner.vue';
 import bannerad from '@/components/bannerad.vue';
 import commentsection from '@/components/comment-section.vue';
+import badge from '@/components/blogs.vue';
 
 export default {
   components: {
@@ -12,6 +13,7 @@ export default {
     banner,
     bannerad,
     commentsection,
+    badge,
   },
 };
 </script>
@@ -49,6 +51,20 @@ export default {
   <bannerad />
   <!-- <gallery /> -->
 
+  <section>
+    <div class="fixed bottom-5 right-5 z-50 space-y-2 animate-interval-shake">
+      <a class="WhatsApp-button flex flex-row justify-start items-center gap-2 " href="https://wa.me/+27692929578" target="_blank">
+        <div class="hover:bg-green-500 text-green-500 hover:text-white uppercase text-sm font-medium px-3 py-1 mt-2 rounded-lg shadow-lg">
+          Need Help?
+        </div>
+        <img 
+          src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/whatsapp.png?v=1741077507" 
+          class="w-[40px] h-[40px]"
+          loading="lazy"
+          alt="WhatsApp Button">
+      </a>
+    </div>
+  </section>
   <section>
     <div class="max-w-[1280px] mx-auto my-[60px] px-[20px]">
       <h1 class="text-[40px] md:text-[40px] text-center leading-[90%] py-[60px]" style="-webkit-text-stroke: 1px black;">Bring The Heat - With Confidence</h1>
@@ -97,6 +113,7 @@ export default {
       </div>
     </div>
   </section>
+  <badge />
   <commentsection />
   <sub_footer />
 
@@ -108,7 +125,7 @@ export default {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  .first-button {
+  .first-button, .WhatsApp-button img {
     transition: width 0.3s ease;
   }
 
@@ -128,5 +145,26 @@ export default {
     .heat-img{
       max-height: 500px;
     }
+  }
+  @keyframes interval-shake {
+    0%, 100% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    50% { transform: translateX(0); }
+  }
+
+  .animate-interval-shake {
+    animation: interval-shake 0.6s ease-in-out infinite;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+  }
+
+  .WhatsApp-button:hover img {
+    height: 60px;
+    width: 60px;
   }
 </style>

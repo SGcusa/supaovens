@@ -1,5 +1,5 @@
 <template>
-  <div class="comment-container max-w-[1280px] mx-auto my-0 p-[20px]">
+  <div class="comment-container max-w-[1280px] mx-auto py-[60px] p-[20px]">
     <div class="flex flex-col md:flex-row gap-20">
       <div class="w-full md:w-1/2 max-h-[400px] flex flex-col justify-between">
         <div class="header-section">
