@@ -1,99 +1,145 @@
+<script>
+import mediar from '@/components/mediar.vue';
+
+export default {
+  components: {
+    mediar,
+  },
+  data() {
+    return {
+      items: [
+        { image: 'https://i.ibb.co/5sg34TR/Whats-App-Image-2024-06-20-at-20-39-04.png'},
+        { image: 'https://i.ibb.co/r0hsVJj/Whats-App-Image-2024-06-20-at-20-30-16.png'},
+        { image: 'https://i.ibb.co/dksJzTP/Whats-App-Image-2024-06-20-at-20-30-22.png'},
+        { image: 'https://i.ibb.co/Wnh99YZ/Whats-App-Image-2024-06-20-at-20-39-05-1.png'},
+        { image: 'https://i.ibb.co/w4LyX3P/Whats-App-Image-2024-06-20-at-20-39-06-1.png'},
+        { image: 'https://i.ibb.co/C1ghFjv/Whats-App-Image-2024-06-20-at-20-30-11.png'},
+        { image: 'https://i.ibb.co/4SW4hk5/cc1103d7-5868-4165-8583-7b469c2c12cd-1.jpg'}
+      ],
+    };
+  },
+  methods: {
+    moveNext() {
+      const track = this.$refs.track;
+      if (track) {
+        track.appendChild(track.firstElementChild);
+      }
+    },
+    movePrev() {
+      const track = this.$refs.track;
+      if (track) {
+        track.prepend(track.lastElementChild);
+      }
+    },
+    autoSlide() {
+      setInterval(() => {
+        this.moveNext();
+      }, 20000);
+    }
+  },
+  mounted() {
+    this.autoSlide();
+  }
+};
+</script>
+
+
+
 <template>
   <section>
-    <div class="relative flex flex-row text-white text-start items-center max-h-[400px] overflow-hidden">
-      <img class="top-0 left-0 w-full h-full object-coverrounded-md" 
-        src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/cc1103d7-5868-4165-8583-7b469c2c12cd-2_1.jpg?v=1740816979"
-        >
-      <div class="absolute px-[3vw] z-10 m-4 max-w-[600px]">
-        <h1 class="text-[40px] md:text-[60px] leading-[90%] stroke-white">Shop Our Range of Premium Pizza Ovens</h1>
-        <div class="first-button relative sm:w-[180px] border-[1px] bg-white border-white overflow-hidden flex flex-row justify-start items-center mt-8">
-          <a class="button-text text-center leading-[140%] min-w-[100px] bg-white text-black  sm:w-[180px] py-3 uppercase"
-             href=".button_url">
-            Enquire Now!
-          </a>
-          <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
-            <img 
-              class="arrow-icon w-[20px] h-full" 
-              src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-arrow.png?v=1740996158" 
-              width="100%" 
-              height="100%" 
-              alt="">
-          </span>
-        </div>
+    <div class="text-center items-center">
+      <div class="px-[3vw] z-10 m-4 max-w-[600px] mx-auto pb-[60px]">
+        <h1 class="flex flex-col justify-center items-center text-[40px] md:text-[60px] leading-[90%] stroke-black">
+          <span class="text-[16px] leading-[100%] uppercase pt-[20px] text-left text-[#b1b1b1]">Shop Our Range of Premium</span>
+           Pizza Ovens
+        </h1>
       </div>
     </div>
   </section>
-
- <section>
-  <div class="max-w-[1280px] mx-auto my-[60px]">
-    <div class="flex flex-row items-center justify-center gap-[20px]">
-      <div class="w-1/3">
-        <h4>Home</h4>
-        <img class="w-full h-full object-cover" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/461747022_952026406939335_4267264655225207363_n_enhanced.png?v=1741096066" alt="">
-      </div>
-      <div class="w-1/3">
-        <h4>Commercial</h4>
-        <img class="w-full h-full object-cover" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/473417469_1174953707334705_4396058158015343406_n_enhanced.png?v=1741096067" alt="">
-      </div>
-      <div class="w-1/3">
-        <h4>On-The-Go</h4>
-        <img class="w-full h-full object-cover" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/470244202_1158317082331701_7680353135610417328_n_enhanced.png?v=1741096068" alt="">
+  
+  <section>
+    <div class=" px-[20px]">
+      <div class="carousel-container relative flex flex-col gap-[20px] items-center max-w-[1280px] mx-auto my-[20px] overflow-hidden">
+        <button class="absolute carousel-btn prev" @click="movePrev">&#10094;</button>
+        <div class="carousel-track flex flex-row overflow-x-scroll" ref="track">
+          <div v-for="(item, index) in items" :key="index" :class="['carousel-item', {'middle': index === 2}]">
+            <img :src="item.image" :alt="item.text" class="h-full object-cover rounded-lg max-w-[400px]" />
+          </div>
+        </div>
+        <button class="absolute carousel-btn next" @click="moveNext">&#10095;</button>
+        <mediar/>
       </div>
     </div>
-  </div>
- </section> 
+
+  </section>
 </template>
 
 
-
-<!-- <script>
-window.addEventListener('scroll', () => {
-  const elements = document.querySelectorAll('.fade-in');
-  elements.forEach(element => {
-    const position = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    if (position < windowHeight - 100) {
-      element.classList.add('visible');
-    }
-  });
-});
-</script> -->
 
 
 
 
 
 <style scoped>
-
-.round{
-  border: 1px solid black;
+.carousel-track {
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  flex: 0 0 calc(0% - 20px);
+  margin: 0 10px;
+  flex-direction: column;
+  opacity: 0.4;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.carousel-item:nth-child(4) {
+  height: 300px;
+  opacity: 1;
+}
+.carousel-text{
+  display: none;
+}
+.carousel-btn {
+  position: absolute;
+  bottom: 100px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+.carousel-btn.prev {
+  left: 0px;
+}
+.carousel-btn {
+  border-radius: 50%;
+  height: 40px;
+}
+.carousel-btn.next {
+  right: 0px;
 }
 
-.footer-sec{
-  border-right: 1px solid rgb(184, 184, 184);
+.first-button {
+  border: 1px solid black !important;
 }
 .first-button, .WhatsApp-button img {
-    transition: width 0.3s ease;
-  }
-
-  .arrow {
-    opacity: 0;
-  }
-
-  .first-button:hover {
-    width: 210px;
-  }
-
-  .first-button:hover .arrow {
-    opacity: 1;
-  }
-/* .fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-out;
+  transition: width 0.3s ease;
 }
-
-.fade-in.visible {
+.arrow {
+  opacity: 0;
+}
+.first-button:hover {
+  width: 210px;
+}
+.first-button:hover .arrow {
   opacity: 1;
-} */
+}
 </style>

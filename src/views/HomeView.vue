@@ -5,6 +5,7 @@ import banner from '@/components/banner.vue';
 import bannerad from '@/components/bannerad.vue';
 import commentsection from '@/components/comment-section.vue';
 import badge from '@/components/blogs.vue';
+import mediar from '@/components/mediar.vue';
 
 export default {
   components: {
@@ -14,6 +15,7 @@ export default {
     bannerad,
     commentsection,
     badge,
+    mediar,
   },
 };
 </script>
@@ -29,15 +31,7 @@ export default {
       </video>
       <div class="absolute px-[3vw] z-10 m-4">
         <h1 class="text-[40px] md:text-[60px] lg:text-[80px] leading-[90%] stroke-white" style="-webkit-text-stroke: 2px white;">SUPA<br/> OVENS</h1>
-        <div class="first-button relative sm:w-[180px] border-[1px] border-white overflow-hidden flex flex-row justify-start items-center mt-8">
-          <a class="button-text text-center leading-[140%] min-w-[100px] bg-transparent text-white  sm:w-[180px] py-3 uppercase"
-             href=".button_url">
-            Enquire Now!
-          </a>
-          <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
-            <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="">
-          </span>
-        </div>
+        <mediar/>
       </div>
     </div>
 
@@ -118,6 +112,7 @@ export default {
   <sub_footer />
 
 </template>
+
 
 
 <style scoped>

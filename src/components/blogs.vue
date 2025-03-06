@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-  <div class="max-w-[1280px] mx-auto my-[100px]">
+  <div class="max-w-[1280px] mx-auto my-[100px] px-[20px]">
     <div class="flex flex-row gap-20 justify-start items-start">
       <div class="w-full md:w-4/12 py-[60px] flex flex-col justify-between">
         <h1 class="text-[40px] md:text-[40px] text-start leading-[100%]" style="-webkit-text-stroke: 1px black;">Sharp Tools,<br/> Hot Flames —<br/> Perfect Every Slice</h1>

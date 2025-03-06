@@ -1,21 +1,16 @@
 
 <template>
   <section>
-  <div class="pt-[4vw]">
-    <h1 class="md:text-[60px] stroke-black">Get in Touch</h1>
-    <hr class="mt-2">
+  <div class="text-center items-center">
+    <div class="px-[3vw] z-10 m-4 max-w-[600px] mx-auto pb-[60px]">
+      <h1 class="flex flex-col justify-center items-center text-[40px] md:text-[60px] leading-[90%] stroke-black">
+        <span class="text-[16px] leading-[100%] uppercase pt-[20px] text-left text-[#b1b1b1]">Leave a supa comment</span>
+         Get In Touch
+      </h1>
+    </div>
   </div>
   <div class="flex flex-row items-center gap-[20px]">
-    <div class="w-full md:w-1/2">
-      <img 
-        class="object-cover"
-        src="https://i.ibb.co/C1ghFjv/Whats-App-Image-2024-06-20-at-20-30-11.png" 
-        alt=""
-        width="100%"
-        height="100%"
-      >
-    </div>
-    <div class="w-full md:w-1/2">
+    <div class="w-full md:max-w-[800px] mx-auto ">
       <form action="https://submit-form.com/awGwRjsGh" method="POST">
         <div class="h-[50vh] text-left px-[10vw] text-[18px]">
           <div class="flex flex-col md:flex-row justify-center text-start items-start">
