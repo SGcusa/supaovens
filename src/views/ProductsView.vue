@@ -67,10 +67,9 @@ export default {
           </div>
         </div>
         <button class="absolute carousel-btn next" @click="moveNext">&#10095;</button>
-        <div class="bg-black"><mediar/></div>
+        <!-- <div class="bg-black"><mediar/></div> -->
       </div>
     </div>
-
   </section>
 </template>
 
