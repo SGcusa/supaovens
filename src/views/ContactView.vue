@@ -9,10 +9,10 @@
       </h1>
     </div>
   </div>
-  <div class="flex flex-row items-center gap-[20px]">
-    <div class="w-full md:max-w-[800px] mx-auto ">
+  <div class="flex flex-row items-center gap-[20px] mb-[60px]">
+    <div class="w-full md:max-w-[1100px] mx-auto ">
       <form action="https://submit-form.com/awGwRjsGh" method="POST">
-        <div class="h-[50vh] text-left px-[10vw] text-[18px]">
+        <div class="text-left px-[10vw] text-[18px]">
           <div class="flex flex-col md:flex-row justify-center text-start items-start">
             <div class="w-full md:w-1/2 flex flex-col pr-0 md:pr-4 mb-4 md:mb-0">
               <label for="name1">Name</label>
@@ -31,7 +31,6 @@
                     placeholder="Surname" required />
             </div>
           </div>
-    
           <div class="mb-4">
             <label for="email">Email</label>
             <input class="form-control border-gray-400 text-gray-200 border-2" 
@@ -41,6 +40,16 @@
                    placeholder="Email" required />
           </div>
           <div class="mb-4">
+            <label class="block">About:</label>
+            <select class="w-full p-2 border-gray-400 text-gray-600 border-2 rounded-md">
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Technical Support">Technical Support</option>
+              <option value="Pricing & Quotes">Pricing & Quotes</option>
+              <option value="Feedback & Suggestions">Feedback & Suggestions</option>
+            </select>
+          </div>
+          
+          <div class="mb-4">
             <label for="message">Message</label>
             <textarea class="form-control border-gray-400 text-gray-200 border-2 h-28" 
                       id="message" 
@@ -49,18 +58,6 @@
             </textarea>
             <button class="py-2 my-4 bg-black text-white w-full border-2 round" type="submit">Send</button>
           </div>
-      
-        <!-- <fieldset>
-          <legend>Select items:</legend>
-          <input type="checkbox" id="brush" name="items" value="Brush" />
-          <label for="brush">Brush</label><br/>
-          <input type="checkbox" id="spade" name="items" value="Spade" />
-          <label for="spade">Spade</label><br/>
-          <input type="checkbox" id="glove" name="items" value="Glove" />
-          <label for="glove">Glove</label><br/>
-          <input type="checkbox" id="door" name="items" value="Oven Door" />
-          <label for="door">Oven Door</label><br/>
-        </fieldset> -->
         </div>
       </form>
     </div>

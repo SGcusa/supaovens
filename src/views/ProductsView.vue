@@ -70,7 +70,6 @@ export default {
         <div class="bg-black"><mediar/></div>
       </div>
     </div>
-
   </section>
 </template>
 
