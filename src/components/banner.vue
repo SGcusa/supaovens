@@ -26,7 +26,8 @@ export default {
         </span>
       </div>
     </div>
-    <div class="card-block relative flex justify-center w-full md:w-1/2 columns-[400px] flex-row text-white items-end overflow-hidden">
+    <div class="">
+      <router-link to="/404" class="card-block relative flex justify-center w-full md:w-1/2 columns-[400px] flex-row text-white items-end overflow-hidden">
       <img
         class="w-full h-full object-cover" 
         src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/Screenshot_2025-02-21_at_18.56.48.png?v=1740226650" 
@@ -35,14 +36,16 @@ export default {
       <div class="absolute z-10 card-title text-center w-full min-h-[100px] mx-auto flex items-center justify-center">
         <h1 class="text-[24px] md:text-[32px] leading-[90%]">Shop Accessories</h1>
         <span class="card-arrow pl-[14px] pt-[6px]">
-          <img 
-            src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" 
-            class="arrow-icon w-[20px]" 
-            height="100%" 
-            width="100%" 
-            alt="">
-        </span>
-      </div>
+            <img 
+              src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" 
+              class="arrow-icon w-[20px]" 
+              height="100%" 
+              width="100%" 
+              alt=""
+            >
+          </span>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>

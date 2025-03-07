@@ -9,7 +9,7 @@ export default {
 <template>
   <div class="relative flex flex-col md:flex-row text-start items-center overflow-hidden my-8 md:my-20">
     <div class="md:absolute md:z-10 md:m-4">
-      <h1 class="md:w-1/2 lg:w-1/3 text-center flex flex-col gap-[10px] pt-[20px] md:pt-0 px-[20px] text-[20px] md:text-[32px] uppercase leading-[100%]">
+      <h1 class="md:w-1/2 lg:w-1/3 md:!text-start text-center flex flex-col gap-[10px] pt-[20px] md:pt-0 px-[20px] text-[20px] md:text-[32px] uppercase leading-[100%]">
         Turn up the heat this season with the sleek supa oven — where every pizza is a masterpiece. 
           <span class="text-[12px]">Order yours now. Ts & Cs apply.</span>
       </h1>
