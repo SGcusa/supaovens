@@ -1,8 +1,8 @@
 
 <template>
   <section>
-    <div @click="showForm = true" class="first-button relative sm:w-[180px] border-[1px] border-white overflow-hidden flex flex-row justify-start items-center mt-8">
-      <a class="button-text text-center leading-[140%] min-w-[100px] bg-transparent text-white  sm:w-[180px] py-3 uppercase">
+    <div @click="showForm = true" class="first-button relative sm:w-[180px] border-[1px] overflow-hidden flex flex-row justify-start items-center">
+      <a class="button-text text-[14px] md:text-[16px] text-center leading-[140%] min-w-[100px] bg-transparent text-white  sm:w-[180px] md:p-3 p-[10px] uppercase w-[135px]">
         Enquire Now!
       </a>
       <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
@@ -123,6 +123,7 @@ export default {
 
 <style>
 .first-button {
+  border: 1px solid white;
     transition: width 0.3s ease;
   }
 

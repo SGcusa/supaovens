@@ -67,7 +67,7 @@ export default {
           </div>
         </div>
         <button class="absolute carousel-btn next" @click="moveNext">&#10095;</button>
-        <mediar/>
+        <div class="bg-black"><mediar/></div>
       </div>
     </div>
 
@@ -76,20 +76,16 @@ export default {
 
 
 
-
-
-
-
 <style scoped>
 .carousel-track {
   transition: transform 0.5s ease-in-out;
 }
 .carousel-item {
-  flex: 0 0 calc(0% - 20px);
-  margin: 0 10px;
+  margin: 10px;
   flex-direction: column;
   opacity: 0.4;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +93,14 @@ export default {
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
-.carousel-item:nth-child(4) {
-  height: 300px;
+.carousel-item:nth-child(4)  {
+  height: 360px;
+  width: 360px;
+  opacity: 1;
+}
+.carousel-item:nth-child(4) img {
+  height: 360px;
+  width: 360px;
   opacity: 1;
 }
 .carousel-text{
@@ -106,7 +108,7 @@ export default {
 }
 .carousel-btn {
   position: absolute;
-  bottom: 100px;
+  top: 100px;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -118,10 +120,6 @@ export default {
 }
 .carousel-btn.prev {
   left: 0px;
-}
-.carousel-btn {
-  border-radius: 50%;
-  height: 40px;
 }
 .carousel-btn.next {
   right: 0px;

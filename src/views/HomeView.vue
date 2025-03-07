@@ -24,17 +24,16 @@ export default {
 
 <template>
   <section>
-    <div class="relative flex flex-row text-white text-start items-center max-h-[600px] overflow-hidden px-[20px] HTYO">
+    <div class="relative flex flex-row text-white text-start items-center max-h-[600px] overflow-hidden">
       <video autoplay muted loop class="top-0 left-0 w-full h-full object-cover">
         <source class="!rounded-md" src="https://i.imgur.com/SOZINP0.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <div class="absolute px-[3vw] z-10 m-4">
-        <h1 class="text-[40px] md:text-[60px] lg:text-[80px] leading-[90%] stroke-white" style="-webkit-text-stroke: 2px white;">SUPA<br/> OVENS</h1>
+        <h1 class="text-[40px] md:text-[60px] lg:text-[80px] mb-[10px] leading-[90%] stroke-white" style="-webkit-text-stroke: 2px white;">SUPA<br/> OVENS</h1>
         <mediar/>
       </div>
     </div>
-
 
     <div class="flex flex-col justify-center items-center z-10 my-0 mx-auto md:pl-[200px]">
       <h1 class="max-w-[500px] py-12 px-[20px] text-[24px] md:text-[40px] text-center md:!text-left">We deliver nationwide,<br/> Get your pizza oven delivered to your door step</h1>
@@ -62,7 +61,7 @@ export default {
   <section>
     <div class="max-w-[1280px] mx-auto my-[60px] px-[20px]">
       <h1 class="text-[40px] md:text-[40px] text-center leading-[90%] py-[60px]" style="-webkit-text-stroke: 1px black;">Bring The Heat - With Confidence</h1>
-      <div class="flex flex-col lg:flex-row lg:gap-[60px] mt-[80px]">
+      <div class="flex flex-col lg:flex-row lg:gap-[60px] mt-[20px] md:mt-[80px]">
         <div class="lg:w-1/2 w-full flex items-center justify-center">
           <img class="heat-img" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/Group_245.png?v=1741010550" alt="">
         </div>
@@ -94,7 +93,7 @@ export default {
               </span>
             </div>
             <div class="first-button relative sm:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
-              <a class="button-text text-center leading-[140%] min-w-[100px]  text-white  sm:w-[180px] py-3 uppercase"
+              <a class="button-text text-center text-[14px] leading-[140%] min-w-[100px]  text-white  sm:w-[180px] uppercase "
                 href=".button_url">
                 Enquire Now!
               </a>
@@ -126,6 +125,11 @@ export default {
 
   .arrow {
     opacity: 0;
+  }
+
+  .first-button {
+    justify-content: center;
+    display: flex;
   }
 
   .first-button:hover {

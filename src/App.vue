@@ -11,7 +11,7 @@
         @Supa_Ovens
       </a>
     </div>
-    <div class="md:hidden relative w-full overflow-hidden md:justify-center md:gap-10 lg:gap-14 flex flex-row items-center">
+    <div class="md:hidden relative w-full overflow-hidden md:justify-center md:gap-10 lg:gap-14 flex flex-row items-center" style="text-wrap: pretty;">
       <div class="flex w-full mobile-slider">
         <a href="tel:+27764167815" class="text-white hover:underline min-w-full text-center">
           +27 76 416 7815 
@@ -25,7 +25,7 @@
       </div>
     </div>
   </nav>
-  <nav class="relative flex items-center justify-between px-[4vw] max-w-[1440px] mx-auto text-black">
+  <nav class="relative flex items-center justify-between px-[4vw]  mx-auto text-black">
     <!-- Left section: Logo -->
     <div class="nav-left__logo">
       <router-link to="/" class="flex items-center">
@@ -85,7 +85,7 @@ export default {
 }
 
 nav {
-  padding: 20px 50px;
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
