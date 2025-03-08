@@ -64,15 +64,29 @@
 export default {
   data() {
     return {
-      isMenuOpen: false, // Controls if the dropdown menu is open
+      isMenuOpen: false,
     };
-  },
-  methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen; // Toggles the menu open and closed
+      },
+      methods: {
+        toggleMenu(event) {
+      this.isMenuOpen = !this.isMenuOpen;
+      if (this.isMenuOpen) {
+        document.addEventListener("click", this.handleClickOutside);
+      } else {
+        document.removeEventListener("click", this.handleClickOutside);
+      }
+      event.stopPropagation(); // Prevent event bubbling
     },
+    handleClickOutside(event) {
+      if (!document.querySelector("#nav-content")?.contains(event.target) &&
+          !event.target.closest(".dropdown-toggle")) {
+        this.isMenuOpen = false;
+        document.removeEventListener("click", this.handleClickOutside);
+      }
+    }
   },
 };
+
 </script>
 
 <style>
