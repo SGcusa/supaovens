@@ -158,8 +158,8 @@ export default {
 
 
 <style>
-.first-button {
-  border: 1px solid white;
+  .first-button {
+    border: 1px solid white;
     transition: width 0.3s ease;
   }
 
