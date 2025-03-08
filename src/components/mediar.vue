@@ -28,7 +28,7 @@
           Back
         </div>
 
-        <form action="https://formspree.io/f/mblgrpkb" method="POST" class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]" @submit.prevent="submitForm">
+        <form action="https://formspree.io/f/mblgrpkb" method="POST" class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]">
           <div v-if="currentStep === 1">
             <h2 class="text-2xl font-bold text-center mb-[40px] md:mb-[60px]">Step 1: Choose Your Oven Options</h2>
             <label class="block mb-2 text-[20px]">Inside Diameter Size:</label>
@@ -78,13 +78,13 @@
           <div v-if="currentStep === 3">
             <h2 class="text-2xl font-bold text-center mb-4">Step 3: Finalize Your Enquiry</h2>
             <label class="block mb-2 text-[20px]">Full Name:</label>
-            <input v-model="form.name" type="text" class="w-full p-2 mb-4 border " placeholder="Your Name">
+            <input v-model="form.name" type="text" class="w-full p-2 mb-4 border" placeholder="Your Name" name="name">
 
             <label class="block mb-2 text-[20px]">Email Address:</label>
-            <input v-model="form.email" type="email" class="w-full p-2 mb-4 border " placeholder="Your Email">
+            <input v-model="form.email" type="email" class="w-full p-2 mb-4 border" placeholder="Your Email" name="email">
 
             <label class="block mb-2 text-[20px]">Phone Number:</label>
-            <input v-model="form.phone" type="tel" class="w-full p-2 mb-4 border " placeholder="Your Phone Number">
+            <input v-model="form.phone" type="tel" class="w-full p-2 mb-4 border" placeholder="Your Phone Number" name="phone">
 
             <button type="submit" class="bg-green-600 text-white px-6 py-3 w-full">
               Submit Enquiry
