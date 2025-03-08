@@ -28,7 +28,7 @@
           Back
         </div>
 
-        <form class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]" @submit.prevent="submitForm">
+        <form action="https://formspree.io/f/mblgrpkb" method="POST" class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]" @submit.prevent="submitForm">
           <div v-if="currentStep === 1">
             <h2 class="text-2xl font-bold text-center mb-[40px] md:mb-[60px]">Step 1: Choose Your Oven Options</h2>
             <label class="block mb-2 text-[20px]">Inside Diameter Size:</label>

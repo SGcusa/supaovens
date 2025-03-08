@@ -1,10 +1,13 @@
 <script>
 import mediar from '@/components/mediar.vue';
+import sub_footer from '@/components/subscribtion.vue';
+
 
 export default {
   
   components: {
     mediar,
+    sub_footer,
   },
   data() {
     return {
@@ -108,60 +111,33 @@ export default {
   <div class="flex flex-row items-center justify-center"><mediar class="bg-black"/></div>
   
   <section>
-    <div class="secvices-section mx-auto max-w-[1280px] my-[80px] ">
-      <div class="services-container flex flex-row xl:justify-center gap-[10px] md:gap-[20px] min-h-[180px] overflow-x-scroll px-[20px]">
-        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row gap-[10px]">
+    <div class="secvices-section mx-auto max-w-[1280px] my-[120px] ">
+      <div class="services-container flex flex-row xl:justify-center gap-[10px] md:gap-[24px] min-h-[180px] overflow-x-scroll">
+        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row md:items-end gap-[10px]">
           <div class="text-[20px] sm:text-[24px] leading-[140%]">
             <span class="text-[12px] md:text-[16px] leading-[40%] text-[#999]">Day 1</span>  
             <h4 class="text-[20px] md:text-[24px]">After Installation</h4>
           </div>
           <div class="card-text lg:relative text-[12px] sm:text-[14px] leading-[120%] pl-[20px]">
             After installation, a client is required to wait a maximum of 7 days for a dry out.
-            <span class="arrow absolute top-[28px] lg:top-[85%] right-[16px] lg:right-[-10px] xl:right-[10px]">
-              <img 
-                class="arrow-icon opacity-25 w-[20px] h-full" 
-                height="100%" 
-                width="100%" 
-                src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-arrow.png?v=1740996158"  
-                alt="arrow"
-              >
-            </span>
           </div>
         </div>
-        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row gap-[10px]">
+        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row md:items-end gap-[10px]">
           <div class="text-[20px] sm:text-[24px] leading-[140%]">
             <span class="text-[12px] md:text-[16px] leading-[40%] text-[#999]">Day 7</span>  
             <h4 class="text-[20px] md:text-[24px]">Preheat process</h4>
           </div>
           <div class="card-text lg:relative text-[12px] sm:text-[14px] leading-[120%] pl-[20px]">
             then the client can begin to do curing, burning a maximum of 4 blocks of wood at the centre of the oven, let it burn for 3 HT hours for 7 days.
-            <span class="arrow absolute top-[28px] lg:top-[85%] right-[16px] lg:right-[-10px] xl:right-[10px]">
-              <img 
-                class="arrow-icon opacity-25 w-[20px] h-full" 
-                height="100%" 
-                width="100%" 
-                src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-arrow.png?v=1740996158"  
-                alt="arrow"
-              >
-            </span>
           </div>
         </div>
-        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row gap-[10px]">
+        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row md:items-end gap-[10px]">
           <div class="text-[20px] sm:text-[24px] leading-[140%]">
             <span class="text-[12px] md:text-[16px] leading-[40%] text-[#999]">Day 14</span>  
             <h4 class="text-[20px] md:text-[24px]">Ready for-use</h4>
           </div>
           <div class="card-text lg:relative text-[12px] sm:text-[14px] leading-[120%] pl-[20px]">
             After 14 days, the client can begin to use the oven for cooking.
-            <span class="arrow absolute top-[28px] lg:top-[85%] right-[16px] lg:right-[-10px] xl:right-[10px]">
-              <img 
-                class="arrow-icon opacity-25 w-[20px] h-full" 
-                height="100%" 
-                width="100%" 
-                src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-arrow.png?v=1740996158" 
-                alt="arrow"
-              >
-            </span>
           </div>
         </div>
       </div>  
@@ -169,15 +145,14 @@ export default {
   </section>
 
   <section>
-    <div class="p-[20px] bg-black">
-      <div class="carousel-container max-w-[1280px] md:max-h-[700px] h-full w-full relative flex flex-col md:flex-row gap-[20px] items-end mx-auto  overflow-hidden">
+      <div class="carousel-container max-w-[1280px] md:max-h-[700px] h-full w-full relative flex flex-col md:flex-row gap-[20px] items-end mx-auto pb-[120px] overflow-hidden">
         <div class="w-full md:w-5/12 flex flex-col md:items-start justify-start gap-4 md:gap-14">
-          <h3 class="md:absolute md:top-0 md:py-[20px] py-[10px] text-center text-white text-[20px] md:text-[48px]">Why Supa Ovens?</h3>
+          <h3 class="md:absolute md:top-0 md:py-[20px] py-[10px] text-center text-[20px] md:text-[48px]">Why Supa Ovens?</h3>
           <div class="md:hidden w-full md:w-7/12 flex justify-center max-h-[400px] py-[10px] items-center md:pl-[80px]">
             <img :src="carouselItems[currentIndex].picture" alt="" class="h-full md:w-full object-cover" />
           </div>
-          <div class="carousel-item-text text-[20px] text-white md:text-start lg:pr-[80px]">{{ carouselItems[currentIndex].header }}</div>
-          <div class="carousel-item-text text-white md:text-start lg:pr-[80px]">{{ carouselItems[currentIndex].text }}</div>
+          <div class="carousel-item-text text-[20px] md:text-start lg:pr-[80px]">{{ carouselItems[currentIndex].header }}</div>
+          <div class="carousel-item-text md:text-start lg:pr-[80px]">{{ carouselItems[currentIndex].text }}</div>
           <div class="flex flex-row md:justify-start justify-center gap-4">
             <button class="carousel-button prev" @click="movePrevv">&#10094; Prev</button>
             <button class="carousel-button next" @click="moveNexxt">Next &#10095;</button>
@@ -187,8 +162,9 @@ export default {
           <img :src="carouselItems[currentIndex].picture" alt="" class="h-full w-full object-cover" />
         </div>
       </div>
-    </div>
   </section>
+
+  <sub_footer/>
 </template>
 
 

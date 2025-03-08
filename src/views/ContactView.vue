@@ -11,7 +11,7 @@
   </div>
   <div class="flex flex-row items-center gap-[20px] mb-[60px]">
     <div class="w-full md:max-w-[1100px] mx-auto ">
-      <form action="https://submit-form.com/awGwRjsGh" method="POST">
+      <form action="https://formspree.io/f/xrbpzolj" method="POST">
         <div class="text-left px-[10vw] text-[18px]">
           <div class="flex flex-col md:flex-row justify-center text-start items-start">
             <div class="w-full md:w-1/2 flex flex-col pr-0 md:pr-4 mb-4 md:mb-0">

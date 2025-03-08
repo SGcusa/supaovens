@@ -84,10 +84,9 @@ export default {
           </div>
           <div class="flex flex-row gap-[20px]">
             <div class="first-button relative sm:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
-              <a class="button-text text-center leading-[140%] min-w-[100px]  text-white  sm:w-[180px] py-3 uppercase"
-                href=".button_url">
+              <router-link to="/about" class="button-text text-center leading-[140%] min-w-[100px]  text-white  sm:w-[180px] py-3 uppercase">
                 Read More
-              </a>
+              </router-link>
               <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
                 <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="">
               </span>
@@ -119,7 +118,7 @@ export default {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  .first-button, .WhatsApp-button img {
+  .first-button {
     transition: width 0.3s ease;
   }
 
@@ -160,10 +159,5 @@ export default {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-duration: 4s;
-  }
-
-  .WhatsApp-button:hover img {
-    height: 60px;
-    width: 60px;
   }
 </style>
