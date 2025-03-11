@@ -162,11 +162,6 @@ nav a.router-link-exact-active::after {
   align-items: center;
 }
 
-.round{
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
 .footer-sec{
   border-right: 1px solid rgb(184, 184, 184);
 }

@@ -13,7 +13,7 @@ export default {
           <img 
             src="https://i.ibb.co/tYLpGpW/Screenshot-2024-09-09-at-09-59-54.png" 
             alt="Image for name }}" 
-            class="object-center object-cover h-full w-full rounded-md" 
+            class="object-center object-cover h-full w-full" 
             loading="lazy"
           >
         </div>
@@ -25,7 +25,7 @@ export default {
             </div>
   
             <a href="/" class="button-container w-full flex flex-row">
-              <button class="px-8 py-4 rounded-[4px] {% if block.settings.button_width == 'full' %}w-full{% else %}w-fit{% endif %} md:!w-fit">
+              <button class="px-8 py-4 {% if block.settings.button_width == 'full' %}w-full{% else %}w-fit{% endif %} md:!w-fit">
                button_label
               </button>
             </a>

@@ -27,6 +27,8 @@ export default {
   </div>
 </template>
 
+
+
 <style scoped>
   .badges {
     width: 100%;

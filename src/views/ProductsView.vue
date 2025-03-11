@@ -101,7 +101,7 @@ export default {
         <button class="absolute carousel-btn prev" @click="movePrev">&#10094;</button>
         <div class="carousel-track flex flex-row overflow-x-scroll" ref="track">
           <div v-for="(item, index) in items" :key="index" :class="['carousel-item', {'middle': index === 2}]">
-            <img :src="item.image" :alt="item.text" class="h-full object-cover rounded-lg max-w-[400px]" />
+            <img :src="item.image" :alt="item.text" class="h-full object-cover max-w-[400px]" />
           </div>
         </div>
         <button class="absolute carousel-btn next" @click="moveNext">&#10095;</button>
@@ -183,7 +183,6 @@ export default {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 .carousel-item:nth-child(4)  {

@@ -41,7 +41,7 @@
           </div>
           <div class="mb-4">
             <label class="block">About:</label>
-            <select class="w-full p-2 border-gray-400 text-gray-600 border-2 rounded-md">
+            <select class="w-full p-2 border-gray-400 text-gray-600 border-2">
               <option value="General Inquiry">General Inquiry</option>
               <option value="Technical Support">Technical Support</option>
               <option value="Pricing & Quotes">Pricing & Quotes</option>

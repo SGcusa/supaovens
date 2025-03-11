@@ -26,7 +26,7 @@ export default {
         </span>
       </div>
     </router-link>
-    <router-link to="/404" class="card-block relative flex justify-center w-full md:w-1/2 columns-[400px] flex-row text-white items-end overflow-hidden">
+    <router-link to="/accessories" class="card-block relative flex justify-center w-full md:w-1/2 columns-[400px] flex-row text-white items-end overflow-hidden">
       <img
         class="w-full h-full object-cover" 
         src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/Screenshot_2025-02-21_at_18.56.48.png?v=1740226650" 

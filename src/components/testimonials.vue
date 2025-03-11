@@ -32,8 +32,8 @@ export default {
         </div>
       </div>
       <div class="arrows flex justify-center gap-4 mt-4">
-        <button @click="prevSlide" class="p-2 bg-gray-800 text-white rounded">←</button>
-        <button @click="nextSlide" class="p-2 bg-gray-800 text-white rounded">→</button>
+        <button @click="prevSlide" class="p-2 bg-gray-800 text-white">←</button>
+        <button @click="nextSlide" class="p-2 bg-gray-800 text-white">→</button>
       </div>
     </div>
   </section>
