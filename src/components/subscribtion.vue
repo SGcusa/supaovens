@@ -17,10 +17,10 @@ export default {
       <div class="flex flex-col md:flex-row gap-4 min-h-[200px] my-10">
         <div class="w-full md:w-1/2 flex flex-col justify-end items-start">
           <div class="flex flex-col items-start text-left">
-            <div class="below-text md:max-w-[250px] text-[12px] sm:text-[16px] text-white">Be the first to know about our latest treatments, exclusive offers, and wellness tips.</div>  
-            <div class="first-button flex flex-col justify-center items-center mt-3">
+            <div class="below-text md:max-w-[404px] text-[12px] sm:text-[16px] text-white">We’re here for more than just purchases — let’s connect! Whether you have a question, need technical support, or want to share feedback and ideas, we’d love to hear from you.</div>  
+            <div class="flex flex-col justify-center items-center mt-3">
               <a class="text-center leading-[140%] min-w-[200px] bg-white text-black sm:min-w-[300px] py-3 uppercase hover:tracking-[1px]"
-                 href=".button_url">
+                 href="/contact">
                 Get In Touch
               </a>  
             </div> 

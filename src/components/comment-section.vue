@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row gap-20">
       <div class="w-full md:w-1/2 max-h-[400px] flex flex-col justify-between">
         <div class="header-section">
-          <h1 class="text-start text-[20px] md:text-[32px]">Post A Comment</h1>
+          <h1 class="text-start text-[20px] md:text-[40px]">Leave A Comment</h1>
           <p class="text-[14px] md:text-[16px] py-[10px] text-left max-w-[400px]">
             We would like to hear from you. Share your experience with us below:
           </p>

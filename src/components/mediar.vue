@@ -3,15 +3,15 @@
     <div 
       v-if="!showForm" 
       @click="showForm = true" 
-      :class="['first-button relative sm:w-[180px] overflow-hidden flex flex-row justify-start items-center', borderClass]"
+      :class="['first-button relative md:w-[180px] overflow-hidden flex flex-row justify-start items-center', borderClass]"
       :style="{ backgroundColor: backgroundColor }"
     >
       <a 
-        :class="['button-text text-[14px] md:text-[16px] text-center leading-[140%] min-w-[100px] sm:w-[180px] md:p-3 p-[10px] uppercase w-[135px]', textColorClass]"
+        :class="['button-text text-[14px] md:text-[16px] text-center leading-[140%] min-w-[100px] md:w-[180px] md:p-3 p-[10px] uppercase w-[135px]', textColorClass]"
       >
         {{ buttonText }}
       </a>
-      <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
+      <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
         <img 
           class="arrow-icon w-[20px] h-full" 
           height="100%" 
@@ -157,14 +157,19 @@ export default {
 
 
 
-<style>
+<style scoped>
+@media screen and (min-width: 767px) {
   .first-button {
-    border: 1px solid white;
     transition: width 0.3s ease;
   }
 
   .arrow {
     opacity: 0;
+  }
+
+  .first-button {
+    justify-content: center;
+    display: flex;
   }
 
   .first-button:hover {
@@ -174,7 +179,7 @@ export default {
   .first-button:hover .arrow {
     opacity: 1;
   }
-
+}
   .close-btn, .first-button {
     cursor: pointer;
   }

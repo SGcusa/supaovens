@@ -16,7 +16,7 @@ export default {
       >
       <div class="absolute z-10 card-title text-center w-full min-h-[100px] mx-auto flex items-center justify-center">
         <h1 class="text-[24px] md:text-[32px] leading-[90%]">Shop Ovens</h1>
-        <span class="card-arrow pl-[14px] pt-[6px]">
+        <span class="hidden md:block card-arrow pl-[14px] pt-[6px]">
           <img 
             src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" 
             class="arrow-icon w-[20px]" 
@@ -34,7 +34,7 @@ export default {
       >
       <div class="absolute z-10 card-title text-center w-full min-h-[100px] mx-auto flex items-center justify-center">
         <h1 class="text-[24px] md:text-[32px] leading-[90%]">Shop Accessories</h1>
-        <span class="card-arrow pl-[14px] pt-[6px]">
+        <span class="hidden md:block card-arrow pl-[14px] pt-[6px]">
           <img 
             src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" 
             class="arrow-icon w-[20px]" 

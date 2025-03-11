@@ -85,19 +85,26 @@ export default {
 
 <template>
   <section>
-    <div class="text-center items-center">
-      <div class="px-[3vw] z-10 m-4 max-w-[600px] mx-auto pb-[60px]">
+    <div class="text-center items-center z-10 m-4 ">
+      <div class="max-w-[600px] mx-auto">
         <h1 class="flex flex-col justify-center items-center text-[40px] md:text-[60px] leading-[90%] stroke-black">
           <span class="text-[16px] leading-[100%] uppercase pt-[20px] text-left text-[#b1b1b1]">Shop Our Range of Premium</span>
-           Pizza Ovens
+           Supa Ovens
         </h1>
       </div>
+    </div>
+    <div class="flex flex-row gap-4 mx-auto pt-0 pb-[40px] md:pt-[40px] px-[20px] max-w-[1280px]">
+      <router-link 
+        to="/accessories" 
+        class="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 md:hover:after:w-full">
+        Shop Accessories
+      </router-link>
     </div>
   </section>
   
   <section>
-    <div class=" px-[20px]">
-      <div class="carousel-container relative flex flex-col gap-[20px] items-center max-w-[1280px] min-h-[400px] mx-auto my-[20px] overflow-hidden">
+    <div class="px-[20px]">
+      <div class="carousel-container relative flex flex-col gap-[20px] items-center max-w-[1280px] min-h-[400px] mx-auto mb-[20px] overflow-hidden">
         <button class="absolute carousel-btn prev" @click="movePrev">&#10094;</button>
         <div class="carousel-track flex flex-row overflow-x-scroll" ref="track">
           <div v-for="(item, index) in items" :key="index" :class="['carousel-item', {'middle': index === 2}]">
@@ -111,32 +118,32 @@ export default {
   <div class="flex flex-row items-center justify-center"><mediar class="bg-black"/></div>
   
   <section>
-    <div class="secvices-section mx-auto max-w-[1280px] my-[120px] ">
+    <div class="secvices-section mx-auto max-w-[1280px] my-[60px] md:my-[120px] px-[20px]">
       <div class="services-container flex flex-row xl:justify-center gap-[10px] md:gap-[24px] min-h-[180px] overflow-x-scroll">
-        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row md:items-end gap-[10px]">
+        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row lg:items-end gap-[10px]">
           <div class="text-[20px] sm:text-[24px] leading-[140%]">
             <span class="text-[12px] md:text-[16px] leading-[40%] text-[#999]">Day 1</span>  
             <h4 class="text-[20px] md:text-[24px]">After Installation</h4>
           </div>
-          <div class="card-text lg:relative text-[12px] sm:text-[14px] leading-[120%] pl-[20px]">
+          <div class="card-text lg:relative text-[14px] sm:text-[14px] leading-[120%] pl-[20px]">
             After installation, a client is required to wait a maximum of 7 days for a dry out.
           </div>
         </div>
-        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row md:items-end gap-[10px]">
+        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row lg:items-end gap-[10px]">
           <div class="text-[20px] sm:text-[24px] leading-[140%]">
             <span class="text-[12px] md:text-[16px] leading-[40%] text-[#999]">Day 7</span>  
             <h4 class="text-[20px] md:text-[24px]">Preheat process</h4>
           </div>
-          <div class="card-text lg:relative text-[12px] sm:text-[14px] leading-[120%] pl-[20px]">
+          <div class="card-text lg:relative text-[14px] sm:text-[14px] leading-[120%] pl-[20px]">
             then the client can begin to do curing, burning a maximum of 4 blocks of wood at the centre of the oven, let it burn for 3 HT hours for 7 days.
           </div>
         </div>
-        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row md:items-end gap-[10px]">
+        <div class="card-block relative text-start md:w-full bg-cover bg-[#f4f4f4] p-[20px] min-w-[200px] lg:h-[140px] md:h-[200px] flex flex-col lg:flex-row lg:items-end gap-[10px]">
           <div class="text-[20px] sm:text-[24px] leading-[140%]">
             <span class="text-[12px] md:text-[16px] leading-[40%] text-[#999]">Day 14</span>  
             <h4 class="text-[20px] md:text-[24px]">Ready for-use</h4>
           </div>
-          <div class="card-text lg:relative text-[12px] sm:text-[14px] leading-[120%] pl-[20px]">
+          <div class="card-text lg:relative text-[14px] sm:text-[14px] leading-[120%] pl-[20px]">
             After 14 days, the client can begin to use the oven for cooking.
           </div>
         </div>
@@ -217,20 +224,27 @@ export default {
   right: 0px;
 }
 
-.first-button {
-  border: 1px solid black !important;
-}
-.first-button, .WhatsApp-button img {
-  transition: width 0.3s ease;
-}
-.arrow {
-  opacity: 0;
-}
-.first-button:hover {
-  width: 210px;
-}
-.first-button:hover .arrow {
-  opacity: 1;
+@media screen and (min-width: 767px) {
+  .first-button {
+    transition: width 0.3s ease;
+  }
+
+  .arrow {
+    opacity: 0;
+  }
+
+  .first-button {
+    justify-content: center;
+    display: flex;
+  }
+
+  .first-button:hover {
+    width: 210px;
+  }
+
+  .first-button:hover .arrow {
+    opacity: 1;
+  }
 }
 
 

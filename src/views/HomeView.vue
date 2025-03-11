@@ -82,20 +82,20 @@ export default {
             <span class="uppercase font-semibold min-w-[100px] min-[480px]:min-w-[200px]">Brick Decoration:</span>
             Carefully crafted brick designs not only enhance the oven’s structural strength but also add a refined, timeless look to your setup.
           </div>
-          <div class="flex flex-row gap-[20px]">
-            <div class="first-button relative sm:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
-              <router-link to="/about" class="button-text text-center leading-[140%] min-w-[100px]  text-white  sm:w-[180px] py-3 uppercase">
+          <div class="flex flex-row gap-[20px] w-full">
+            <div class="first-button relative w-1/2 md:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
+              <router-link to="/about" class="button-text text-center leading-[140%] min-w-[100px]  text-white w-full md:w-[180px] py-3 uppercase">
                 Read More
               </router-link>
-              <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
+              <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
                 <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="">
               </span>
             </div>
-            <div class="first-button relative sm:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
-              <router-link to="/404" class="button-text text-center leading-[140%] min-w-[100px]  text-white  sm:w-[180px] py-3 uppercase">
+            <div class="first-button relative w-1/2 md:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
+              <router-link to="/404" class="button-text text-center leading-[140%] min-w-[100px] text-white w-full md:w-[180px] py-3 uppercase">
                 Enquire Now!
               </router-link>
-              <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
+              <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
                 <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="">
               </span>
             </div>
@@ -117,6 +117,8 @@ export default {
     overflow-x: hidden;
     overflow-y: hidden;
   }
+
+@media screen and (min-width: 767px) {
   .first-button {
     transition: width 0.3s ease;
   }
@@ -137,6 +139,7 @@ export default {
   .first-button:hover .arrow {
     opacity: 1;
   }
+}
 
   @media screen and (max-width: 1024px) {
     .heat-img{
