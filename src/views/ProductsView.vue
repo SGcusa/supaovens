@@ -152,7 +152,7 @@ export default {
   </section>
 
   <section>
-      <div class="carousel-container max-w-[1280px] md:max-h-[700px] h-full w-full relative flex flex-col md:flex-row gap-[20px] items-end mx-auto pb-[120px] overflow-hidden">
+      <div class="carousel-container max-w-[1280px] md:max-h-[700px] h-full w-full relative flex flex-col md:flex-row gap-[20px] items-end mx-auto pb-[60px] md:pb-[120px] overflow-hidden">
         <div class="w-full md:w-5/12 flex flex-col md:items-start justify-start gap-4 md:gap-14">
           <h3 class="md:absolute md:top-0 md:py-[20px] py-[10px] text-center text-[20px] md:text-[48px]">Why Supa Ovens?</h3>
           <div class="md:hidden w-full md:w-7/12 flex justify-center max-h-[400px] py-[10px] items-center md:pl-[80px]">

@@ -58,7 +58,7 @@
               <option value="no">No</option>
             </select>
 
-            <button @click="nextStep" type="button" class="bg-slate-600 hover:bg-black text-white px-6 py-3 w-full">
+            <button @click="nextStep" type="button" class="bg-black md:hover:bg-slate-600 text-white px-6 py-3 w-full">
               Next
             </button>
           </div>

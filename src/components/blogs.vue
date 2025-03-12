@@ -6,8 +6,8 @@ export default {
 
 
 <template>
-  <div class="max-w-[1280px] mx-auto my-[100px] px-[20px]">
-    <div class="flex flex-col md:flex-row gap-20 justify-start items-start">
+  <div class="max-w-[1280px] mx-auto my-[30px] md:my-[100px] px-[20px]">
+    <div class="flex flex-col md:flex-row gap-[20px] md:gap-20 justify-start items-start">
       <div class="w-full md:w-4/12 py-[20px] md:py-[60px] flex flex-col justify-between">
         <h1 class="text-[20px] md:text-[40px] text-center md:!text-start leading-[100%]" style="-webkit-text-stroke: 1px black;">Sharp Tools,<br class="hidden md:block"/> Hot Flames —<br class="hidden md:block"/> Perfect Every Slice</h1>
         <p class="hidden md:block text-[20px] uppercase pt-[20px] text-left text-[#b1b1b1]" style="-webkit-text-stroke: 1px #b1b1b1;">Hover To View Item</p>
@@ -72,4 +72,15 @@ export default {
   .badges:hover .badge-icon {
     animation-play-state: paused!important;
   }
+
+@media screen and (max-width: 767px) {
+  .badge-icon {
+    width: calc(var(--width) - 80px);
+    height: calc(var(--height) - 80px);
+  }
+  .badges {
+    width: 100%;
+    height: calc(var(--height) - 80px);
+  }
+}
 </style>

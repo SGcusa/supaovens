@@ -57,6 +57,8 @@ export default {
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+
+@media screen and (min-width: 767px) {
   .card-block:hover .card-title{
     padding-right: 10px;
     background: linear-gradient(to top, rgb(42, 42, 42) 40%, transparent 100%);
@@ -64,4 +66,5 @@ export default {
   .card-block:hover .card-arrow{
     opacity: 1;
   }
+}
 </style>

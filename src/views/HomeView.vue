@@ -47,7 +47,7 @@ export default {
   <section>
     <div class="fixed bottom-5 right-5 z-50 space-y-2 animate-interval-shake">
       <a class="WhatsApp-button flex flex-row justify-start items-center gap-2 " href="https://wa.me/+27692929578" target="_blank">
-        <div class="hover:bg-green-500 text-green-500 hover:text-white uppercase text-sm font-medium px-3 py-1 mt-2 rounded-lg shadow-lg">
+        <div class="md:hover:bg-green-500 text-green-500 hover:text-white uppercase text-sm font-medium px-3 py-1 mt-2 rounded-lg shadow-lg">
           Need Help?
         </div>
         <img 

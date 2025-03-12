@@ -17,9 +17,9 @@ export default {
       <div class="flex flex-col md:flex-row gap-4 min-h-[200px] my-10">
         <div class="w-full md:w-1/2 flex flex-col justify-end items-start">
           <div class="flex flex-col items-start text-left">
-            <div class="below-text md:max-w-[404px] text-[12px] sm:text-[16px] text-white">We’re here for more than just purchases — let’s connect! Whether you have a question, need technical support, or want to share feedback and ideas, we’d love to hear from you.</div>  
+            <div class="below-text md:max-w-[404px] text-[14px] sm:text-[16px] text-white">We’re here for more than just purchases — let’s connect! Whether you have a question, need technical support, or want to share feedback and ideas, we’d love to hear from you.</div>  
             <div class="flex flex-col justify-center items-center mt-3">
-              <a class="text-center leading-[140%] min-w-[200px] bg-white text-black sm:min-w-[300px] py-3 uppercase hover:tracking-[1px]"
+              <a class="text-center leading-[140%] min-w-[200px] bg-white text-black sm:min-w-[300px] py-3 uppercase md:hover:tracking-[1px]"
                  href="/contact">
                 Get In Touch
               </a>  
@@ -30,14 +30,14 @@ export default {
           <div class="w-full flex flex-col sm:flex-row gap-8 sm:gap-0">
             <div class="w-full sm:w-1/2 text-left">
               <div class="right-header text-white text-[16px] md:text-[20px] mb-[16px]">Orders and Support</div>
-                <div class="right-content text-white text-[12px] sm:text-[16px] my-1">
-                  <p class="hover:tracking-[1px]">Terms & Conditions</p> 
-                  <p class="hover:tracking-[1px]">Privacy Policy</p> 
+                <div class="right-content text-white text-[14px] sm:text-[16px] my-1">
+                  <p class="md:hover:tracking-[1px]">Terms & Conditions</p> 
+                  <p class="md:hover:tracking-[1px]">Privacy Policy</p> 
                 </div>
             </div>
             <div class="w-full sm:w-1/2 text-left">
               <div class="right-header text-white text-[16px] md:text-[20px] mb-[16px]">Operating Hours</div>
-                <div class="right-content text-white text-[12px] sm:text-[16px] my-1">
+                <div class="right-content text-white text-[14px] sm:text-[16px] my-1">
                   <p>Monday - Friday: 09:00 - 17:00</p>
                   <p>Saturday: 10:00 - 17:00</p> 
                   <p>Sunday: CLOSED</p> 
