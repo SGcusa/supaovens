@@ -3,15 +3,15 @@
     <div 
       v-if="!showForm" 
       @click="showForm = true" 
-      :class="['first-button relative sm:w-[180px] overflow-hidden flex flex-row justify-start items-center', borderClass]"
+      :class="['first-button relative md:w-[180px] overflow-hidden flex flex-row justify-start items-center', borderClass]"
       :style="{ backgroundColor: backgroundColor }"
     >
       <a 
-        :class="['button-text text-[14px] md:text-[16px] text-center leading-[140%] min-w-[100px] sm:w-[180px] md:p-3 p-[10px] uppercase w-[135px]', textColorClass]"
+        :class="['button-text text-[14px] md:text-[16px] text-center leading-[140%] min-w-[100px] md:w-[180px] md:p-3 p-[10px] uppercase w-[135px]', textColorClass]"
       >
         {{ buttonText }}
       </a>
-      <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
+      <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
         <img 
           class="arrow-icon w-[20px] h-full" 
           height="100%" 
@@ -28,7 +28,7 @@
           Back
         </div>
 
-        <form action="https://formspree.io/f/mblgrpkb" method="POST" class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]" @submit.prevent="submitForm">
+        <form action="https://formspree.io/f/mblgrpkb" method="POST" class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]">
           <div v-if="currentStep === 1">
             <h2 class="text-2xl font-bold text-center mb-[40px] md:mb-[60px]">Step 1: Choose Your Oven Options</h2>
             <label class="block mb-2 text-[20px]">Inside Diameter Size:</label>
@@ -58,7 +58,7 @@
               <option value="no">No</option>
             </select>
 
-            <button @click="nextStep" type="button" class="bg-slate-600 hover:bg-black text-white px-6 py-3 w-full">
+            <button @click="nextStep" type="button" class="bg-black md:hover:bg-slate-600 text-white px-6 py-3 w-full">
               Next
             </button>
           </div>
@@ -78,13 +78,13 @@
           <div v-if="currentStep === 3">
             <h2 class="text-2xl font-bold text-center mb-4">Step 3: Finalize Your Enquiry</h2>
             <label class="block mb-2 text-[20px]">Full Name:</label>
-            <input v-model="form.name" type="text" class="w-full p-2 mb-4 border " placeholder="Your Name">
+            <input v-model="form.name" type="text" class="w-full p-2 mb-4 border" placeholder="Your Name" name="name">
 
             <label class="block mb-2 text-[20px]">Email Address:</label>
-            <input v-model="form.email" type="email" class="w-full p-2 mb-4 border " placeholder="Your Email">
+            <input v-model="form.email" type="email" class="w-full p-2 mb-4 border" placeholder="Your Email" name="email">
 
             <label class="block mb-2 text-[20px]">Phone Number:</label>
-            <input v-model="form.phone" type="tel" class="w-full p-2 mb-4 border " placeholder="Your Phone Number">
+            <input v-model="form.phone" type="tel" class="w-full p-2 mb-4 border" placeholder="Your Phone Number" name="phone">
 
             <button type="submit" class="bg-green-600 text-white px-6 py-3 w-full">
               Submit Enquiry
@@ -157,14 +157,19 @@ export default {
 
 
 
-<style>
+<style scoped>
+@media screen and (min-width: 767px) {
   .first-button {
-    border: 1px solid white;
     transition: width 0.3s ease;
   }
 
   .arrow {
     opacity: 0;
+  }
+
+  .first-button {
+    justify-content: center;
+    display: flex;
   }
 
   .first-button:hover {
@@ -174,7 +179,7 @@ export default {
   .first-button:hover .arrow {
     opacity: 1;
   }
-
+}
   .close-btn, .first-button {
     cursor: pointer;
   }

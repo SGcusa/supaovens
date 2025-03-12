@@ -1,25 +1,25 @@
 <template>
   <nav class="bg-[#000]">
     <div class="hidden md:flex flex-row justify-center items-center md:gap-14 text-white w-full">
-      <a href="tel:+27764167815" class="text-white hover:underline">
+      <a href="tel:+27764167815" class="text-white md:hover:underline">
         +27 76 416 7815 
       </a> |
-      <a href="mailto:supaovens@gmail.com" class="text-white hover:underline">
+      <a href="mailto:supaovens@gmail.com" class="text-white md:hover:underline">
         supaovens@gmail.com
       </a> |
-      <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white hover:underline">
+      <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white md:hover:underline">
         @Supa_Ovens
       </a>
     </div>
     <div class="md:hidden relative w-full overflow-hidden md:justify-center md:gap-10 lg:gap-14 flex flex-row items-center" style="text-wrap: pretty;">
       <div class="flex w-full mobile-slider">
-        <a href="tel:+27764167815" class="text-white hover:underline min-w-full text-center">
+        <a href="tel:+27764167815" class="text-whitemd:hover:underline min-w-full text-center">
           +27 76 416 7815 
         </a> |
-        <a href="mailto:supaovens@gmail.com" class="text-white hover:underline min-w-full text-center">
+        <a href="mailto:supaovens@gmail.com" class="text-white md:hover:underline min-w-full text-center">
           supaovens@gmail.com
         </a> |
-        <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white hover:underline min-w-full text-center">
+        <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white md:hover:underline min-w-full text-center">
           @Supa_Ovens
         </a>
       </div>
@@ -44,16 +44,16 @@
 
     <!-- Center and Right section: Navigation Links (Hidden on small screens) -->
     <div id="nav-content" class="hidden md:space-x-8 items-center overflow-hidden">
-      <router-link to="/products" class="text-[16px] hover:scale-105 transition-colors duration-200">Our Services</router-link>
-      <router-link to="/about" class="text-[16px] hover:scale-105 transition-colors duration-200">About Us</router-link>
-      <router-link to="/contact" class="text-[16px] hover:scale-105 transition-colors duration-200">Contact</router-link>
+      <router-link to="/products" class="text-[16px] md:hover:scale-105 transition-colors duration-200">Our Services</router-link>
+      <router-link to="/about" class="text-[16px] md:hover:scale-105 transition-colors duration-200">About Us</router-link>
+      <router-link to="/contact" class="text-[16px] md:hover:scale-105 transition-colors duration-200">Contact</router-link>
     </div>
 
     <!-- Dropdown Menu for Small Screens -->
     <div v-if="isMenuOpen" class="absolute w-[200px] top-14 right-[10px] md:right-[20px] xl:right-10 bg-blend-darken bg-white shadow-lg z-50 flex flex-col space-y-4 p-4">
-      <router-link to="/products" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
-      <router-link to="/about" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
-      <router-link to="/contact" class="text-gray-800 text-right hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
+      <router-link to="/products" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
+      <router-link to="/about" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
+      <router-link to="/contact" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
     </div>
   </nav>
 
@@ -160,11 +160,6 @@ nav a.router-link-exact-active::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.round{
-  border: 1px solid black;
-  border-radius: 10px;
 }
 
 .footer-sec{

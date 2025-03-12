@@ -2,8 +2,8 @@
   <section>
     <div class="">
       <div class="px-[10vw] z-10 m-4 mx-auto md:pb-[160px]">
-        <h1 class="flex flex-col justify-center items-center text-[20px] md:text-[60px] leading-[90%] stroke-black">
-          <span class="text-[12px] md:text-[16px] uppercase md:py-[20px] leading-[120%] text-left text-[#b1b1b1]">From a Spark to a Flame</span>
+        <h1 class="flex flex-col justify-center items-center text-[20px] md:text-[60px] md:leading-[90%] stroke-black">
+          <span class="text-[14px] md:text-[16px] uppercase md:py-[20px] leading-[120%] text-left text-[#b1b1b1]">From a Spark to a Flame</span>
           Supa Ovens started in 2019 as more than just a business — it was a dream fueled by a love for wood-fired pizza. Founded by Simphiwe Bhusa in Strand, Cape Town, our goal has always been simple: to craft quality pizza ovens that bring people together.
 
           What began as a small team with big dreams is now a passionate family of creators, building ovens that carry our story — and we can’t wait to be part of yours

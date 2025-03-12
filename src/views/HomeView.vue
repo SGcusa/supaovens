@@ -26,7 +26,7 @@ export default {
   <section>
     <div class="relative flex flex-row text-white text-start items-center max-h-[600px] overflow-hidden">
       <video autoplay muted loop class="top-0 left-0 w-full h-full object-cover">
-        <source class="!rounded-md" src="https://i.imgur.com/SOZINP0.mp4" type="video/mp4">
+        <source class="" src="https://i.imgur.com/SOZINP0.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <div class="absolute px-[3vw] z-10 m-4">
@@ -47,7 +47,7 @@ export default {
   <section>
     <div class="fixed bottom-5 right-5 z-50 space-y-2 animate-interval-shake">
       <a class="WhatsApp-button flex flex-row justify-start items-center gap-2 " href="https://wa.me/+27692929578" target="_blank">
-        <div class="hover:bg-green-500 text-green-500 hover:text-white uppercase text-sm font-medium px-3 py-1 mt-2 rounded-lg shadow-lg">
+        <div class="md:hover:bg-green-500 text-green-500 hover:text-white uppercase text-sm font-medium px-3 py-1 mt-2 rounded-lg shadow-lg">
           Need Help?
         </div>
         <img 
@@ -82,21 +82,20 @@ export default {
             <span class="uppercase font-semibold min-w-[100px] min-[480px]:min-w-[200px]">Brick Decoration:</span>
             Carefully crafted brick designs not only enhance the oven’s structural strength but also add a refined, timeless look to your setup.
           </div>
-          <div class="flex flex-row gap-[20px]">
-            <div class="first-button relative sm:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
-              <router-link to="/about" class="button-text text-center leading-[140%] min-w-[100px]  text-white  sm:w-[180px] py-3 uppercase">
+          <div class="flex flex-row gap-[20px] w-full">
+            <div class="first-button relative w-1/2 md:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
+              <router-link to="/about" class="button-text text-center leading-[140%] min-w-[100px]  text-white w-full md:w-[180px] py-3 uppercase">
                 Read More
               </router-link>
-              <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
+              <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
                 <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="">
               </span>
             </div>
-            <div class="first-button relative sm:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
-              <a class="button-text text-center text-[14px] leading-[140%] min-w-[100px]  text-white  sm:w-[180px] uppercase "
-                href=".button_url">
+            <div class="first-button relative w-1/2 md:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center mt-8">
+              <router-link to="/404" class="button-text text-center leading-[140%] min-w-[100px] text-white w-full md:w-[180px] py-3 uppercase">
                 Enquire Now!
-              </a>
-              <span class="arrow absolute right-4 transition-opacity duration-300 ease-in-out">
+              </router-link>
+              <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
                 <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="">
               </span>
             </div>
@@ -118,6 +117,8 @@ export default {
     overflow-x: hidden;
     overflow-y: hidden;
   }
+
+@media screen and (min-width: 767px) {
   .first-button {
     transition: width 0.3s ease;
   }
@@ -138,6 +139,7 @@ export default {
   .first-button:hover .arrow {
     opacity: 1;
   }
+}
 
   @media screen and (max-width: 1024px) {
     .heat-img{
