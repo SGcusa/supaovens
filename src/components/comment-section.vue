@@ -8,12 +8,12 @@
             We would like to hear from you. Share your experience with us below:
           </p>
         </div>
-    
+
         <div v-if="user" class="user-info flex items-center gap-[10px] mb-[20px]">
           <img class="rounded-[50%] w-[50px] h-[50px]" :src="user.picture" alt="User profile picture" />
           <p>Welcome, {{ user.name }}</p>
         </div>
-        
+
         <div class="comment-section flex flex-col justify-start gap-[10px] mb-[20px]">
           <div class="rate-section flex items-center gap-[5px]">
             <span v-for="star in 5" :key="star" @click="setRating(star)" class="star" :class="{ 'text-yellow-500': star <= rating }">★</span>
@@ -27,16 +27,9 @@
 
       <div class="w-full md:w-1/2">
         <div class="comments max-h-[400px] mt-[60px] overflow-scroll">
-          <div 
-              v-for="(comment, index) in sortedComments" 
-              :key="index" 
-              class="comment flex flex-col gap-[10px] p-[10px] border-b"
-            >
+          <div v-for="(comment, index) in sortedComments" :key="index" class="comment flex flex-col gap-[10px] p-[10px] border-b">
             <div class="flex items-center gap-[10px]">
-              <img 
-                :src="comment.picture" 
-                class="rounded-[50%] w-[40px] h-[40px]"
-                alt="User profile picture" />
+              <img :src="comment.picture" class="rounded-[50%] w-[40px] h-[40px]" alt="User profile picture" />
               <div class="text-start">
                 <h3>{{ comment.name }}</h3>
                 <p>{{ comment.text }}</p>
@@ -56,11 +49,13 @@
       </div>
     </div>
 
+    <!-- Sign-in Pop-up -->
     <div v-if="showSignInPopup" class="popup fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-      <div class="bg-white p-[20px] rounded-[10px]">
-        <p class="mb-[20px]">Please sign in to leave a comment:</p>
-        <div id="google-signin-btn"></div>
-        <button class="mt-[10px] px-4 py-2 bg-gray-500 text-white rounded" @click="showSignInPopup = false">Cancel</button>
+      <div class="bg-white p-[30px] rounded-[10px] text-center w-[300px]">
+        <p class="mb-[20px] text-[18px] font-bold">Please sign in to leave a comment:</p>
+        <div v-show="googleScriptLoaded" id="google-signin-btn" class="mb-[20px]"></div>
+        <p v-if="!googleScriptLoaded" class="text-gray-500">Loading Google Sign-In...</p>
+        <button class="px-6 py-2 bg-gray-500 text-white rounded" @click="showSignInPopup = false">Cancel</button>
       </div>
     </div>
   </div>
@@ -75,7 +70,8 @@ export default {
       comment: "",
       rating: 0,
       comments: JSON.parse(localStorage.getItem("comments")) || [],
-      showSignInPopup: false
+      showSignInPopup: false,
+      googleScriptLoaded: false
     };
   },
   computed: {
@@ -110,7 +106,7 @@ export default {
       this.comments.unshift(newComment);
       localStorage.setItem("comments", JSON.stringify(this.comments));
       this.comment = "";
-      this.rating = 0; 
+      this.rating = 0;
     },
     likeComment(index) {
       this.comments[index].likes++;
@@ -134,7 +130,10 @@ export default {
       script.id = "google-signin-script";
       script.src = "https://accounts.google.com/gsi/client";
       script.async = true;
-      script.onload = this.initializeGoogleSignIn;
+      script.onload = () => {
+        this.googleScriptLoaded = true;
+        this.initializeGoogleSignIn();
+      };
       document.head.appendChild(script);
     },
     initializeGoogleSignIn() {
@@ -142,13 +141,19 @@ export default {
         client_id: "YOUR_CLIENT_ID",
         callback: this.handleCredentialResponse
       });
+
       window.google.accounts.id.renderButton(
         document.getElementById("google-signin-btn"),
         { theme: "outline", size: "large" }
       );
     },
     handleCredentialResponse(response) {
-      this.user = { name: "User Name", email: "user@example.com", picture: "https://via.placeholder.com/50" };
+      console.log("Google response:", response);
+      this.user = {
+        name: "John Doe",
+        email: "johndoe@example.com",
+        picture: "https://via.placeholder.com/50"
+      };
       this.showSignInPopup = false;
     }
   },
@@ -162,6 +167,7 @@ export default {
 .usercomment {
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .comment {
@@ -170,5 +176,15 @@ export default {
 
 .star {
   cursor: pointer;
+  font-size: 20px;
+}
+
+.popup {
+  z-index: 1000;
+}
+
+#google-signin-btn {
+  display: flex;
+  justify-content: center;
 }
 </style>
