@@ -27,11 +27,9 @@ export default {
     <div class="relative flex flex-row text-white text-start items-end md:items-center max-h-[800px] md:max-h-[600px] overflow-hidden">
       <video autoplay muted loop class="hidden md:block top-0 left-0 w-full h-full object-cover">
         <source class="" src="https://i.imgur.com/SOZINP0.mp4" type="video/mp4">
-        Your browser does not support the video tag.
       </video>
-      <video autoplay muted loop class="md:hidden block top-0 left-0 w-full h-full object-cover">
-        <source class="" src="https://cdn.shopify.com/videos/c/o/v/b0c65c546bdc4e248716dc4d39a21ee5.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+      <video autoplay muted loop playsinline poster="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/Screenshot_2025-03-14_at_13.02.00.png?v=1741950130" class="md:hidden block top-0 left-0 w-full h-full object-cover">
+        <source src="https://cdn.shopify.com/videos/c/o/v/b0c65c546bdc4e248716dc4d39a21ee5.mp4" type="video/mp4">
       </video>
       <div class="absolute pb-[20px] md:pb-0 px-[3vw] z-10 m-4">
         <h1 class="text-[40px] sm:text-[60px] lg:text-[80px] mb-[10px] leading-[90%] stroke-white" style="-webkit-text-stroke: 2px white;">SUPA<br/> OVENS</h1>
