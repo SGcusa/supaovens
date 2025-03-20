@@ -4,7 +4,7 @@
       <a href="tel:+27799715987" class="text-white md:hover:underline">
         +27 79 971 5987 
       </a> |
-      <a href="mailto:sb.supaovens@gmail.com" class="text-white md:hover:underline">
+      <a href="mailto:sb.supaovens@gmail.com?subject=Inquiry&body=Hello, I'd like to ask about..." class="text-white md:hover:underline">
         sb.supaovens@gmail.com the
       </a> |
       <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white md:hover:underline">
@@ -16,7 +16,7 @@
         <a href="tel:+27799715987" class="text-whitemd:hover:underline min-w-full text-center">
           +27 79 971 5987 
         </a> |
-        <a href="mailto:sb.supaovens@gmail.com" class="text-white md:hover:underline min-w-full text-center">
+        <a href="mailto:sb.supaovens@gmail.com?subject=Inquiry&body=Hello, I'd like to ask about..." class="text-white md:hover:underline min-w-full text-center">
           sb.supaovens@gmail.com
         </a> |
         <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white md:hover:underline min-w-full text-center">
