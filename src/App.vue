@@ -5,7 +5,7 @@
         +27 79 971 5987 
       </a> |
       <a href="mailto:sb.supaovens@gmail.com" class="text-white md:hover:underline">
-        sb.supaovens@gmail.com
+        sb.supaovens@gmail.com the
       </a> |
       <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white md:hover:underline">
         @Supa_Ovens
