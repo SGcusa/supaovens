@@ -1,11 +1,11 @@
 <template>
   <nav class="bg-[#000]">
     <div class="hidden md:flex flex-row justify-center items-center md:gap-14 text-white w-full">
-      <a href="tel:+27764167815" class="text-white md:hover:underline">
-        +27 76 416 7815 
+      <a href="tel:+27799715987" class="text-white md:hover:underline">
+        +27 79 971 5987 
       </a> |
-      <a href="mailto:supaovens@gmail.com" class="text-white md:hover:underline">
-        supaovens@gmail.com
+      <a href="mailto:sb.supaovens@gmail.com" class="text-white md:hover:underline">
+        sb.supaovens@gmail.com
       </a> |
       <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white md:hover:underline">
         @Supa_Ovens
@@ -13,11 +13,11 @@
     </div>
     <div class="md:hidden relative w-full overflow-hidden md:justify-center md:gap-10 lg:gap-14 flex flex-row items-center" style="text-wrap: pretty;">
       <div class="flex w-full mobile-slider">
-        <a href="tel:+27764167815" class="text-whitemd:hover:underline min-w-full text-center">
-          +27 76 416 7815 
+        <a href="tel:+27799715987" class="text-whitemd:hover:underline min-w-full text-center">
+          +27 79 971 5987 
         </a> |
-        <a href="mailto:supaovens@gmail.com" class="text-white md:hover:underline min-w-full text-center">
-          supaovens@gmail.com
+        <a href="mailto:sb.supaovens@gmail.com" class="text-white md:hover:underline min-w-full text-center">
+          sb.supaovens@gmail.com
         </a> |
         <a href="https://www.facebook.com/p/Supa-Ovens-100063959528797/" target="_blank" class="text-white md:hover:underline min-w-full text-center">
           @Supa_Ovens
