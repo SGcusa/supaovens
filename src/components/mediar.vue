@@ -22,13 +22,13 @@
       </span>
     </div>
 
-    <div v-if="showForm" class="fixed top-0 left-0 w-full h-full bg-white flex justify-center items-center z-50">
-      <div class="w-full h-full bg-white p-8 shado relative">
+    <div v-if="showForm" class="fixed top-0 left-0 w-full h-full bg-white flex justify-center items-center z-50 overflow-scroll">
+      <div class="w-full h-full bg-white px-[20px] pt-[100px] md:pt-0 pb-[60px] md:pb-0 shado relative">
         <div @click="showForm = false" class="close-btn absolute top-5 left-5 text-black font-bold cursor-pointer">
           Back
         </div>
 
-        <div class="flex flex-row gap-20 h-full justify-center items-center">
+        <div class="flex flex-col md:flex-row gap-20 h-full md:justify-center items-center overflow-scroll">
           <div class="w-full md:w-6/12 text-start">
             <form action="https://formspree.io/f/mblgrpkb" method="POST" class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]">
               <div v-if="currentStep === 1">
@@ -104,7 +104,7 @@
             </form>
           </div>
   
-          <div class="hidden md:block md:w-4/12 text-start">
+          <div class="w-full md:w-4/12 text-center md:!text-start">
             <p class="text-black font-semibold text-xl">Ordering Your Supa Oven</p>
             <p class="text-black mt-2">
               To place your order, please fill in the checkout form with your details, 
@@ -114,7 +114,7 @@
             
             <p class="text-black font-semibold text-lg mt-4">Pizza Oven Capacities</p>
             <div class="overflow-x-auto mt-2">
-              <table class="w-full border-collapse border border-gray-300">
+              <table class="w-full border-collapse border border-gray-300 text-black">
                 <thead class="bg-gray-200">
                   <tr>
                     <th class="border border-gray-300 px-4 py-2 text-start">Oven Size</th>
