@@ -28,69 +28,136 @@
           Back
         </div>
 
-        <form action="https://formspree.io/f/mblgrpkb" method="POST" class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]">
-          <div v-if="currentStep === 1">
-            <h2 class="text-2xl font-bold text-center mb-[40px] md:mb-[60px]">Step 1: Choose Your Oven Options</h2>
-            <label class="block mb-2 text-[20px]">Inside Diameter Size:</label>
-            <select v-model="form.size" class="w-full p-2 mb-4 border ">
-              <option value="0.8m">0.8m</option>
-              <option value="1m">1m</option>
-              <option value="1.5m">1.5m</option>
-              <option value="2m">2m</option>
-            </select>
-
-            <label class="block mb-2 text-[20px]">Brick Colour:</label>
-            <select v-model="form.brickColor" class="w-full p-2 mb-4 border ">
-              <option value="red">Red</option>
-              <option value="brown">Brown</option>
-              <option value="black">Black</option>
-            </select>
-
-            <label class="block mb-2 text-[20px]">Oven Location:</label>
-            <select v-model="form.location" class="w-full p-2 mb-4 border ">
-              <option value="inside">Inside</option>
-              <option value="outside">Outside</option>
-            </select>
-
-            <label class="block mb-2 text-[20px]">Under a Roof:</label>
-            <select v-model="form.roof" class="w-full p-2 mb-4 border ">
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-
-            <button @click="nextStep" type="button" class="bg-black md:hover:bg-slate-600 text-white px-6 py-3 w-full">
-              Next
-            </button>
+        <div class="flex flex-row gap-20 h-full justify-center items-center">
+          <div class="w-full md:w-6/12 text-start">
+            <form action="https://formspree.io/f/mblgrpkb" method="POST" class="w-full h-full mx-auto text-black flex flex-col justify-center max-w-[600px]">
+              <div v-if="currentStep === 1">
+                <h2 class="text-2xl font-bold text-center mb-[40px] md:mb-[60px] flex flex-col">
+                  <span class="text-[14px] md:text-[16px] uppercase leading-[120%] text-[#b1b1b1]">Step 1:</span>
+                   Choose Your Oven Options
+                </h2>
+                <label class="block mb-2 text-[20px]">Inside Diameter Size:</label>
+                <select v-model="form.size" class="w-full p-2 mb-4 border ">
+                  <option value="0.8m">0.8m</option>
+                  <option value="1m">1m</option>
+                  <option value="1.5m">1.5m</option>
+                  <option value="2m">2m</option>
+                </select>
+  
+                <label class="block mb-2 text-[20px]">Brick Colour:</label>
+                <select v-model="form.brickColor" class="w-full p-2 mb-4 border ">
+                  <option value="red">Red</option>
+                  <option value="brown">Brown</option>
+                  <option value="black">Black</option>
+                </select>
+  
+                <label class="block mb-2 text-[20px]">Oven Location:</label>
+                <select v-model="form.location" class="w-full p-2 mb-4 border ">
+                  <option value="inside">Inside</option>
+                  <option value="outside">Outside</option>
+                </select>
+  
+                <label class="block mb-2 text-[20px]">Under a Roof:</label>
+                <select v-model="form.roof" class="w-full p-2 mb-4 border ">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+  
+                <button @click="nextStep" type="button" class="bg-black md:hover:bg-slate-600 text-white px-6 py-3 w-full">
+                  Next
+                </button>
+              </div>
+  
+              <div v-if="currentStep === 2">
+                <h2 class="text-2xl font-bold text-center mb-4 flex flex-col">
+                  <span class="text-[14px] md:text-[16px] uppercase leading-[120%] text-[#b1b1b1]">Step 2:</span>
+                  Choose Your Accessories
+                </h2>
+                <div v-for="(accessory, index) in accessories" :key="index" class="flex items-center mb-2">
+                  <input type="checkbox" v-model="form.accessories" :value="accessory" class="mr-2">
+                  <span>{{ accessory }}</span>
+                </div>
+  
+                <button @click="nextStep" type="button" class="bg-red-600 text-white px-6 py-3 w-full">
+                  Next
+                </button>
+              </div>
+  
+              <div v-if="currentStep === 3">
+                <h2 class="text-2xl font-bold text-center mb-4 flex flex-col">
+                  <span class="text-[14px] md:text-[16px] uppercase leading-[120%] text-[#b1b1b1]">Step 3:</span>
+                  Finalize Your Enquiry
+                </h2>
+                <label class="block mb-2 text-[20px]">Full Name:</label>
+                <input v-model="form.name" type="text" class="w-full p-2 mb-4 border" placeholder="Your Name" name="name">
+  
+                <label class="block mb-2 text-[20px]">Email Address:</label>
+                <input v-model="form.email" type="email" class="w-full p-2 mb-4 border" placeholder="Your Email" name="email">
+  
+                <label class="block mb-2 text-[20px]">Phone Number:</label>
+                <input v-model="form.phone" type="tel" class="w-full p-2 mb-4 border" placeholder="Your Phone Number" name="phone">
+  
+                <button type="submit" class="bg-green-600 text-white px-6 py-3 w-full">
+                  Submit Enquiry
+                </button>
+              </div>
+            </form>
           </div>
-
-          <div v-if="currentStep === 2">
-            <h2 class="text-2xl font-bold text-center mb-4">Step 2: Choose Your Accessories</h2>
-            <div v-for="(accessory, index) in accessories" :key="index" class="flex items-center mb-2">
-              <input type="checkbox" v-model="form.accessories" :value="accessory" class="mr-2">
-              <span>{{ accessory }}</span>
+  
+          <div class="hidden md:block md:w-4/12 text-start">
+            <p class="text-black font-semibold text-xl">Ordering Your Supa Oven</p>
+            <p class="text-black mt-2">
+              To place your order, please fill in the checkout form with your details, 
+              including your name, contact information, and delivery address. 
+              Once submitted, we will contact you within 24 hours to confirm your order and discuss delivery or pickup options.
+            </p>
+            
+            <p class="text-black font-semibold text-lg mt-4">Pizza Oven Capacities</p>
+            <div class="overflow-x-auto mt-2">
+              <table class="w-full border-collapse border border-gray-300">
+                <thead class="bg-gray-200">
+                  <tr>
+                    <th class="border border-gray-300 px-4 py-2 text-start">Oven Size</th>
+                    <th class="border border-gray-300 px-4 py-2 text-start">Inside Diameter</th>
+                    <th class="border border-gray-300 px-4 py-2 text-start">Outside (cm)</th>
+                    <th class="border border-gray-300 px-4 py-2 text-start">Pizza Capacity</th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white">
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">0.8m</td>
+                    <td class="border border-gray-300 px-4 py-2">80cm</td>
+                    <td class="border border-gray-300 px-4 py-2">100cm</td>
+                    <td class="border border-gray-300 px-4 py-2">2 large pizzas</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2">1.2m</td>
+                    <td class="border border-gray-300 px-4 py-2">120cm</td>
+                    <td class="border border-gray-300 px-4 py-2">140cm</td>
+                    <td class="border border-gray-300 px-4 py-2">5 large pizzas</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">1.5m</td>
+                    <td class="border border-gray-300 px-4 py-2">150cm</td>
+                    <td class="border border-gray-300 px-4 py-2">170cm</td>
+                    <td class="border border-gray-300 px-4 py-2">9 large pizzas</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2">2m</td>
+                    <td class="border border-gray-300 px-4 py-2">200cm</td>
+                    <td class="border border-gray-300 px-4 py-2">220cm</td>
+                    <td class="border border-gray-300 px-4 py-2">15 large pizzas</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <button @click="nextStep" type="button" class="bg-red-600 text-white px-6 py-3 w-full">
-              Next
-            </button>
+            
+            <p class="text-black mt-4">
+              Make sure to choose the right oven size for your needs. 
+              If you have any questions, feel free to reach out before placing your order.
+            </p>
           </div>
-
-          <div v-if="currentStep === 3">
-            <h2 class="text-2xl font-bold text-center mb-4">Step 3: Finalize Your Enquiry</h2>
-            <label class="block mb-2 text-[20px]">Full Name:</label>
-            <input v-model="form.name" type="text" class="w-full p-2 mb-4 border" placeholder="Your Name" name="name">
-
-            <label class="block mb-2 text-[20px]">Email Address:</label>
-            <input v-model="form.email" type="email" class="w-full p-2 mb-4 border" placeholder="Your Email" name="email">
-
-            <label class="block mb-2 text-[20px]">Phone Number:</label>
-            <input v-model="form.phone" type="tel" class="w-full p-2 mb-4 border" placeholder="Your Phone Number" name="phone">
-
-            <button type="submit" class="bg-green-600 text-white px-6 py-3 w-full">
-              Submit Enquiry
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </section>

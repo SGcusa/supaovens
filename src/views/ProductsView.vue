@@ -14,27 +14,32 @@ export default {
       currentIndex: 0,
       carouselItems: [
         { 
-          picture: 'https://i.ibb.co/5sg34TR/Whats-App-Image-2024-06-20-at-20-39-04.png', 
+          picture: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/470215450_1158317448998331_6934975351814482433_n_enhanced.png?v=1742908184', 
+          picture2: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/470215450_1158317448998331_6934975351814482433_n_enhanced_1.png?v=1742908184', 
           header: 'Intelligently Crafted.',
           text: 'The expertly designed Supa Ovens bring together innovation and tradition. Personalize your cooking experience with versatile sizes and premium craftsmanship, turning every bake into a masterpiece.' 
         },
         { 
-          picture: 'https://i.ibb.co/r0hsVJj/Whats-App-Image-2024-06-20-at-20-30-16.png', 
+          picture: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/468449497_1143993643764045_7061827701529264989_n_enhanced.png?v=1742908184', 
+          picture2: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/468449497_1143993643764045_7061827701529264989_n_enhanced_1.png?v=1742908184', 
           header: 'Performance in Every Bite.',
           text: 'From sizzling backyard gatherings to bustling restaurant kitchens, Supa Ovens deliver flawless heat distribution and wood-fired perfection — because every pizza deserves the perfect cook.' 
         },
         { 
-          picture: 'https://i.ibb.co/dksJzTP/Whats-App-Image-2024-06-20-at-20-30-22.png', 
+          picture: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/461747022_952026406939335_4267264655225207363_n_enhanced_e15254f6-755f-4369-83cc-3722cc761a6b.png?v=1742908184', 
+          picture2: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/461747022_952026406939335_4267264655225207363_n_enhanced_1.png?v=1742908184', 
           header: 'Where Design Meets Flavor.',
           text: 'Our pizza ovens blend stylish design with unbeatable performance. Built for both home chefs and professionals, they bring bold flavors and brilliant aesthetics to every cooking space.' 
         },
         { 
-          picture: 'https://i.ibb.co/Wnh99YZ/Whats-App-Image-2024-06-20-at-20-39-05-1.png', 
+          picture: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/473417469_1174953707334705_4396058158015343406_n_enhanced_33781fbb-3d62-4553-a844-b03b86734143.png?v=1742908184', 
+          picture2: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/473417469_1174953707334705_4396058158015343406_n_enhanced_1.png?v=1742908184', 
           header: 'Ignite Your Culinary Passion.',
           text: 'Unleash the power of wood-fired cooking with Supa Ovens. Whether it’s a crisp crust or a smoky finish, our ovens turn every meal into an unforgettable experience.' 
         },
         { 
-          picture: 'https://i.ibb.co/w4LyX3P/Whats-App-Image-2024-06-20-at-20-39-06-1.png', 
+          picture: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/468503932_1144013700428706_6703190742923299966_n_enhanced_9d3906de-755c-459c-9324-b36a0d12fcd9.png?v=1742908184', 
+          picture2: 'https://cdn.shopify.com/s/files/1/0900/4875/8049/files/468503932_1144013700428706_6703190742923299966_n_enhanced_1.png?v=1742908184', 
           header: 'Engineered for Excellence.',
           text: 'Supa Ovens offer more than just heat — they deliver precision, consistency, and charm. Designed for those who value both function and flair, each oven takes your pizza game to the next level.' 
         }
@@ -106,7 +111,7 @@ export default {
     <div class="px-[20px]">
       <div class="carousel-container relative flex flex-col gap-[20px] items-center max-w-[1280px] min-h-[400px] mx-auto mb-[20px] overflow-hidden">
         <button class="absolute carousel-btn prev" @click="movePrev">&#10094;</button>
-        <div class="carousel-track flex flex-row overflow-x-scroll" ref="track">
+        <div class="carousel-track flex flex-row" ref="track">
           <div v-for="(item, index) in items" :key="index" :class="['carousel-item', {'middle': index === 2}]">
             <img :src="item.image" :alt="item.text" class="h-full object-cover max-w-[400px]" />
           </div>
@@ -153,20 +158,20 @@ export default {
 
   <section>
       <div class="carousel-container max-w-[1280px] md:max-h-[700px] h-full w-full relative flex flex-col md:flex-row gap-[20px] items-end mx-auto pb-[60px] md:pb-[120px] overflow-hidden">
-        <div class="w-full md:w-5/12 flex flex-col md:items-start justify-start gap-4 md:gap-14">
+        <div class="w-full md:w-5/12 flex flex-col md:items-start justify-start gap-4 md:gap-14 md:pl-[40px]">
           <h3 class="md:absolute md:top-0 md:py-[20px] py-[10px] text-center text-[20px] md:text-[48px]">Why Supa Ovens?</h3>
-          <div class="md:hidden w-full md:w-7/12 flex justify-center max-h-[400px] py-[10px] items-center md:pl-[80px]">
+          <div class="md:hidden w-full md:w-7/12 flex justify-center max-h-[400px] py-[10px] items-center md:pl-[60px] lg:pl-[80px] overflow-hidden">
             <img :src="carouselItems[currentIndex].picture" alt="" class="h-full md:w-full object-cover" />
           </div>
           <div class="carousel-item-text text-[20px] md:text-start lg:pr-[80px]">{{ carouselItems[currentIndex].header }}</div>
-          <div class="carousel-item-text md:text-start lg:pr-[80px]">{{ carouselItems[currentIndex].text }}</div>
+          <div class="carousel-item-text md:text-start lg:pr-[80px] px-[20px] md:px-0">{{ carouselItems[currentIndex].text }}</div>
           <div class="flex flex-row md:justify-start justify-center gap-4">
             <button class="carousel-button prev" @click="movePrevv">&#10094; Prev</button>
             <button class="carousel-button next" @click="moveNexxt">Next &#10095;</button>
           </div>
         </div>
-        <div class="hidden w-full md:w-7/12 md:flex justify-center md:max-h-[350px] lg:max-h-[600px] items-center md:pl-[80px] lg:pl-[60px]">
-          <img :src="carouselItems[currentIndex].picture" alt="" class="h-full w-full object-cover" />
+        <div class="hidden w-full md:w-7/12 md:flex justify-center items-center overflow-hidden">
+          <img :src="carouselItems[currentIndex].picture2" alt="" class="h-full w-full object-cover" />
         </div>
       </div>
   </section>
