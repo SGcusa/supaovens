@@ -117,7 +117,6 @@
               <table class="w-full border-collapse border border-gray-300 text-black">
                 <thead class="bg-gray-200">
                   <tr>
-                    <th class="border border-gray-300 px-4 py-2 text-start">Oven Size</th>
                     <th class="border border-gray-300 px-4 py-2 text-start">Inside Diameter</th>
                     <th class="border border-gray-300 px-4 py-2 text-start">Outside (cm)</th>
                     <th class="border border-gray-300 px-4 py-2 text-start">Pizza Capacity</th>
@@ -125,28 +124,34 @@
                 </thead>
                 <tbody class="bg-white">
                   <tr>
-                    <td class="border border-gray-300 px-4 py-2">0.8m</td>
-                    <td class="border border-gray-300 px-4 py-2">80cm</td>
-                    <td class="border border-gray-300 px-4 py-2">100cm</td>
+                    <td class="border border-gray-300 px-4 py-2">60cm</td>
+                    <td class="border border-gray-300 px-4 py-2">900cm by 1m</td>
+                    <td class="border border-gray-300 px-4 py-2">1 large pizzas</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2">70cmm</td>
+                    <td class="border border-gray-300 px-4 py-2">1m by 1.1m</td>
                     <td class="border border-gray-300 px-4 py-2">2 large pizzas</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-2">90cm</td>
+                    <td class="border border-gray-300 px-4 py-2">1.2m by 1.3m</td>
+                    <td class="border border-gray-300 px-4 py-2">3 large pizzas</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2">1m</td>
+                    <td class="border border-gray-300 px-4 py-2">1.3m by 1.4m</td>
+                    <td class="border border-gray-300 px-4 py-2">4 large pizzas</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2">1.1m</td>
+                    <td class="border border-gray-300 px-4 py-2">1.4m by 1.5m</td>
+                    <td class="border border-gray-300 px-4 py-2">4 large pizzas</td>
                   </tr>
                   <tr class="bg-gray-50">
                     <td class="border border-gray-300 px-4 py-2">1.2m</td>
-                    <td class="border border-gray-300 px-4 py-2">120cm</td>
-                    <td class="border border-gray-300 px-4 py-2">140cm</td>
-                    <td class="border border-gray-300 px-4 py-2">5 large pizzas</td>
-                  </tr>
-                  <tr>
-                    <td class="border border-gray-300 px-4 py-2">1.5m</td>
-                    <td class="border border-gray-300 px-4 py-2">150cm</td>
-                    <td class="border border-gray-300 px-4 py-2">170cm</td>
-                    <td class="border border-gray-300 px-4 py-2">9 large pizzas</td>
-                  </tr>
-                  <tr class="bg-gray-50">
-                    <td class="border border-gray-300 px-4 py-2">2m</td>
-                    <td class="border border-gray-300 px-4 py-2">200cm</td>
-                    <td class="border border-gray-300 px-4 py-2">220cm</td>
-                    <td class="border border-gray-300 px-4 py-2">15 large pizzas</td>
+                    <td class="border border-gray-300 px-4 py-2">1.5m by 1.6m</td>
+                    <td class="border border-gray-300 px-4 py-2">6 large pizzas</td>
                   </tr>
                 </tbody>
               </table>
