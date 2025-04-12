@@ -13,7 +13,7 @@
     </div>
     <div class="md:hidden relative w-full overflow-hidden md:justify-center md:gap-10 lg:gap-14 flex flex-row items-center" style="text-wrap: pretty;">
       <div class="flex w-full mobile-slider">
-        <a href="tel:+27799715987" class="text-whitemd:hover:underline min-w-full text-center">
+        <a href="tel:+27799715987" class="text-white md:hover:underline min-w-full text-center">
           +27 79 971 5987 
         </a> |
         <a href="mailto:sb.supaovens@gmail.com?subject=Inquiry&body=Hello, I'd like to ask about..." class="text-white md:hover:underline min-w-full text-center">
@@ -42,23 +42,23 @@
       </button>
     </div>
 
-    <!-- Center and Right section: Navigation Links (Hidden on small screens) -->
-    <div id="nav-content" class="hidden md:space-x-8 items-center overflow-hidden">
+    <!-- <div id="nav-content" class="hidden md:space-x-8 items-center overflow-hidden">
       <router-link to="/products" class="text-[16px] md:hover:scale-105 transition-colors duration-200">Our Services</router-link>
-      <router-link to="/about" class="text-[16px] md:hover:scale-105 transition-colors duration-200">About Us</router-link>
+      <router-link to="/about-supa-ovens" class="text-[16px] md:hover:scale-105 transition-colors duration-200">About Us</router-link>
       <router-link to="/contact" class="text-[16px] md:hover:scale-105 transition-colors duration-200">Contact</router-link>
-    </div>
+    </div> -->
 
-    <!-- Dropdown Menu for Small Screens -->
     <div v-if="isMenuOpen" class="absolute w-[200px] top-14 right-[10px] md:right-[20px] xl:right-10 bg-blend-darken bg-white shadow-lg z-50 flex flex-col space-y-4 p-4">
       <router-link to="/products" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
-      <router-link to="/about" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
+      <router-link to="/about-supa-ovens" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
       <router-link to="/contact" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
     </div>
   </nav>
 
   <router-view />
 </template>
+
+
 
 <script>
 export default {
@@ -75,7 +75,7 @@ export default {
       } else {
         document.removeEventListener("click", this.handleClickOutside);
       }
-      event.stopPropagation(); // Prevent event bubbling
+      event.stopPropagation();
     },
     handleClickOutside(event) {
       if (!document.querySelector("#nav-content")?.contains(event.target) &&
