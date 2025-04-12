@@ -49,6 +49,7 @@ export default {
 </template>
 
 
+
 <style>
   .card-title {
     background: linear-gradient(to top, rgb(42, 42, 42) 30%, transparent 100%);

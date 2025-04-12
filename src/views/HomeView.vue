@@ -86,7 +86,7 @@ export default {
           </div>
           <div class="flex flex-row gap-[20px] w-full">
             <div class="first-button relative w-1/2 md:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center md:mt-8">
-              <router-link to="/about" class="button-text text-center max-[767px]:text-[12px] leading-[140%] min-w-[100px] text-white w-full md:w-[180px] py-2 md:py-3 uppercase">
+              <router-link to="/about-supa-ovens" class="button-text text-center max-[767px]:text-[12px] leading-[140%] min-w-[100px] text-white w-full md:w-[180px] py-2 md:py-3 uppercase">
                 Read More
               </router-link>
               <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
