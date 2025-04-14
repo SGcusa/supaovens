@@ -12,7 +12,53 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <title>Affordable Wood-Fired Pizza Ovens for Sale | Supa Ovens SA</title>
     <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
-  </head>
+     <!-- Schema.org Structured Data for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Supa Ovens SA",
+        "image": "https://supaovens.co.za/images/supaovens-cover.jpg",
+        "url": "https://supaovens.co.za",
+        "telephone": "+27 71 234 5678",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "27055 Shumani Street, Strand",
+          "addressLocality": "Cape Town",
+          "addressRegion": "Western Cape",
+          "postalCode": "7140",
+          "addressCountry": "ZA"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "17:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/supaovens"
+        ],
+        "description": "Supa Ovens SA builds and sells high-quality wood-fired pizza ovens, handcrafted in Cape Town. Perfect for home use or business needs, with delivery across South Africa."
+      }
+      </script>  
+    </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
