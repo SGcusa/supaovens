@@ -13,6 +13,7 @@ export default {
         class="w-full h-full object-cover" 
         src="https://i.ibb.co/dksJzTP/Whats-App-Image-2024-06-20-at-20-30-22.png" 
         alt="mp4"
+        loading="lazy"
       >
       <div class="absolute z-10 card-title text-center w-full min-h-[100px] mx-auto flex items-center justify-center">
         <h1 class="text-[24px] md:text-[32px] leading-[90%]">Shop Ovens</h1>
@@ -22,6 +23,7 @@ export default {
             class="arrow-icon w-[20px]" 
             height="100%" 
             width="100%" 
+            loading="lazy"
             alt="">
         </span>
       </div>
@@ -31,6 +33,7 @@ export default {
         class="w-full h-full object-cover" 
         src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/Screenshot_2025-02-21_at_18.56.48.png?v=1740226650" 
         alt="mp4"
+        loading="lazy"
       >
       <div class="absolute z-10 card-title text-center w-full min-h-[100px] mx-auto flex items-center justify-center">
         <h1 class="text-[24px] md:text-[32px] leading-[90%]">Shop Accessories</h1>
@@ -41,6 +44,7 @@ export default {
             height="100%" 
             width="100%" 
             alt=""
+            loading="lazy"
           >
         </span>
       </div>

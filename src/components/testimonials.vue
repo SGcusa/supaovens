@@ -28,7 +28,7 @@ export default {
     <div class="banner max-w-[1280px] mx-auto my-[60px]">
       <div class="slider-container flex overflow-hidden">
         <div class="slider flex transition-transform duration-500" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-          <img v-for="(img, index) in images" :key="index" :src="img" alt="" class="w-full shrink-0">
+          <img v-for="(img, index) in images" :key="index" :src="img" alt="" class="w-full shrink-0" loading="lazy">
         </div>
       </div>
       <div class="arrows flex justify-center gap-4 mt-4">

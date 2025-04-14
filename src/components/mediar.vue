@@ -18,6 +18,7 @@
           width="100%" 
           :src="arrowSrc" 
           alt="arrow"
+          loading="lazy"
         >
       </span>
     </div>

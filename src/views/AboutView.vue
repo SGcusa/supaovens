@@ -28,7 +28,7 @@
       <div class="flex flex-row gap-[60px] items-center px-[10vw] z-10 m-4 mx-auto md:pb-[160px] text-start text-[20px] md:text-[40px] md:leading-[90%]">
         <div class="w-1/2">
           <figure class="slide-up">
-            <img src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/470244202_1158317082331701_7680353135610417328_n_enhanced-removebg-preview.png?v=1741096065" alt="">
+            <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/470244202_1158317082331701_7680353135610417328_n_enhanced-removebg-preview.png?v=1741096065" alt="">
           </figure>
         </div>
         <div class="w-1/2">
@@ -42,7 +42,7 @@
       <div class="flex flex-row gap-[60px] items-center px-[10vw] z-10 m-4 mx-auto md:pb-[160px] text-start text-[20px] md:text-[40px] md:leading-[90%]">
         <div class="w-1/2">
           <figure class="slide-up">
-            <img src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/470244202_1158317082331701_7680353135610417328_n_enhanced-removebg-preview.png?v=1741096065" alt="">
+            <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/470244202_1158317082331701_7680353135610417328_n_enhanced-removebg-preview.png?v=1741096065" alt="">
           </figure>
         </div>
         <div class="w-1/2">

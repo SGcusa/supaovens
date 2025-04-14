@@ -10,7 +10,7 @@
         </div>
 
         <div v-if="user" class="user-info flex items-center gap-[10px] mb-[20px]">
-          <img class="rounded-[50%] w-[50px] h-[50px]" :src="user.picture" alt="User profile picture" />
+          <img class="rounded-[50%] w-[50px] h-[50px]" :src="user.picture" alt="User profile picture" loading="lazy" />
           <p>Welcome, {{ user.name }}</p>
         </div>
 
@@ -29,7 +29,7 @@
         <div class="comments max-h-[400px] mt-[60px] overflow-scroll">
           <div v-for="(comment, index) in sortedComments" :key="index" class="comment flex flex-col gap-[10px] p-[10px] border-b">
             <div class="flex items-center gap-[10px]">
-              <img :src="comment.picture" class="rounded-[50%] w-[40px] h-[40px]" alt="User profile picture" />
+              <img :src="comment.picture" class="rounded-[50%] w-[40px] h-[40px]" alt="User profile picture" loading="lazy" />
               <div class="text-start">
                 <h3>{{ comment.name }}</h3>
                 <p>{{ comment.text }}</p>
