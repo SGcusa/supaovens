@@ -65,7 +65,7 @@ export default {
       <h1 class="text-[24px] md:text-[40px] text-center leading-[90%] py-[60px]" style="-webkit-text-stroke: 1px black;">Bring The Heat - With Confidence</h1>
       <div class="flex flex-col lg:flex-row lg:gap-[60px] mt-[20px] md:mt-[80px]">
         <div class="lg:w-1/2 w-full flex items-center justify-center">
-          <img class="heat-img" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/Group_245.png?v=1741010550" alt="">
+          <img class="heat-img" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/Group_245.png?v=1741010550" alt="labelled Pizza Oven" loading="lazy">
         </div>
         <div class="lg:w-1/2 w-full flex flex-col gap-[20px] justify-start items-start">
           <div class="flex flex-col min-[480px]:flex-row text-start">
@@ -90,7 +90,7 @@ export default {
                 Read More
               </router-link>
               <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
-                <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="">
+                <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="left-arrow" loading="lazy">
               </span>
             </div>
             <div class="first-button relative w-1/2 md:w-[180px] border-[1px] bg-black overflow-hidden flex flex-row justify-start items-center md:mt-8">
@@ -98,7 +98,7 @@ export default {
                 Enquire Now!
               </router-link>
               <span class="hidden md:block arrow absolute right-4 transition-opacity duration-300 ease-in-out">
-                <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="">
+                <img class="arrow-icon w-[20px] h-full" height="100%" width="100%" src="https://cdn.shopify.com/s/files/1/0900/4875/8049/files/right-chevron.png?v=1740996159" alt="right-arrow" loading="lazy">
               </span>
             </div>
           </div>

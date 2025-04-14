@@ -29,7 +29,7 @@
     <!-- Left section: Logo -->
     <div class="nav-left__logo">
       <router-link to="/" class="flex items-center">
-        <img src="https://i.ibb.co/60tc1q7/logo3.png" alt="logo" class="w-[8vw] md:w-[60px]" />
+        <img src="https://i.ibb.co/60tc1q7/logo3.png" alt="logo" class="w-[8vw] md:w-[60px]" loading="lazy" />
       </router-link>
     </div>
 
