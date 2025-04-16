@@ -161,7 +161,7 @@ export default {
         <div class="w-full md:w-5/12 flex flex-col md:items-start justify-start gap-4 md:gap-14 md:pl-[40px]">
           <h3 class="md:absolute md:top-0 md:py-[20px] py-[10px] text-center text-[20px] md:text-[48px]">Why Supa Ovens?</h3>
           <div class="md:hidden w-full md:w-7/12 flex justify-center max-h-[400px] py-[10px] items-center md:pl-[60px] lg:pl-[80px] overflow-hidden">
-            <img :src="carouselItems[currentIndex].picture" alt="" class="h-full md:w-full object-cover" loading="lazy" />
+            <img :src="carouselItems[currentIndex].picture" :alt="item.text" class="h-full md:w-full object-cover" loading="lazy" />
           </div>
           <div class="carousel-item-text text-[20px] md:text-start lg:pr-[80px]">{{ carouselItems[currentIndex].header }}</div>
           <div class="carousel-item-text md:text-start lg:pr-[80px] px-[20px] md:px-0">{{ carouselItems[currentIndex].text }}</div>
@@ -171,7 +171,7 @@ export default {
           </div>
         </div>
         <div class="hidden w-full md:w-7/12 md:flex justify-center items-center overflow-hidden">
-          <img :src="carouselItems[currentIndex].picture2" alt="" class="h-full w-full object-cover" loading="lazy" />
+          <img :src="carouselItems[currentIndex].picture2" :alt="item.text" class="h-full w-full object-cover" loading="lazy" />
         </div>
       </div>
   </section>

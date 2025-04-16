@@ -4,14 +4,14 @@
       <div class="w-full md:w-1/2 max-h-[400px] flex flex-col justify-between">
         <div class="header-section">
           <h1 class="text-start text-[20px] md:text-[40px]">Leave A Comment</h1>
-          <p class="text-[14px] md:text-[16px] py-[10px] text-left max-w-[400px]">
+          <p class="text-[14px] md:text-[16px] py-[10px] text-left max-w-[460px]">
             We would like to hear from you. Share your experience with us below:
           </p>
         </div>
 
         <div v-if="user" class="user-info flex items-center gap-[10px] mb-[20px]">
           <img class="rounded-[50%] w-[50px] h-[50px]" :src="user.picture" alt="User profile picture" loading="lazy" />
-          <p>Welcome, {{ user.name }}</p>
+          <p>Welcome, <span>{{ user.name }}</span></p>
         </div>
 
         <div class="comment-section flex flex-col justify-start gap-[10px] mb-[20px]">
@@ -37,7 +37,7 @@
               </div>
             </div>
             <div class="likes-rate flex items-center gap-[10px]">
-              <button @click="likeComment(index)">👍 {{ comment.likes }}</button>
+              <button @click="toggleLike(index)" :disabled="!user">👍 {{ comment.likes }}</button>
               <span>Rating: {{ comment.rating }} ★</span>
               <template v-if="user && user.email === comment.email">
                 <button @click="editComment(index)">Edit</button>
@@ -49,12 +49,14 @@
       </div>
     </div>
 
-    <!-- Sign-in Pop-up -->
+    <!-- Sign-in Button -->
+    <div id="google-signin-btn" class="my-4"></div>
+
+    <!-- Sign-in Pop-up (Hidden if not needed) -->
     <div v-if="showSignInPopup" class="popup fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
       <div class="bg-white p-[30px] rounded-[10px] text-center w-[300px]">
         <p class="mb-[20px] text-[18px] font-bold">Please sign in to leave a comment:</p>
-        <div v-show="googleScriptLoaded" id="google-signin-btn" class="mb-[20px]"></div>
-        <p v-if="!googleScriptLoaded" class="text-gray-500">Loading Google Sign-In...</p>
+        
         <button class="px-6 py-2 bg-gray-500 text-white rounded" @click="showSignInPopup = false">Cancel</button>
       </div>
     </div>
@@ -70,8 +72,7 @@ export default {
       comment: "",
       rating: 0,
       comments: JSON.parse(localStorage.getItem("comments")) || [],
-      showSignInPopup: false,
-      googleScriptLoaded: false
+      showSignInPopup: false
     };
   },
   computed: {
@@ -100,6 +101,7 @@ export default {
         text: this.comment.trim(),
         rating: this.rating,
         likes: 0,
+        likedBy: [],  // Track users who have liked this comment
         date: new Date().toISOString()
       };
 
@@ -108,8 +110,22 @@ export default {
       this.comment = "";
       this.rating = 0;
     },
-    likeComment(index) {
-      this.comments[index].likes++;
+    toggleLike(index) {
+      const comment = this.comments[index];
+      
+      // If the user has already liked the comment, remove the like
+      if (comment.likedBy.includes(this.user.email)) {
+        comment.likes--;
+        const userIndex = comment.likedBy.indexOf(this.user.email);
+        if (userIndex !== -1) {
+          comment.likedBy.splice(userIndex, 1);
+        }
+      } else {
+        // Otherwise, add the like
+        comment.likes++;
+        comment.likedBy.push(this.user.email);
+      }
+
       localStorage.setItem("comments", JSON.stringify(this.comments));
     },
     editComment(index) {
@@ -131,14 +147,13 @@ export default {
       script.src = "https://accounts.google.com/gsi/client";
       script.async = true;
       script.onload = () => {
-        this.googleScriptLoaded = true;
         this.initializeGoogleSignIn();
       };
       document.head.appendChild(script);
     },
     initializeGoogleSignIn() {
       window.google.accounts.id.initialize({
-        client_id: "YOUR_CLIENT_ID",
+        client_id: "27939649771-jkokb27vc97cpvneu2jphgg89av223n4.apps.googleusercontent.com",  // Replace with your actual client ID
         callback: this.handleCredentialResponse
       });
 
@@ -149,12 +164,31 @@ export default {
     },
     handleCredentialResponse(response) {
       console.log("Google response:", response);
+
+      const idToken = response.credential; // Get the ID token from the response
+
+      // Decode the ID token to retrieve the user's information
+      const userInfo = this.decodeJwt(idToken);
+
+      // Set the user data
       this.user = {
-        name: "John Doe",
-        email: "johndoe@example.com",
-        picture: "https://via.placeholder.com/50"
+        name: userInfo.name,
+        email: userInfo.email,
+        picture: userInfo.picture
       };
+
       this.showSignInPopup = false;
+    },
+
+    decodeJwt(token) {
+      // Decode the JWT token (simple decoding on the client side)
+      const base64Url = token.split('.')[1];
+      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+      const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+
+      return JSON.parse(jsonPayload);
     }
   },
   mounted() {
