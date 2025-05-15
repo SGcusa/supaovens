@@ -50,7 +50,7 @@
 
     <div v-if="isMenuOpen" class="absolute w-[200px] top-14 right-[10px] md:right-[20px] xl:right-10 bg-blend-darken bg-white shadow-lg z-50 flex flex-col space-y-4 p-4">
       <router-link to="/products" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">Our Services</router-link>
-      <router-link to="/about-supa-ovens" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
+      <router-link to="/404" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">About Us</router-link>
       <router-link to="/contact" class="text-gray-800 text-right md:hover:scale-105 text-lg p-2 transition-all duration-200">Contact</router-link>
     </div>
   </nav>
