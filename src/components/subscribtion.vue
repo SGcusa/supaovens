@@ -30,9 +30,9 @@ export default {
           <div class="w-full flex flex-col sm:flex-row gap-8 sm:gap-0">
             <div class="w-full sm:w-1/2 text-left">
               <div class="right-header text-white text-[16px] md:text-[20px] mb-[16px]">Orders and Support</div>
-                <div class="right-content text-white text-[14px] sm:text-[16px] my-1">
-                  <p class="md:hover:tracking-[1px]">Terms & Conditions</p> 
-                  <p class="md:hover:tracking-[1px]">Privacy Policy</p> 
+                <div class="right-content text-white text-[14px] sm:text-[16px] my-1 flex flex-col gap-[4px]">
+                  <router-link to="/policies" class="md:hover:tracking-[1px]">Terms & Conditions</router-link> 
+                  <router-link to="/404" class="md:hover:tracking-[1px]">Privacy Policy</router-link> 
                 </div>
             </div>
             <div class="w-full sm:w-1/2 text-left">

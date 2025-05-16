@@ -17,7 +17,7 @@ export default {
     <img 
         class="object-cover max-h-[160px] md:max-h-[360px]"
         src="https://i.ibb.co/C1ghFjv/Whats-App-Image-2024-06-20-at-20-30-11.png" 
-        alt=""
+        alt="Burning Outdoor Woodfired Oven"
         width="100%"
         height="100%"
         loading="lazy"
